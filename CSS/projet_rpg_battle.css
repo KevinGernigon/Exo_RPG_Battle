@@ -113,12 +113,32 @@ body {
 	border: 0px;
 }
 
-.mouseover_monstre{
+#menu_monstre_1{
 	display : flex;
 	flex-direction: column;
 	font: 40px Arial, sans-serif;
 	background-color: rgba(12, 63, 145, 0.6);
 	position: fixed;
 	left: 27%;
+	top: 43%;
+}
+
+#menu_monstre_2{
+	display : flex;
+	flex-direction: column;
+	font: 40px Arial, sans-serif;
+	background-color: rgba(12, 63, 145, 0.6);
+	position: fixed;
+	left: 46%;
+	top: 43%;
+}
+
+#menu_monstre_3{
+	display : flex;
+	flex-direction: column;
+	font: 40px Arial, sans-serif;
+	background-color: rgba(12, 63, 145, 0.6);
+	position: fixed;
+	left: 64%;
 	top: 43%;
 }
