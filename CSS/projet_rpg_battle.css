@@ -1,0 +1,124 @@
+body {
+	background-image: url(../Images/Background/BG/battleback8.png);
+	background-size: cover;
+}
+
+.groupe_monstres {
+  display: flex;
+  font: 30px Arial, sans-serif;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  left: 25%;
+  right: 20%;
+  top: 10%;
+  bottom: 50%;
+}
+
+.groupe_personnages{
+  display: flex;
+  font: 30px Arial, sans-serif;
+  background-color: rgba(12, 63, 145, 0.6);
+  justify-content: space-between;
+  flex-direction: row;
+  position: fixed;
+  top: 64%;
+  left: 32%;
+  right: 3%;
+  border: 5px solid white;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.stats_sous_joueur {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font: 25px Arial, sans-serif;
+  align-items: center;
+  background-color: rgba(12, 63, 145, 0.6);
+  position: fixed;
+  top: 75%;
+  left: 22%;
+  right: 1%;
+  border: 5px solid white;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.valeurs_sous_joueur {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font: 25px Arial, sans-serif;
+  align-items: center;
+  position: fixed;
+  top: 76%;
+  left: 37%;
+  right: 1%;
+  border: 0px solid white;
+  padding: 15px;
+}
+
+#monstre_1 {
+	background-image: url("../Images/Monstres/Monstre_1.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+	border: 0px solid white;
+	padding: 150px;
+}
+
+#monstre_2 {
+	background-image: url("../Images/Monstres/Monstre_2.png");
+	background-repeat: no-repeat;	
+	background-size: contain;
+	border: 0px solid white;
+	padding: 150px;
+}
+
+#monstre_3 {
+	background-image: url("../Images/Monstres/Monstre_3.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+	border: 0px solid white;
+	padding: 150px;
+}
+
+.menu_choix{
+	display:flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: space-around;
+	background-color: rgba(12, 63, 145, 0.6);
+	font: 35px Arial, sans-serif;
+	position: fixed;
+	bottom: 4%;
+	top: 60%;
+	left: 1%;
+	right: 78%;
+	border: 10px solid white;
+	border-radius: 10px;
+	padding: 20px;
+}
+
+#attaque{
+	border: 0px;
+}
+
+#defend{
+	border: 0px;
+}
+
+#special{
+	border: 0px;
+}
+
+.mouseover_monstre{
+	display : flex;
+	flex-direction: column;
+	font: 40px Arial, sans-serif;
+	background-color: rgba(12, 63, 145, 0.6);
+	position: fixed;
+	left: 27%;
+	top: 43%;
+}
