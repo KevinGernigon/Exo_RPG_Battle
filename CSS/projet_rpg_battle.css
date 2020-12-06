@@ -269,3 +269,47 @@ body {
 	background-repeat: no-repeat;
 	padding: 20px;
 }
+
+
+
+#bloodsplash {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: fixed;
+	top: 25%;
+	bottom: 30%;
+	left: 10%;
+	right: 57%;
+	font: 50px Arial, sans-serif;
+	background-image: url();
+	background-size:cover;
+}
+
+#water {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: fixed;
+	top: 18%;
+	bottom: 30%;
+	left: 54%;
+	right: 12%;
+	font: 50px Arial, sans-serif;
+	background-image: url();
+	background-size:cover;
+}
+
+#hit {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: fixed;
+	top: 18%;
+	bottom: 30%;
+	left: 30%;
+	right: 30%;
+	font: 50px Arial, sans-serif;
+	background-image: url();
+	background-size:cover;
+}
