@@ -53,7 +53,7 @@ body {
   font: 25px Arial, sans-serif;
   align-items: center;
   position: fixed;
-  top: 76%;
+  top: 75%;
   left: 37%;
   right: 1%;
   border: 0px solid white;
@@ -101,6 +101,81 @@ body {
 	padding: 20px;
 }
 
+.boutons_menu {
+	display:flex;
+	align-items: center;
+	flex-direction: column;
+	font: 35px Arial, sans-serif;
+	position: fixed;
+	bottom: 1%;
+	top: 62.8%;
+	left: 1.5%;
+	right: 78%;
+	padding: 30px;
+}
+
+#bouton_attaque {
+	width: 74%;
+    height: 80%;
+	background-image: url("../Images/Autre/Button.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	opacity: 70%;
+}
+
+#bouton_defend {
+	width: 74%;
+    height: 80%;
+	background-image: url("../Images/Autre/Button.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	opacity: 70%;
+}
+
+#bouton_special {
+	width: 74%;
+    height: 80%;	
+	background-image: url("../Images/Autre/Button.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	opacity: 70%;
+}
+
+.pointer_menu {
+	display:flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: space-around;
+	font: 30px Arial, sans-serif;
+	position: fixed;
+	bottom: 3%;
+	top: 61%;
+	left: 1%;
+	right: 93%;
+	padding: 30px;
+}
+
+#pointer_attaque {
+	background-image: url("../Images/Autre/Pointer.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	padding: 25px;
+}
+
+#pointer_defend {
+	background-image: url();
+	background-size: contain;
+	background-repeat: no-repeat;
+	padding: 25px;
+}
+
+#pointer_special {
+	background-image: url();
+	background-size: contain;
+	background-repeat: no-repeat;
+	padding: 25px;
+}
+
 #attaque{
 	border: 0px;
 }
@@ -113,14 +188,21 @@ body {
 	border: 0px;
 }
 
+.monstre_over {
+	display: flex;
+	justify-content: space-between;
+	position: fixed;
+	top: 2%;
+	right: 15%;
+	left: 18%;
+	align-items: center;
+}
+
 #menu_monstre_1{
 	display : flex;
 	flex-direction: column;
 	font: 40px Arial, sans-serif;
 	background-color: rgba(12, 63, 145, 0.6);
-	position: fixed;
-	left: 27%;
-	top: 43%;
 }
 
 #menu_monstre_2{
@@ -128,9 +210,6 @@ body {
 	flex-direction: column;
 	font: 40px Arial, sans-serif;
 	background-color: rgba(12, 63, 145, 0.6);
-	position: fixed;
-	left: 46%;
-	top: 43%;
 }
 
 #menu_monstre_3{
@@ -138,7 +217,55 @@ body {
 	flex-direction: column;
 	font: 40px Arial, sans-serif;
 	background-color: rgba(12, 63, 145, 0.6);
+}
+
+#message_au_centre {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font: 30px Arial, sans-serif;
 	position: fixed;
-	left: 64%;
-	top: 43%;
+	top: 44%;
+	left: 30%;
+	right: 30%;
+	bottom: 45%;
+
+}
+
+.pointeur_heros {
+	display: flex;
+	justify-content: space-between;
+	position: fixed;
+	top: 59%;
+	right: 8%;
+	left: 33%;
+	align-items: center;
+}
+
+#pointeur_heros_1 {
+	background-image: url("../Images/Autre/Pointer_down.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	padding: 20px;
+}
+
+#pointeur_heros_2 {
+	background-image: url("");
+	background-size: contain;
+	background-repeat: no-repeat;
+	padding: 20px;
+}
+
+#pointeur_heros_3 {
+	background-image: url("");
+	background-size: contain;
+	background-repeat: no-repeat;
+	padding: 20px;
+}
+
+#pointeur_heros_4 {
+	background-image: url("");
+	background-size: contain;
+	background-repeat: no-repeat;
+	padding: 20px;
 }

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>HTML, CSS and JavaScript demo</title>
+<title>RPG Battle</title>
 <link media="all" rel="stylesheet" href="..\CSS\projet_rpg_battle.css">
 </head>
 <body>
@@ -13,6 +13,7 @@
 		<div class = "monstre" id="monstre_2"></div>
 		<div class = "monstre" id="monstre_3"></div>		
 	</section>
+	<section class= "monstre_over">
 	<section class="mouseover_monstre" id="menu_monstre_1">
 		<div class= "stats_monstres" id="nom_monstre_1"></div>
 		<div class= "stats_monstres" id="vie_monstre_1"></div>
@@ -25,6 +26,7 @@
 		<div class= "stats_monstres" id="nom_monstre_3"></div>
 		<div class= "stats_monstres" id="vie_monstre_3"></div>
     </section>
+	</section>
 	</section>
 
   <section class="groupe_personnages">
@@ -39,21 +41,25 @@
 			<div class="stat" id="vie">Vie</div>
 			<div class="stat" id="mana">Mana</div>
 			<div class="stat" id="atk">Attaque</div>
+			<div class="stat" id="def">Défense</div>
 		</section>
 		<section class="menu_stats_2">
 			<div class="stat" id="vie">Vie</div>
 			<div class="stat" id="mana">Mana</div>
 			<div class="stat" id="atk">Attaque</div>
+			<div class="stat" id="def">Défense</div>
 		</section>
 		<section class="menu_stats_3">		
 			<div class="stat" id="vie">Vie</div>
 			<div class="stat" id="mana">Mana</div>
 			<div class="stat" id="atk">Attaque</div>
+			<div class="stat" id="def">Défense</div>
 		</section>
 		<section class="menu_stats_4">		
 			<div class="stat" id="vie">Vie</div>
 			<div class="stat" id="mana">Mana</div>
 			<div class="stat" id="atk">Attaque</div>
+			<div class="stat" id="def">Défense</div>
 		</section>		
   </section>
   
@@ -62,21 +68,25 @@
 			<div class="valeur" id="valeur_vie_1">100</div>
 			<div class="valeur" id="valeur_mana_1">100</div>
 			<div class="valeur" id="valeur_atk_1">25</div>
+			<div class="valeur" id="valeur_def">10</div>
 		</section>
 		<section class="valeurs_stats_2">
 			<div class="valeur" id="valeur_vie_2">100</div>
 			<div class="valeur" id="valeur_mana_2">100</div>
 			<div class="valeur" id="valeur_atk_2">25</div>
+			<div class="valeur" id="valeur_def">10</div>
 		</section>
 		<section class="valeurs_stats_3">
 			<div class="valeur" id="valeur_vie_3">100</div>
 			<div class="valeur" id="valeur_mana_3">100</div>
 			<div class="valeur" id="valeur_atk_3">25</div>
+			<div class="valeur" id="valeur_def">10</div>
 		</section>
 		<section class="valeurs_stats_4">
 			<div class="valeur" id="valeur_vie_4">100</div>
 			<div class="valeur" id="valeur_mana_4">100</div>
 			<div class="valeur" id="valeur_atk_4">25</div>
+			<div class="valeur" id="valeur_def">10</div>
 		</section>		
     </section>
 
@@ -84,6 +94,29 @@
 		<div class="action" id="attaque">Attaquer</div>
 		<div class="action" id="defend">Défendre</div>	
 		<div class="action" id="special">Spécial</div>		
+	</section>
+	
+	<section class="pointer_menu">
+		<div class="pointer" id="pointer_attaque"></div>
+		<div class="pointer" id="pointer_defend"></div>
+		<div class="pointer" id="pointer_special"></div>
+	</section>
+	
+	<section class="pointeur_heros">
+		<div class="pointer" id="pointeur_heros_1"></div>
+		<div class="pointer" id="pointeur_heros_2"></div>
+		<div class="pointer" id="pointeur_heros_3"></div>
+		<div class="pointer" id="pointeur_heros_4"></div>
+	</section>
+	
+	<section class="boutons_menu">
+		<div class="bouton" id="bouton_attaque"></div>
+		<div class="bouton" id="bouton_defend"></div>
+		<div class="bouton" id="bouton_special"></div>
+	</section>
+	
+	<section class="message_centre" id="message_au_centre">
+		<div class="message" id="message_attaque"></div>
 	</section>
 <!-- End your code here -->
 <script src="..\JS\projet_rpg_battle.js"></script>
