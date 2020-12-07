@@ -65,7 +65,65 @@ function entierAleatoire(min, max){
 }
 
 
-var attaque_des_monstres = function(){	
+var attaque_des_monstres = function(){
+	setTimeout(function bloodsplash_1(){ bloodsplash.style.backgroundImage = "url(../Images/Animations/Blood/Blood_15.png)";}, 0);
+	setTimeout(function bloodsplash_2(){ bloodsplash.style.backgroundImage = "url(../Images/Animations/Blood/Blood_14.png)";}, 50);
+	setTimeout(function bloodsplash_3(){ bloodsplash.style.backgroundImage = "url(../Images/Animations/Blood/Blood_13.png)";}, 100);
+	setTimeout(function bloodsplash_4(){ bloodsplash.style.backgroundImage = "url(../Images/Animations/Blood/Blood_12.png)";}, 150);
+	setTimeout(function bloodsplash_5(){ bloodsplash.style.backgroundImage = "url(../Images/Animations/Blood/Blood_11.png)";}, 200);
+	setTimeout(function bloodsplash_6(){ bloodsplash.style.backgroundImage = "url(../Images/Animations/Blood/Blood_10.png)";}, 250);
+	setTimeout(function bloodsplash_7(){ bloodsplash.style.backgroundImage = "url(../Images/Animations/Blood/Blood_9.png)";}, 300);
+	setTimeout(function bloodsplash_8(){ bloodsplash.style.backgroundImage = "url(../Images/Animations/Blood/Blood_8.png)";}, 350);
+	setTimeout(function bloodsplash_9(){ bloodsplash.style.backgroundImage = "url(../Images/Animations/Blood/Blood_7.png)";}, 400);
+	setTimeout(function bloodsplash_10(){ bloodsplash.style.backgroundImage = "url(../Images/Animations/Blood/Blood_6.png)";}, 450);
+	setTimeout(function bloodsplash_11(){ bloodsplash.style.backgroundImage = "url(../Images/Animations/Blood/Blood_5.png)";}, 500);
+	setTimeout(function bloodsplash_12(){ bloodsplash.style.backgroundImage = "url(../Images/Animations/Blood/Blood_4.png)";}, 550);
+	setTimeout(function bloodsplash_13(){ bloodsplash.style.backgroundImage = "url(../Images/Animations/Blood/Blood_3.png)";}, 600);
+	setTimeout(function bloodsplash_14(){ bloodsplash.style.backgroundImage = "url(../Images/Animations/Blood/Blood_2.png)";}, 650);
+	setTimeout(function bloodsplash_15(){ bloodsplash.style.backgroundImage = "url(../Images/Animations/Blood/Blood_1.png)";}, 700);
+	setTimeout(function bloodsplash_reset(){ bloodsplash.style.backgroundImage = "url()"}, 750);
+	
+	setTimeout(function water_1(){ water.style.backgroundImage = "url(../Images/Animations/Water/Water_1.png)";}, 0);
+	setTimeout(function water_2(){ water.style.backgroundImage = "url(../Images/Animations/Water/Water_2.png)";}, 34);
+	setTimeout(function water_3(){ water.style.backgroundImage = "url(../Images/Animations/Water/Water_3.png)";}, 68);
+	setTimeout(function water_4(){ water.style.backgroundImage = "url(../Images/Animations/Water/Water_4.png)";}, 102);
+	setTimeout(function water_5(){ water.style.backgroundImage = "url(../Images/Animations/Water/Water_5.png)";}, 136);
+	setTimeout(function water_6(){ water.style.backgroundImage = "url(../Images/Animations/Water/Water_6.png)";}, 170);
+	setTimeout(function water_7(){ water.style.backgroundImage = "url(../Images/Animations/Water/Water_7.png)";}, 204);
+	setTimeout(function water_8(){ water.style.backgroundImage = "url(../Images/Animations/Water/Water_8.png)";}, 238);
+	setTimeout(function water_9(){ water.style.backgroundImage = "url(../Images/Animations/Water/Water_9.png)";}, 272);
+	setTimeout(function water_10(){ water.style.backgroundImage = "url(../Images/Animations/Water/Water_10.png)";}, 306);
+	setTimeout(function water_11(){ water.style.backgroundImage = "url(../Images/Animations/Water/Water_11.png)";}, 340);
+	setTimeout(function water_12(){ water.style.backgroundImage = "url(../Images/Animations/Water/Water_12.png)";}, 374);
+	setTimeout(function water_13(){ water.style.backgroundImage = "url(../Images/Animations/Water/Water_13.png)";}, 408);
+	setTimeout(function water_14(){ water.style.backgroundImage = "url(../Images/Animations/Water/Water_14.png)";}, 442);
+	setTimeout(function water_15(){ water.style.backgroundImage = "url(../Images/Animations/Water/Water_15.png)";}, 476);
+	setTimeout(function water_16(){ water.style.backgroundImage = "url(../Images/Animations/Water/Water_16.png)";}, 510);
+	setTimeout(function water_17(){ water.style.backgroundImage = "url(../Images/Animations/Water/Water_17.png)";}, 544);
+	setTimeout(function water_18(){ water.style.backgroundImage = "url(../Images/Animations/Water/Water_18.png)";}, 578);
+	setTimeout(function water_19(){ water.style.backgroundImage = "url(../Images/Animations/Water/Water_19.png)";}, 612);
+	setTimeout(function water_20(){ water.style.backgroundImage = "url(../Images/Animations/Water/Water_20.png)";}, 646);
+	setTimeout(function water_21(){ water.style.backgroundImage = "url(../Images/Animations/Water/Water_21.png)";}, 680);
+	setTimeout(function water_22(){ water.style.backgroundImage = "url(../Images/Animations/Water/Water_22.png)";}, 714);
+	setTimeout(function water_23(){ water.style.backgroundImage = "url(../Images/Animations/Water/Water_23.png)";}, 748);
+	setTimeout(function water_clear(){ water.style.backgroundImage = "url()";}, 750);
+	
+	setTimeout(function hit_1(){ hit.style.backgroundImage = "url(../Images/Animations/Hit/Hit_15.png)";}, 0);
+	setTimeout(function hit_2(){ hit.style.backgroundImage = "url(../Images/Animations/Hit/Hit_14.png)";}, 50);
+	setTimeout(function hit_3(){ hit.style.backgroundImage = "url(../Images/Animations/Hit/Hit_13.png)";}, 100);
+	setTimeout(function hit_4(){ hit.style.backgroundImage = "url(../Images/Animations/Hit/Hit_12.png)";}, 150);
+	setTimeout(function hit_5(){ hit.style.backgroundImage = "url(../Images/Animations/Hit/Hit_11.png)";}, 200);
+	setTimeout(function hit_6(){ hit.style.backgroundImage = "url(../Images/Animations/Hit/Hit_10.png)";}, 250);
+	setTimeout(function hit_7(){ hit.style.backgroundImage = "url(../Images/Animations/Hit/Hit_9.png)";}, 300);
+	setTimeout(function hit_8(){ hit.style.backgroundImage = "url(../Images/Animations/Hit/Hit_8.png)";}, 350);
+	setTimeout(function hit_9(){ hit.style.backgroundImage = "url(../Images/Animations/Hit/Hit_7.png)";}, 400);
+	setTimeout(function hit_10(){ hit.style.backgroundImage = "url(../Images/Animations/Hit/Hit_6.png)";}, 450);
+	setTimeout(function hit_11(){ hit.style.backgroundImage = "url(../Images/Animations/Hit/Hit_5.png)";}, 500);
+	setTimeout(function hit_12(){ hit.style.backgroundImage = "url(../Images/Animations/Hit/Hit_4.png)";}, 550);
+	setTimeout(function hit_13(){ hit.style.backgroundImage = "url(../Images/Animations/Hit/Hit_3.png)";}, 600);
+	setTimeout(function hit_14(){ hit.style.backgroundImage = "url(../Images/Animations/Hit/Hit_2.png)";}, 650);
+	setTimeout(function hit_15(){ hit.style.backgroundImage = "url(../Images/Animations/Hit/Hit_1.png)";}, 700);
+	setTimeout(function hit_clear(){ hit.style.backgroundImage = "url()";}, 750);	
 }
 
 
@@ -304,21 +362,21 @@ bouton_special.onclick = function (){
 	bouton_special.onmouseout = function (){
 		bouton_special.style.backgroundImage = "url(../Images/Autre/Button.png)";
 	}
-	setTimeout(function bloodsplash_1(){ bloodsplash.style.backgroundImage = "url(../Images/Animations/Blood/Blood_1.png)";}, 0);
-	setTimeout(function bloodsplash_2(){ bloodsplash.style.backgroundImage = "url(../Images/Animations/Blood/Blood_2.png)";}, 50);
-	setTimeout(function bloodsplash_3(){ bloodsplash.style.backgroundImage = "url(../Images/Animations/Blood/Blood_3.png)";}, 100);
-	setTimeout(function bloodsplash_4(){ bloodsplash.style.backgroundImage = "url(../Images/Animations/Blood/Blood_4.png)";}, 150);
-	setTimeout(function bloodsplash_5(){ bloodsplash.style.backgroundImage = "url(../Images/Animations/Blood/Blood_5.png)";}, 200);
-	setTimeout(function bloodsplash_6(){ bloodsplash.style.backgroundImage = "url(../Images/Animations/Blood/Blood_6.png)";}, 250);
-	setTimeout(function bloodsplash_7(){ bloodsplash.style.backgroundImage = "url(../Images/Animations/Blood/Blood_7.png)";}, 300);
+	setTimeout(function bloodsplash_1(){ bloodsplash.style.backgroundImage = "url(../Images/Animations/Blood/Blood_15.png)";}, 0);
+	setTimeout(function bloodsplash_2(){ bloodsplash.style.backgroundImage = "url(../Images/Animations/Blood/Blood_14.png)";}, 50);
+	setTimeout(function bloodsplash_3(){ bloodsplash.style.backgroundImage = "url(../Images/Animations/Blood/Blood_13.png)";}, 100);
+	setTimeout(function bloodsplash_4(){ bloodsplash.style.backgroundImage = "url(../Images/Animations/Blood/Blood_12.png)";}, 150);
+	setTimeout(function bloodsplash_5(){ bloodsplash.style.backgroundImage = "url(../Images/Animations/Blood/Blood_11.png)";}, 200);
+	setTimeout(function bloodsplash_6(){ bloodsplash.style.backgroundImage = "url(../Images/Animations/Blood/Blood_10.png)";}, 250);
+	setTimeout(function bloodsplash_7(){ bloodsplash.style.backgroundImage = "url(../Images/Animations/Blood/Blood_9.png)";}, 300);
 	setTimeout(function bloodsplash_8(){ bloodsplash.style.backgroundImage = "url(../Images/Animations/Blood/Blood_8.png)";}, 350);
-	setTimeout(function bloodsplash_9(){ bloodsplash.style.backgroundImage = "url(../Images/Animations/Blood/Blood_9.png)";}, 400);
-	setTimeout(function bloodsplash_10(){ bloodsplash.style.backgroundImage = "url(../Images/Animations/Blood/Blood_10.png)";}, 450);
-	setTimeout(function bloodsplash_11(){ bloodsplash.style.backgroundImage = "url(../Images/Animations/Blood/Blood_11.png)";}, 500);
-	setTimeout(function bloodsplash_12(){ bloodsplash.style.backgroundImage = "url(../Images/Animations/Blood/Blood_12.png)";}, 550);
-	setTimeout(function bloodsplash_13(){ bloodsplash.style.backgroundImage = "url(../Images/Animations/Blood/Blood_13.png)";}, 600);
-	setTimeout(function bloodsplash_14(){ bloodsplash.style.backgroundImage = "url(../Images/Animations/Blood/Blood_14.png)";}, 650);
-	setTimeout(function bloodsplash_15(){ bloodsplash.style.backgroundImage = "url(../Images/Animations/Blood/Blood_15.png)";}, 700);
+	setTimeout(function bloodsplash_9(){ bloodsplash.style.backgroundImage = "url(../Images/Animations/Blood/Blood_7.png)";}, 400);
+	setTimeout(function bloodsplash_10(){ bloodsplash.style.backgroundImage = "url(../Images/Animations/Blood/Blood_6.png)";}, 450);
+	setTimeout(function bloodsplash_11(){ bloodsplash.style.backgroundImage = "url(../Images/Animations/Blood/Blood_5.png)";}, 500);
+	setTimeout(function bloodsplash_12(){ bloodsplash.style.backgroundImage = "url(../Images/Animations/Blood/Blood_4.png)";}, 550);
+	setTimeout(function bloodsplash_13(){ bloodsplash.style.backgroundImage = "url(../Images/Animations/Blood/Blood_3.png)";}, 600);
+	setTimeout(function bloodsplash_14(){ bloodsplash.style.backgroundImage = "url(../Images/Animations/Blood/Blood_2.png)";}, 650);
+	setTimeout(function bloodsplash_15(){ bloodsplash.style.backgroundImage = "url(../Images/Animations/Blood/Blood_1.png)";}, 700);
 	setTimeout(function bloodsplash_reset(){ bloodsplash.style.backgroundImage = "url()"}, 750);
 	
 	setTimeout(function water_1(){ water.style.backgroundImage = "url(../Images/Animations/Water/Water_1.png)";}, 0);
@@ -346,20 +404,20 @@ bouton_special.onclick = function (){
 	setTimeout(function water_23(){ water.style.backgroundImage = "url(../Images/Animations/Water/Water_23.png)";}, 748);
 	setTimeout(function water_clear(){ water.style.backgroundImage = "url()";}, 750);
 	
-	setTimeout(function hit_1(){ hit.style.backgroundImage = "url(../Images/Animations/Hit/Hit_1.png)";}, 0);
-	setTimeout(function hit_2(){ hit.style.backgroundImage = "url(../Images/Animations/Hit/Hit_2.png)";}, 50);
-	setTimeout(function hit_3(){ hit.style.backgroundImage = "url(../Images/Animations/Hit/Hit_3.png)";}, 100);
-	setTimeout(function hit_4(){ hit.style.backgroundImage = "url(../Images/Animations/Hit/Hit_4.png)";}, 150);
-	setTimeout(function hit_5(){ hit.style.backgroundImage = "url(../Images/Animations/Hit/Hit_5.png)";}, 200);
-	setTimeout(function hit_6(){ hit.style.backgroundImage = "url(../Images/Animations/Hit/Hit_6.png)";}, 250);
-	setTimeout(function hit_7(){ hit.style.backgroundImage = "url(../Images/Animations/Hit/Hit_7.png)";}, 300);
+	setTimeout(function hit_1(){ hit.style.backgroundImage = "url(../Images/Animations/Hit/Hit_15.png)";}, 0);
+	setTimeout(function hit_2(){ hit.style.backgroundImage = "url(../Images/Animations/Hit/Hit_14.png)";}, 50);
+	setTimeout(function hit_3(){ hit.style.backgroundImage = "url(../Images/Animations/Hit/Hit_13.png)";}, 100);
+	setTimeout(function hit_4(){ hit.style.backgroundImage = "url(../Images/Animations/Hit/Hit_12.png)";}, 150);
+	setTimeout(function hit_5(){ hit.style.backgroundImage = "url(../Images/Animations/Hit/Hit_11.png)";}, 200);
+	setTimeout(function hit_6(){ hit.style.backgroundImage = "url(../Images/Animations/Hit/Hit_10.png)";}, 250);
+	setTimeout(function hit_7(){ hit.style.backgroundImage = "url(../Images/Animations/Hit/Hit_9.png)";}, 300);
 	setTimeout(function hit_8(){ hit.style.backgroundImage = "url(../Images/Animations/Hit/Hit_8.png)";}, 350);
-	setTimeout(function hit_9(){ hit.style.backgroundImage = "url(../Images/Animations/Hit/Hit_9.png)";}, 400);
-	setTimeout(function hit_10(){ hit.style.backgroundImage = "url(../Images/Animations/Hit/Hit_10.png)";}, 450);
-	setTimeout(function hit_11(){ hit.style.backgroundImage = "url(../Images/Animations/Hit/Hit_11.png)";}, 500);
-	setTimeout(function hit_12(){ hit.style.backgroundImage = "url(../Images/Animations/Hit/Hit_12.png)";}, 550);
-	setTimeout(function hit_13(){ hit.style.backgroundImage = "url(../Images/Animations/Hit/Hit_13.png)";}, 600);
-	setTimeout(function hit_14(){ hit.style.backgroundImage = "url(../Images/Animations/Hit/Hit_14.png)";}, 650);
-	setTimeout(function hit_15(){ hit.style.backgroundImage = "url(../Images/Animations/Hit/Hit_15.png)";}, 700);
+	setTimeout(function hit_9(){ hit.style.backgroundImage = "url(../Images/Animations/Hit/Hit_7.png)";}, 400);
+	setTimeout(function hit_10(){ hit.style.backgroundImage = "url(../Images/Animations/Hit/Hit_6.png)";}, 450);
+	setTimeout(function hit_11(){ hit.style.backgroundImage = "url(../Images/Animations/Hit/Hit_5.png)";}, 500);
+	setTimeout(function hit_12(){ hit.style.backgroundImage = "url(../Images/Animations/Hit/Hit_4.png)";}, 550);
+	setTimeout(function hit_13(){ hit.style.backgroundImage = "url(../Images/Animations/Hit/Hit_3.png)";}, 600);
+	setTimeout(function hit_14(){ hit.style.backgroundImage = "url(../Images/Animations/Hit/Hit_2.png)";}, 650);
+	setTimeout(function hit_15(){ hit.style.backgroundImage = "url(../Images/Animations/Hit/Hit_1.png)";}, 700);
 	setTimeout(function hit_clear(){ hit.style.backgroundImage = "url()";}, 750);
 }

@@ -60,29 +60,7 @@ body {
   padding: 15px;
 }
 
-#monstre_1 {
-	background-image: url("../Images/Monstres/Monstre_1.png");
-	background-repeat: no-repeat;
-	background-size: contain;
-	border: 0px solid white;
-	padding: 150px;
-}
 
-#monstre_2 {
-	background-image: url("../Images/Monstres/Monstre_2.png");
-	background-repeat: no-repeat;	
-	background-size: contain;
-	border: 0px solid white;
-	padding: 150px;
-}
-
-#monstre_3 {
-	background-image: url("../Images/Monstres/Monstre_3.png");
-	background-repeat: no-repeat;
-	background-size: contain;
-	border: 0px solid white;
-	padding: 150px;
-}
 
 .menu_choix{
 	display:flex;
@@ -188,37 +166,6 @@ body {
 	border: 0px;
 }
 
-.monstre_over {
-	display: flex;
-	justify-content: space-between;
-	position: fixed;
-	top: 2%;
-	right: 15%;
-	left: 18%;
-	align-items: center;
-}
-
-#menu_monstre_1{
-	display : flex;
-	flex-direction: column;
-	font: 40px Arial, sans-serif;
-	background-color: rgba(12, 63, 145, 0.6);
-}
-
-#menu_monstre_2{
-	display : flex;
-	flex-direction: column;
-	font: 40px Arial, sans-serif;
-	background-color: rgba(12, 63, 145, 0.6);
-}
-
-#menu_monstre_3{
-	display : flex;
-	flex-direction: column;
-	font: 40px Arial, sans-serif;
-	background-color: rgba(12, 63, 145, 0.6);
-}
-
 #message_au_centre {
 	display: flex;
 	align-items: center;
@@ -277,13 +224,14 @@ body {
 	align-items: center;
 	justify-content: center;
 	position: fixed;
-	top: 25%;
-	bottom: 30%;
-	left: 10%;
-	right: 57%;
+	top: 45%;
+	bottom: 25%;
+	left: 16%;
+	right: 59%;
 	font: 50px Arial, sans-serif;
 	background-image: url();
 	background-size:cover;
+	border: 5px solid white;
 }
 
 #water {
@@ -291,13 +239,14 @@ body {
 	align-items: center;
 	justify-content: center;
 	position: fixed;
-	top: 18%;
-	bottom: 30%;
-	left: 54%;
-	right: 12%;
+	top: 45%;
+	bottom: 25%;
+	left: 64%;
+	right: 11%;
 	font: 50px Arial, sans-serif;
 	background-image: url();
 	background-size:cover;
+	border: 5px solid white;
 }
 
 #hit {
@@ -305,11 +254,68 @@ body {
 	align-items: center;
 	justify-content: center;
 	position: fixed;
-	top: 18%;
-	bottom: 30%;
-	left: 30%;
-	right: 30%;
+	top: 45%;
+	bottom: 25%;
+	left: 41%;
+	right: 36%;
 	font: 50px Arial, sans-serif;
 	background-image: url();
 	background-size:cover;
+	border: 5px solid white;
+}
+
+#monstre_1 {
+	background-image: url("../Images/Monstres/Monstre_1.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+	border: 5px solid white;
+	padding: 150px;
+
+}
+
+#monstre_2 {
+	background-image: url("../Images/Monstres/Monstre_2.png");
+	background-repeat: no-repeat;	
+	background-size: contain;
+	border: 5px solid white;
+	padding: 150px;
+}
+
+#monstre_3 {
+	background-image: url("../Images/Monstres/Monstre_3.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+	border: 5px solid white;
+	padding: 150px;
+}
+
+.monstre_over {
+	display: flex;
+	justify-content: space-between;
+	position: fixed;
+	top: 2%;
+	right: 15%;
+	left: 18%;
+	align-items: center;
+}
+
+#menu_monstre_1{
+	display : flex;
+	flex-direction: column;
+	font: 40px Arial, sans-serif;
+	background-color: rgba(12, 63, 145, 0.6);
+}
+
+#menu_monstre_2{
+	display : flex;
+	flex-direction: column;
+	font: 40px Arial, sans-serif;
+	background-color: rgba(12, 63, 145, 0.6);
+}
+
+#menu_monstre_3{
+	display : flex;
+	flex-direction: column;
+	font: 40px Arial, sans-serif;
+	background-color: rgba(12, 63, 145, 0.6);
 }
