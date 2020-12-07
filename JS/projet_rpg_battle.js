@@ -2,6 +2,9 @@ var attaque = document.getElementById("attaque");
 var bouton_attaque = document.getElementById("bouton_attaque");
 var bouton_defend = document.getElementById("bouton_defend");
 var bouton_special = document.getElementById("bouton_special");
+var bouton_monstre_1 = document.getElementById("bouton_monstre_1");
+var bouton_monstre_2 = document.getElementById("bouton_monstre_2");
+var bouton_monstre_3 = document.getElementById("bouton_monstre_3");
 var pointeur_attaque = document.getElementById("pointer_attaque");
 var pointeur_defend = document.getElementById("pointer_defend");
 var pointeur_special = document.getElementById("pointer_special");
@@ -9,6 +12,9 @@ var pointeur_heros_1 = document.getElementById("pointeur_heros_1");
 var pointeur_heros_2 = document.getElementById("pointeur_heros_2");
 var pointeur_heros_3 = document.getElementById("pointeur_heros_3");
 var pointeur_heros_4 = document.getElementById("pointeur_heros_4");
+var pointeur_monstre_1 = document.getElementById("pointeur_monstre_1");
+var pointeur_monstre_2 = document.getElementById("pointeur_monstre_2");
+var pointeur_monstre_3 = document.getElementById("pointeur_monstre_3");
 var monstre_1 = document.getElementById("monstre_1");
 var monstre_2 = document.getElementById("monstre_2");
 var monstre_3 = document.getElementById("monstre_3");
@@ -42,6 +48,7 @@ var message_au_centre = document.getElementById("message_au_centre")
 var bloodsplash = document.getElementById("bloodsplash");
 var water = document.getElementById("water");
 var hit = document.getElementById("hit");
+
 
 var pv_monstre_1 = 100;
 var pv_monstre_2 = 100;
@@ -201,7 +208,7 @@ bouton_special.onmouseover = function (){
 	pointeur_special.style.backgroundImage = "url(../Images/Autre/Pointer.png)";
 }
 
-bouton_attaque.onclick = function atkonclick(){
+/*bouton_attaque.onclick = function atkonclick(){
 	bouton_attaque.style.backgroundImage = "url(../Images/Autre/Button_pressed.png)";
 	var choix_joueur = prompt("Quel monstre souhaitez-vous attaquer ? 1 - Mort-Vivant || 2 - Minotaure || 3 - Élémentaire");
 	if (choix_joueur == 1 && pv_monstre_1 > 0){
@@ -348,6 +355,36 @@ bouton_attaque.onclick = function atkonclick(){
 		bouton_attaque.onmouseout = function (){
 			bouton_attaque.style.backgroundImage = "url(../Images/Autre/Button.png)";
 	}
+}*/
+
+bouton_monstre_1.onmouseover = function (){
+	pointeur_monstre_1.style.backgroundImage = "url(../Images/Autre/Pointer.png)";
+	bouton_monstre_1.onmouseout = function() {
+		pointeur_monstre_1.style.backgroundImage = "url()";
+	}
+}
+
+bouton_monstre_2.onmouseover = function (){
+	pointeur_monstre_2.style.backgroundImage = "url(../Images/Autre/Pointer.png)";
+	bouton_monstre_2.onmouseout = function() {
+		pointeur_monstre_2.style.backgroundImage = "url()";
+	}
+}
+
+bouton_monstre_3.onmouseover = function (){
+	pointeur_monstre_3.style.backgroundImage = "url(../Images/Autre/Pointer.png)";
+	bouton_monstre_3.onmouseout = function (){
+		pointeur_monstre_3.style.backgroundImage = "url()";
+	}
+}
+
+bouton_attaque.onclick = function atkonclick(){
+	bouton_monstre_1.innerHTML = "Mort-Vivant";
+	bouton_monstre_1.style.backgroundImage = "url(../Images/Autre/Button.png)";
+	bouton_monstre_2.innerHTML = "Minotaure";
+	bouton_monstre_2.style.backgroundImage = "url(../Images/Autre/Button.png)";
+	bouton_monstre_3.innerHTML = "Élémentaire";
+	bouton_monstre_3.style.backgroundImage = "url(../Images/Autre/Button.png)";
 }
 
 bouton_defend.onclick = function (){
