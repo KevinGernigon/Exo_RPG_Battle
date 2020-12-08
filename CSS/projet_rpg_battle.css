@@ -313,7 +313,7 @@ body {
 	background-color: rgba(12, 63, 145, 0.6);
 }
 
-.boutons_cible {
+.boutons_cible_attaque {
 	display:flex;
 	align-items: center;
 	flex-direction: row;
@@ -326,7 +326,18 @@ body {
 	padding: 10px;
 }
 
-
+.boutons_cible_special {
+	display:flex;
+	align-items: center;
+	flex-direction: row;
+	justify-content: space-between;
+	font: 35px Arial, sans-serif;
+	position: fixed;
+	top: 43.5%;
+	left: 27%;
+	right: 18%;
+	padding: 10px;
+}
 
 .pointeurs_monstres{
 	display:flex;
@@ -362,21 +373,42 @@ body {
 	padding: 25px;
 }
 
-#bouton_monstre_1{
+#bouton_monstre_attaque_1{
 	background-image: url();
 	background-size: cover;
 	background-repeat: no-repeat;
 	opacity: 70%;
 }
 
-#bouton_monstre_2{
+#bouton_monstre_attaque_2{
 	background-image: url();
 	background-size: cover;
 	background-repeat: no-repeat;
 	opacity: 70%;
 }
 
-#bouton_monstre_3{
+#bouton_monstre_attaque_3{
+	background-image: url();
+	background-size: cover;
+	background-repeat: no-repeat;
+	opacity: 70%;
+}
+
+#bouton_monstre_special_1{
+	background-image: url();
+	background-size: cover;
+	background-repeat: no-repeat;
+	opacity: 70%;
+}
+
+#bouton_monstre_special_2{
+	background-image: url();
+	background-size: cover;
+	background-repeat: no-repeat;
+	opacity: 70%;
+}
+
+#bouton_monstre_special_3{
 	background-image: url();
 	background-size: cover;
 	background-repeat: no-repeat;
