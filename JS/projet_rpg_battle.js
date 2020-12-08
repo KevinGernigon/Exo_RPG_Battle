@@ -97,65 +97,131 @@ function entierAleatoire(min, max){
 	return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
-var attaque_des_monstres = function(){
-	setTimeout(function bloodsplash_1(){ bloodsplash.style.backgroundImage = "url(../Images/Animations/Blood/Blood_15.png)";}, 0);
-	setTimeout(function bloodsplash_2(){ bloodsplash.style.backgroundImage = "url(../Images/Animations/Blood/Blood_14.png)";}, 50);
-	setTimeout(function bloodsplash_3(){ bloodsplash.style.backgroundImage = "url(../Images/Animations/Blood/Blood_13.png)";}, 100);
-	setTimeout(function bloodsplash_4(){ bloodsplash.style.backgroundImage = "url(../Images/Animations/Blood/Blood_12.png)";}, 150);
-	setTimeout(function bloodsplash_5(){ bloodsplash.style.backgroundImage = "url(../Images/Animations/Blood/Blood_11.png)";}, 200);
-	setTimeout(function bloodsplash_6(){ bloodsplash.style.backgroundImage = "url(../Images/Animations/Blood/Blood_10.png)";}, 250);
-	setTimeout(function bloodsplash_7(){ bloodsplash.style.backgroundImage = "url(../Images/Animations/Blood/Blood_9.png)";}, 300);
-	setTimeout(function bloodsplash_8(){ bloodsplash.style.backgroundImage = "url(../Images/Animations/Blood/Blood_8.png)";}, 350);
-	setTimeout(function bloodsplash_9(){ bloodsplash.style.backgroundImage = "url(../Images/Animations/Blood/Blood_7.png)";}, 400);
-	setTimeout(function bloodsplash_10(){ bloodsplash.style.backgroundImage = "url(../Images/Animations/Blood/Blood_6.png)";}, 450);
-	setTimeout(function bloodsplash_11(){ bloodsplash.style.backgroundImage = "url(../Images/Animations/Blood/Blood_5.png)";}, 500);
-	setTimeout(function bloodsplash_12(){ bloodsplash.style.backgroundImage = "url(../Images/Animations/Blood/Blood_4.png)";}, 550);
-	setTimeout(function bloodsplash_13(){ bloodsplash.style.backgroundImage = "url(../Images/Animations/Blood/Blood_3.png)";}, 600);
-	setTimeout(function bloodsplash_14(){ bloodsplash.style.backgroundImage = "url(../Images/Animations/Blood/Blood_2.png)";}, 650);
-	setTimeout(function bloodsplash_15(){ bloodsplash.style.backgroundImage = "url(../Images/Animations/Blood/Blood_1.png)";}, 700);
-	setTimeout(function bloodsplash_reset(){ bloodsplash.style.backgroundImage = "url()"}, 750);
-	
-	setTimeout(function water_1(){ water.style.backgroundImage = "url(../Images/Animations/Water/Water_1.png)";}, 0);
-	setTimeout(function water_2(){ water.style.backgroundImage = "url(../Images/Animations/Water/Water_2.png)";}, 34);
-	setTimeout(function water_3(){ water.style.backgroundImage = "url(../Images/Animations/Water/Water_3.png)";}, 68);
-	setTimeout(function water_4(){ water.style.backgroundImage = "url(../Images/Animations/Water/Water_4.png)";}, 102);
-	setTimeout(function water_5(){ water.style.backgroundImage = "url(../Images/Animations/Water/Water_5.png)";}, 136);
-	setTimeout(function water_6(){ water.style.backgroundImage = "url(../Images/Animations/Water/Water_6.png)";}, 170);
-	setTimeout(function water_7(){ water.style.backgroundImage = "url(../Images/Animations/Water/Water_7.png)";}, 204);
-	setTimeout(function water_8(){ water.style.backgroundImage = "url(../Images/Animations/Water/Water_8.png)";}, 238);
-	setTimeout(function water_9(){ water.style.backgroundImage = "url(../Images/Animations/Water/Water_9.png)";}, 272);
-	setTimeout(function water_10(){ water.style.backgroundImage = "url(../Images/Animations/Water/Water_10.png)";}, 306);
-	setTimeout(function water_11(){ water.style.backgroundImage = "url(../Images/Animations/Water/Water_11.png)";}, 340);
-	setTimeout(function water_12(){ water.style.backgroundImage = "url(../Images/Animations/Water/Water_12.png)";}, 374);
-	setTimeout(function water_13(){ water.style.backgroundImage = "url(../Images/Animations/Water/Water_13.png)";}, 408);
-	setTimeout(function water_14(){ water.style.backgroundImage = "url(../Images/Animations/Water/Water_14.png)";}, 442);
-	setTimeout(function water_15(){ water.style.backgroundImage = "url(../Images/Animations/Water/Water_15.png)";}, 476);
-	setTimeout(function water_16(){ water.style.backgroundImage = "url(../Images/Animations/Water/Water_16.png)";}, 510);
-	setTimeout(function water_17(){ water.style.backgroundImage = "url(../Images/Animations/Water/Water_17.png)";}, 544);
-	setTimeout(function water_18(){ water.style.backgroundImage = "url(../Images/Animations/Water/Water_18.png)";}, 578);
-	setTimeout(function water_19(){ water.style.backgroundImage = "url(../Images/Animations/Water/Water_19.png)";}, 612);
-	setTimeout(function water_20(){ water.style.backgroundImage = "url(../Images/Animations/Water/Water_20.png)";}, 646);
-	setTimeout(function water_21(){ water.style.backgroundImage = "url(../Images/Animations/Water/Water_21.png)";}, 680);
-	setTimeout(function water_22(){ water.style.backgroundImage = "url(../Images/Animations/Water/Water_22.png)";}, 714);
-	setTimeout(function water_23(){ water.style.backgroundImage = "url(../Images/Animations/Water/Water_23.png)";}, 748);
-	setTimeout(function water_clear(){ water.style.backgroundImage = "url()";}, 750);
-	
-	setTimeout(function hit_1(){ hit.style.backgroundImage = "url(../Images/Animations/Hit/Hit_15.png)";}, 0);
-	setTimeout(function hit_2(){ hit.style.backgroundImage = "url(../Images/Animations/Hit/Hit_14.png)";}, 50);
-	setTimeout(function hit_3(){ hit.style.backgroundImage = "url(../Images/Animations/Hit/Hit_13.png)";}, 100);
-	setTimeout(function hit_4(){ hit.style.backgroundImage = "url(../Images/Animations/Hit/Hit_12.png)";}, 150);
-	setTimeout(function hit_5(){ hit.style.backgroundImage = "url(../Images/Animations/Hit/Hit_11.png)";}, 200);
-	setTimeout(function hit_6(){ hit.style.backgroundImage = "url(../Images/Animations/Hit/Hit_10.png)";}, 250);
-	setTimeout(function hit_7(){ hit.style.backgroundImage = "url(../Images/Animations/Hit/Hit_9.png)";}, 300);
-	setTimeout(function hit_8(){ hit.style.backgroundImage = "url(../Images/Animations/Hit/Hit_8.png)";}, 350);
-	setTimeout(function hit_9(){ hit.style.backgroundImage = "url(../Images/Animations/Hit/Hit_7.png)";}, 400);
-	setTimeout(function hit_10(){ hit.style.backgroundImage = "url(../Images/Animations/Hit/Hit_6.png)";}, 450);
-	setTimeout(function hit_11(){ hit.style.backgroundImage = "url(../Images/Animations/Hit/Hit_5.png)";}, 500);
-	setTimeout(function hit_12(){ hit.style.backgroundImage = "url(../Images/Animations/Hit/Hit_4.png)";}, 550);
-	setTimeout(function hit_13(){ hit.style.backgroundImage = "url(../Images/Animations/Hit/Hit_3.png)";}, 600);
-	setTimeout(function hit_14(){ hit.style.backgroundImage = "url(../Images/Animations/Hit/Hit_2.png)";}, 650);
-	setTimeout(function hit_15(){ hit.style.backgroundImage = "url(../Images/Animations/Hit/Hit_1.png)";}, 700);
-	setTimeout(function hit_clear(){ hit.style.backgroundImage = "url()";}, 750);	
+var clear_message_centre = function(){ 
+	message_au_centre.style.backgroundColor = ""; 
+	message_attaque.innerHTML = ""; 
+	message_au_centre.style.border = ""; 
+	message_au_centre.style.padding = "";
+}
+
+var attaque_premier_monstre = function(){
+	var attaque_monstre_1 = entierAleatoire(1,4);
+	if (attaque_monstre_1 == 1){
+		pdv_heros_1 = pdv_heros_1 + def_heros_1 - 30;
+		valeur_pdv_heros_1.innerHTML = pdv_heros_1;
+		message_attaque.innerHTML = "Kai subit " + (30-def_heros_1) + " points de dégâts.";
+		message_au_centre.style.backgroundColor = "rgba(12, 63, 145, 0.6)";
+		message_au_centre.style.border = "10px solid white";
+		message_au_centre.style.borderRadius = "10px";
+		message_au_centre.style.padding = "10px";
+	}
+	if (attaque_monstre_1 == 2){
+		pdv_heros_2 = pdv_heros_2 + def_heros_2 - 30;
+		valeur_pdv_heros_2.innerHTML = pdv_heros_2;
+		message_attaque.innerHTML = "Gezek subit " + (30-def_heros_2) + " points de dégâts.";
+		message_au_centre.style.backgroundColor = "rgba(12, 63, 145, 0.6)";
+		message_au_centre.style.border = "10px solid white";
+		message_au_centre.style.borderRadius = "10px";
+		message_au_centre.style.padding = "10px";
+	}
+	if (attaque_monstre_1 == 3){
+		pdv_heros_3 = pdv_heros_3 + def_heros_3 - 30;
+		valeur_pdv_heros_3.innerHTML = pdv_heros_3;
+		message_attaque.innerHTML = "Jihrah subit " + (30-def_heros_3) + " points de dégâts.";
+		message_au_centre.style.backgroundColor = "rgba(12, 63, 145, 0.6)";
+		message_au_centre.style.border = "10px solid white";
+		message_au_centre.style.borderRadius = "10px";
+		message_au_centre.style.padding = "10px";
+	}
+	if (attaque_monstre_1 == 4){
+		pdv_heros_4 = pdv_heros_4 + def_heros_4 - 30;
+		valeur_pdv_heros_1.innerHTML = pdv_heros_4;
+		message_attaque.innerHTML = "Helnes subit " + (30-def_heros_4) + " points de dégâts.";
+		message_au_centre.style.backgroundColor = "rgba(12, 63, 145, 0.6)";
+		message_au_centre.style.border = "10px solid white";
+		message_au_centre.style.borderRadius = "10px";
+		message_au_centre.style.padding = "10px";
+	}
+}
+
+var attaque_second_monstre = function(){
+	var attaque_monstre_2 = entierAleatoire(1,4);
+	if (attaque_monstre_2 == 1){
+		pdv_heros_1 = pdv_heros_1 + def_heros_1 - 40;
+		valeur_pdv_heros_1.innerHTML = pdv_heros_1;
+		message_attaque.innerHTML = "Kai subit " + (40-def_heros_1) + " points de dégâts.";
+		message_au_centre.style.backgroundColor = "rgba(12, 63, 145, 0.6)";
+		message_au_centre.style.border = "10px solid white";
+		message_au_centre.style.borderRadius = "10px";
+		message_au_centre.style.padding = "10px";
+	}
+	if (attaque_monstre_2 == 2){
+		pdv_heros_2 = pdv_heros_2 + def_heros_2 - 40;
+		valeur_pdv_heros_2.innerHTML = pdv_heros_2;
+		message_attaque.innerHTML = "Gezek subit " + (40-def_heros_2) + " points de dégâts.";
+		message_au_centre.style.backgroundColor = "rgba(12, 63, 145, 0.6)";
+		message_au_centre.style.border = "10px solid white";
+		message_au_centre.style.borderRadius = "10px";
+		message_au_centre.style.padding = "10px";
+	}
+	if (attaque_monstre_2 == 3){
+		pdv_heros_3 = pdv_heros_3 + def_heros_3 - 40;
+		valeur_pdv_heros_3.innerHTML = pdv_heros_3;
+		message_attaque.innerHTML = "Jihrah subit " + (40-def_heros_3) + " points de dégâts.";
+		message_au_centre.style.backgroundColor = "rgba(12, 63, 145, 0.6)";
+		message_au_centre.style.border = "10px solid white";
+		message_au_centre.style.borderRadius = "10px";
+		message_au_centre.style.padding = "10px";
+	}
+	if (attaque_monstre_2 == 4){
+		pdv_heros_4 = pdv_heros_4 + def_heros_4 - 40;
+		valeur_pdv_heros_4.innerHTML = pdv_heros_4;
+		message_attaque.innerHTML = "Helnes subit " + (40-def_heros_4) + " points de dégâts.";
+		message_au_centre.style.backgroundColor = "rgba(12, 63, 145, 0.6)";
+		message_au_centre.style.border = "10px solid white";
+		message_au_centre.style.borderRadius = "10px";
+		message_au_centre.style.padding = "10px";
+	}
+}
+
+var attaque_troisieme_monstre = function(){
+	var attaque_monstre_3 = entierAleatoire(1,4);
+	if (attaque_monstre_3 == 1){
+		pdv_heros_1 = pdv_heros_1 + def_heros_1 - 30;
+		valeur_pdv_heros_1.innerHTML = pdv_heros_1;
+		message_attaque.innerHTML = "Kai subit " + (30-def_heros_1) + " points de dégâts.";
+		message_au_centre.style.backgroundColor = "rgba(12, 63, 145, 0.6)";
+		message_au_centre.style.border = "10px solid white";
+		message_au_centre.style.borderRadius = "10px";
+		message_au_centre.style.padding = "10px";
+	}
+	if (attaque_monstre_3 == 2){
+		pdv_heros_2 = pdv_heros_2 + def_heros_2 - 30;
+		valeur_pdv_heros_2.innerHTML = pdv_heros_2;
+		message_attaque.innerHTML = "Gezek subit " + (30-def_heros_2) + " points de dégâts.";
+		message_au_centre.style.backgroundColor = "rgba(12, 63, 145, 0.6)";
+		message_au_centre.style.border = "10px solid white";
+		message_au_centre.style.borderRadius = "10px";
+		message_au_centre.style.padding = "10px";
+	}
+	if (attaque_monstre_3 == 3){
+		pdv_heros_3 = pdv_heros_3 + def_heros_3 - 30;
+		valeur_pdv_heros_3.innerHTML = pdv_heros_3;
+		message_attaque.innerHTML = "Jihrah subit " + (30-def_heros_3) + " points de dégâts.";
+		message_au_centre.style.backgroundColor = "rgba(12, 63, 145, 0.6)";
+		message_au_centre.style.border = "10px solid white";
+		message_au_centre.style.borderRadius = "10px";
+		message_au_centre.style.padding = "10px";
+	}
+	if (attaque_monstre_3 == 4){
+		pdv_heros_4 = pdv_heros_4 + def_heros_4 - 30;
+		valeur_pdv_heros_4.innerHTML = pdv_heros_4;
+		message_attaque.innerHTML = "Helnes subit " + (30-def_heros_4) + " points de dégâts.";
+		message_au_centre.style.backgroundColor = "rgba(12, 63, 145, 0.6)";
+		message_au_centre.style.border = "10px solid white";
+		message_au_centre.style.borderRadius = "10px";
+		message_au_centre.style.padding = "10px";
+	}
 }
 
 if (perso_tour == 1) {
@@ -429,6 +495,10 @@ bouton_monstre_attaque_1.onclick = function(){
 		message_au_centre.style.borderRadius = "10px";
 		message_au_centre.style.padding = "10px";
 		perso_tour = 0;
+		setTimeout(attaque_premier_monstre, 2000);
+		setTimeout(attaque_second_monstre, 4000);
+		setTimeout(attaque_troisieme_monstre, 6000);
+		setTimeout(clear_message_centre, 8000);
 	}
 	if (perso_tour == 3){
 		pv_monstre_1 = pv_monstre_1 - atk_heros_3;
@@ -438,6 +508,7 @@ bouton_monstre_attaque_1.onclick = function(){
 		message_au_centre.style.borderRadius = "10px";
 		message_au_centre.style.padding = "10px";
 		perso_tour = perso_tour + 1;
+		setTimeout(clear_message_centre, 2000);
 	}
 	if (perso_tour == 2){
 		pv_monstre_1 = pv_monstre_1 - atk_heros_2;
@@ -447,6 +518,7 @@ bouton_monstre_attaque_1.onclick = function(){
 		message_au_centre.style.borderRadius = "10px";
 		message_au_centre.style.padding = "10px";
 		perso_tour = perso_tour + 1;
+		setTimeout(clear_message_centre, 2000);
 	}
 	if (perso_tour == 1){
 		pv_monstre_1 = pv_monstre_1 - atk_heros_1;
@@ -456,6 +528,7 @@ bouton_monstre_attaque_1.onclick = function(){
 		message_au_centre.style.borderRadius = "10px";
 		message_au_centre.style.padding = "10px";
 		perso_tour = perso_tour + 1;
+		setTimeout(clear_message_centre, 2000);
 	}
 	if (perso_tour == 0){
 		perso_tour = 1;
@@ -487,12 +560,7 @@ bouton_monstre_attaque_1.onclick = function(){
 		pointeur_heros_3.style.backgroundImage = "url()";
 		pointeur_heros_4.style.backgroundImage = "url(../Images/Autre/Pointer_down.png)";
 		special.innerHTML = "Foudre";
-	}
-	setTimeout(clear_message_centre = function(){ 
-		message_au_centre.style.backgroundColor = ""; 
-		message_attaque.innerHTML = ""; 
-		message_au_centre.style.border = ""; 
-		message_au_centre.style.padding = "";}, 3000);		
+	}		
 }
 
 bouton_monstre_attaque_2.onclick = function(){
@@ -510,6 +578,10 @@ bouton_monstre_attaque_2.onclick = function(){
 		message_au_centre.style.borderRadius = "10px";
 		message_au_centre.style.padding = "10px";
 		perso_tour = 0;
+		setTimeout(attaque_premier_monstre, 2000);
+		setTimeout(attaque_second_monstre, 4000);
+		setTimeout(attaque_troisieme_monstre, 6000);
+		setTimeout(clear_message_centre, 8000);
 		}
 	if (perso_tour == 3){
 		pv_monstre_2 = pv_monstre_2 - atk_heros_3;
@@ -519,6 +591,7 @@ bouton_monstre_attaque_2.onclick = function(){
 		message_au_centre.style.borderRadius = "10px";
 		message_au_centre.style.padding = "10px";
 		perso_tour = perso_tour + 1;
+		setTimeout(clear_message_centre, 2000);
 	}
 	if (perso_tour == 2){
 		pv_monstre_2 = pv_monstre_2 - atk_heros_2;
@@ -528,6 +601,7 @@ bouton_monstre_attaque_2.onclick = function(){
 		message_au_centre.style.borderRadius = "10px";
 		message_au_centre.style.padding = "10px";
 		perso_tour = perso_tour + 1;
+		setTimeout(clear_message_centre, 2000);
 	}
 	if (perso_tour == 1){
 		pv_monstre_2 = pv_monstre_2 - atk_heros_1;
@@ -537,6 +611,7 @@ bouton_monstre_attaque_2.onclick = function(){
 		message_au_centre.style.borderRadius = "10px";
 		message_au_centre.style.padding = "10px";
 		perso_tour = perso_tour + 1;
+		setTimeout(clear_message_centre, 2000);
 	}
 	if (perso_tour == 0){
 		perso_tour = 1;
@@ -564,12 +639,7 @@ bouton_monstre_attaque_2.onclick = function(){
 		pointeur_heros_2.style.backgroundImage = "url()";
 		pointeur_heros_3.style.backgroundImage = "url()";
 		pointeur_heros_4.style.backgroundImage = "url(../Images/Autre/Pointer_down.png)";
-	}
-	setTimeout(clear_message_centre = function(){ 
-		message_au_centre.style.backgroundColor = ""; 
-		message_attaque.innerHTML = ""; 
-		message_au_centre.style.border = ""; 
-		message_au_centre.style.padding = "";}, 3000);		
+	}		
 }		
 
 bouton_monstre_attaque_3.onclick = function(){
@@ -587,6 +657,10 @@ bouton_monstre_attaque_3.onclick = function(){
 		message_au_centre.style.borderRadius = "10px";
 		message_au_centre.style.padding = "10px";
 		perso_tour = 0;
+		setTimeout(attaque_premier_monstre, 2000);
+		setTimeout(attaque_second_monstre, 4000);
+		setTimeout(attaque_troisieme_monstre, 6000);
+		setTimeout(clear_message_centre, 8000);
 		}
 	if (perso_tour == 3){
 		pv_monstre_3 = pv_monstre_3 - atk_heros_3;
@@ -596,6 +670,7 @@ bouton_monstre_attaque_3.onclick = function(){
 		message_au_centre.style.borderRadius = "10px";
 		message_au_centre.style.padding = "10px";
 		perso_tour = perso_tour + 1;
+		setTimeout(clear_message_centre, 2000);
 	}
 	if (perso_tour == 2){
 		pv_monstre_3 = pv_monstre_3 - atk_heros_2;
@@ -605,6 +680,7 @@ bouton_monstre_attaque_3.onclick = function(){
 		message_au_centre.style.borderRadius = "10px";
 		message_au_centre.style.padding = "10px";
 		perso_tour = perso_tour + 1;
+		setTimeout(clear_message_centre, 2000);
 	}
 	if (perso_tour == 1){
 		pv_monstre_3 = pv_monstre_3 - atk_heros_1;
@@ -614,6 +690,7 @@ bouton_monstre_attaque_3.onclick = function(){
 		message_au_centre.style.borderRadius = "10px";
 		message_au_centre.style.padding = "10px";
 		perso_tour = perso_tour + 1;
+		setTimeout(clear_message_centre, 2000);
 	}
 	if (perso_tour == 0){
 		perso_tour = 1;
@@ -641,12 +718,7 @@ bouton_monstre_attaque_3.onclick = function(){
 		pointeur_heros_2.style.backgroundImage = "url()";
 		pointeur_heros_3.style.backgroundImage = "url()";
 		pointeur_heros_4.style.backgroundImage = "url(../Images/Autre/Pointer_down.png)";
-	}
-	setTimeout(clear_message_centre = function(){ 
-		message_au_centre.style.backgroundColor = ""; 
-		message_attaque.innerHTML = ""; 
-		message_au_centre.style.border = ""; 
-		message_au_centre.style.padding = "";}, 3000);		
+	}		
 }		
 
 bouton_defend.onclick = function (){
@@ -745,6 +817,7 @@ bouton_monstre_special_1.onclick = function(){
 		perso_tour = perso_tour + 1;
 		mana_heros_3 = mana_heros_3 - 40;
 		valeur_mana_heros_3.innerHTML = mana_heros_3;
+		setTimeout(clear_message_centre, 2000);
 	}
 	if (perso_tour == 1){
 		monstre_1_poison = 3;
@@ -756,6 +829,7 @@ bouton_monstre_special_1.onclick = function(){
 		perso_tour = perso_tour + 1;
 		mana_heros_1 = mana_heros_1 - 30;
 		valeur_mana_heros_1.innerHTML = mana_heros_1;
+		setTimeout(clear_message_centre, 2000);
 	}
 	if (perso_tour == 0){
 		perso_tour = 1;
@@ -787,12 +861,7 @@ bouton_monstre_special_1.onclick = function(){
 		pointeur_heros_3.style.backgroundImage = "url()";
 		pointeur_heros_4.style.backgroundImage = "url(../Images/Autre/Pointer_down.png)";
 		special.innerHTML = "Foudre";
-	}
-	setTimeout(clear_message_centre = function(){ 
-		message_au_centre.style.backgroundColor = ""; 
-		message_attaque.innerHTML = ""; 
-		message_au_centre.style.border = ""; 
-		message_au_centre.style.padding = "";}, 2500);		
+	}	
 }
 
 bouton_monstre_special_2.onclick = function(){
@@ -812,6 +881,7 @@ bouton_monstre_special_2.onclick = function(){
 		perso_tour = perso_tour + 1;
 		mana_heros_3 = mana_heros_3 - 40;
 		valeur_mana_heros_3.innerHTML = mana_heros_3;
+		setTimeout(clear_message_centre, 2000);
 	}
 	if (perso_tour == 1){
 		monstre_2_poison = 3;
@@ -823,6 +893,7 @@ bouton_monstre_special_2.onclick = function(){
 		perso_tour = perso_tour + 1;
 		mana_heros_1 = mana_heros_1 - 30;
 		valeur_mana_heros_1.innerHTML = mana_heros_1;
+		setTimeout(clear_message_centre, 2000);
 	}
 	if (perso_tour == 0){
 		perso_tour = 1;
@@ -854,12 +925,7 @@ bouton_monstre_special_2.onclick = function(){
 		pointeur_heros_3.style.backgroundImage = "url()";
 		pointeur_heros_4.style.backgroundImage = "url(../Images/Autre/Pointer_down.png)";
 		special.innerHTML = "Foudre";
-	}
-	setTimeout(clear_message_centre = function(){ 
-		message_au_centre.style.backgroundColor = ""; 
-		message_attaque.innerHTML = ""; 
-		message_au_centre.style.border = ""; 
-		message_au_centre.style.padding = "";}, 2500);		
+	}	
 }
 
 bouton_monstre_special_3.onclick = function(){
@@ -879,6 +945,7 @@ bouton_monstre_special_3.onclick = function(){
 		perso_tour = perso_tour + 1;
 		mana_heros_3 = mana_heros_3 - 40;
 		valeur_mana_heros_3.innerHTML = mana_heros_3;
+		setTimeout(clear_message_centre, 2000);
 	}
 	if (perso_tour == 1){
 		monstre_3_poison = 3;
@@ -890,6 +957,7 @@ bouton_monstre_special_3.onclick = function(){
 		perso_tour = perso_tour + 1;
 		mana_heros_1 = mana_heros_1 - 40;
 		valeur_mana_heros_1.innerHTML = mana_heros_1;
+		setTimeout(clear_message_centre, 2000);
 	}
 	if (perso_tour == 0){
 		perso_tour = 1;
@@ -921,12 +989,7 @@ bouton_monstre_special_3.onclick = function(){
 		pointeur_heros_3.style.backgroundImage = "url()";
 		pointeur_heros_4.style.backgroundImage = "url(../Images/Autre/Pointer_down.png)";
 		special.innerHTML = "Foudre";
-	}
-	setTimeout(clear_message_centre = function(){ 
-		message_au_centre.style.backgroundColor = ""; 
-		message_attaque.innerHTML = ""; 
-		message_au_centre.style.border = ""; 
-		message_au_centre.style.padding = "";}, 2500);		
+	}	
 }
 
 bouton_special.onclick = function (){
@@ -962,6 +1025,10 @@ bouton_special.onclick = function (){
 		message_au_centre.style.borderRadius = "10px";
 		message_au_centre.style.padding = "10px";
 		perso_tour = 0;
+		setTimeout(attaque_premier_monstre, 2000);
+		setTimeout(attaque_second_monstre, 4000);
+		setTimeout(attaque_troisieme_monstre, 6000);
+		setTimeout(clear_message_centre, 8000);
 	}
 	if (perso_tour == 3){
 		bouton_monstre_special_1.innerHTML = "Mort-Vivant";
@@ -1027,6 +1094,7 @@ bouton_special.onclick = function (){
 		message_au_centre.style.borderRadius = "10px";
 		message_au_centre.style.padding = "10px";
 		perso_tour = perso_tour + 1;
+		setTimeout(clear_message_centre, 2000);
 	}
 	if (perso_tour == 1){
 		bouton_monstre_special_1.innerHTML = "Mort-Vivant";
@@ -1066,12 +1134,64 @@ bouton_special.onclick = function (){
 		pointeur_heros_3.style.backgroundImage = "url()";
 		pointeur_heros_4.style.backgroundImage = "url(../Images/Autre/Pointer_down.png)";
 		special.innerHTML = "Foudre";
-	}
-	setTimeout(clear_message_centre = function(){ 
-		message_au_centre.style.backgroundColor = ""; 
-		message_attaque.innerHTML = ""; 
-		message_au_centre.style.border = ""; 
-		message_au_centre.style.padding = "";}, 2500);		
+	}	
 }
 
-
+	/*setTimeout(function bloodsplash_1(){ bloodsplash.style.backgroundImage = "url(../Images/Animations/Blood/Blood_15.png)";}, 0);
+	setTimeout(function bloodsplash_2(){ bloodsplash.style.backgroundImage = "url(../Images/Animations/Blood/Blood_14.png)";}, 50);
+	setTimeout(function bloodsplash_3(){ bloodsplash.style.backgroundImage = "url(../Images/Animations/Blood/Blood_13.png)";}, 100);
+	setTimeout(function bloodsplash_4(){ bloodsplash.style.backgroundImage = "url(../Images/Animations/Blood/Blood_12.png)";}, 150);
+	setTimeout(function bloodsplash_5(){ bloodsplash.style.backgroundImage = "url(../Images/Animations/Blood/Blood_11.png)";}, 200);
+	setTimeout(function bloodsplash_6(){ bloodsplash.style.backgroundImage = "url(../Images/Animations/Blood/Blood_10.png)";}, 250);
+	setTimeout(function bloodsplash_7(){ bloodsplash.style.backgroundImage = "url(../Images/Animations/Blood/Blood_9.png)";}, 300);
+	setTimeout(function bloodsplash_8(){ bloodsplash.style.backgroundImage = "url(../Images/Animations/Blood/Blood_8.png)";}, 350);
+	setTimeout(function bloodsplash_9(){ bloodsplash.style.backgroundImage = "url(../Images/Animations/Blood/Blood_7.png)";}, 400);
+	setTimeout(function bloodsplash_10(){ bloodsplash.style.backgroundImage = "url(../Images/Animations/Blood/Blood_6.png)";}, 450);
+	setTimeout(function bloodsplash_11(){ bloodsplash.style.backgroundImage = "url(../Images/Animations/Blood/Blood_5.png)";}, 500);
+	setTimeout(function bloodsplash_12(){ bloodsplash.style.backgroundImage = "url(../Images/Animations/Blood/Blood_4.png)";}, 550);
+	setTimeout(function bloodsplash_13(){ bloodsplash.style.backgroundImage = "url(../Images/Animations/Blood/Blood_3.png)";}, 600);
+	setTimeout(function bloodsplash_14(){ bloodsplash.style.backgroundImage = "url(../Images/Animations/Blood/Blood_2.png)";}, 650);
+	setTimeout(function bloodsplash_15(){ bloodsplash.style.backgroundImage = "url(../Images/Animations/Blood/Blood_1.png)";}, 700);
+	setTimeout(function bloodsplash_reset(){ bloodsplash.style.backgroundImage = "url()"}, 750);
+	
+	setTimeout(function water_1(){ water.style.backgroundImage = "url(../Images/Animations/Water/Water_1.png)";}, 0);
+	setTimeout(function water_2(){ water.style.backgroundImage = "url(../Images/Animations/Water/Water_2.png)";}, 34);
+	setTimeout(function water_3(){ water.style.backgroundImage = "url(../Images/Animations/Water/Water_3.png)";}, 68);
+	setTimeout(function water_4(){ water.style.backgroundImage = "url(../Images/Animations/Water/Water_4.png)";}, 102);
+	setTimeout(function water_5(){ water.style.backgroundImage = "url(../Images/Animations/Water/Water_5.png)";}, 136);
+	setTimeout(function water_6(){ water.style.backgroundImage = "url(../Images/Animations/Water/Water_6.png)";}, 170);
+	setTimeout(function water_7(){ water.style.backgroundImage = "url(../Images/Animations/Water/Water_7.png)";}, 204);
+	setTimeout(function water_8(){ water.style.backgroundImage = "url(../Images/Animations/Water/Water_8.png)";}, 238);
+	setTimeout(function water_9(){ water.style.backgroundImage = "url(../Images/Animations/Water/Water_9.png)";}, 272);
+	setTimeout(function water_10(){ water.style.backgroundImage = "url(../Images/Animations/Water/Water_10.png)";}, 306);
+	setTimeout(function water_11(){ water.style.backgroundImage = "url(../Images/Animations/Water/Water_11.png)";}, 340);
+	setTimeout(function water_12(){ water.style.backgroundImage = "url(../Images/Animations/Water/Water_12.png)";}, 374);
+	setTimeout(function water_13(){ water.style.backgroundImage = "url(../Images/Animations/Water/Water_13.png)";}, 408);
+	setTimeout(function water_14(){ water.style.backgroundImage = "url(../Images/Animations/Water/Water_14.png)";}, 442);
+	setTimeout(function water_15(){ water.style.backgroundImage = "url(../Images/Animations/Water/Water_15.png)";}, 476);
+	setTimeout(function water_16(){ water.style.backgroundImage = "url(../Images/Animations/Water/Water_16.png)";}, 510);
+	setTimeout(function water_17(){ water.style.backgroundImage = "url(../Images/Animations/Water/Water_17.png)";}, 544);
+	setTimeout(function water_18(){ water.style.backgroundImage = "url(../Images/Animations/Water/Water_18.png)";}, 578);
+	setTimeout(function water_19(){ water.style.backgroundImage = "url(../Images/Animations/Water/Water_19.png)";}, 612);
+	setTimeout(function water_20(){ water.style.backgroundImage = "url(../Images/Animations/Water/Water_20.png)";}, 646);
+	setTimeout(function water_21(){ water.style.backgroundImage = "url(../Images/Animations/Water/Water_21.png)";}, 680);
+	setTimeout(function water_22(){ water.style.backgroundImage = "url(../Images/Animations/Water/Water_22.png)";}, 714);
+	setTimeout(function water_23(){ water.style.backgroundImage = "url(../Images/Animations/Water/Water_23.png)";}, 748);
+	setTimeout(function water_clear(){ water.style.backgroundImage = "url()";}, 750);
+	
+	setTimeout(function hit_1(){ hit.style.backgroundImage = "url(../Images/Animations/Hit/Hit_15.png)";}, 0);
+	setTimeout(function hit_2(){ hit.style.backgroundImage = "url(../Images/Animations/Hit/Hit_14.png)";}, 50);
+	setTimeout(function hit_3(){ hit.style.backgroundImage = "url(../Images/Animations/Hit/Hit_13.png)";}, 100);
+	setTimeout(function hit_4(){ hit.style.backgroundImage = "url(../Images/Animations/Hit/Hit_12.png)";}, 150);
+	setTimeout(function hit_5(){ hit.style.backgroundImage = "url(../Images/Animations/Hit/Hit_11.png)";}, 200);
+	setTimeout(function hit_6(){ hit.style.backgroundImage = "url(../Images/Animations/Hit/Hit_10.png)";}, 250);
+	setTimeout(function hit_7(){ hit.style.backgroundImage = "url(../Images/Animations/Hit/Hit_9.png)";}, 300);
+	setTimeout(function hit_8(){ hit.style.backgroundImage = "url(../Images/Animations/Hit/Hit_8.png)";}, 350);
+	setTimeout(function hit_9(){ hit.style.backgroundImage = "url(../Images/Animations/Hit/Hit_7.png)";}, 400);
+	setTimeout(function hit_10(){ hit.style.backgroundImage = "url(../Images/Animations/Hit/Hit_6.png)";}, 450);
+	setTimeout(function hit_11(){ hit.style.backgroundImage = "url(../Images/Animations/Hit/Hit_5.png)";}, 500);
+	setTimeout(function hit_12(){ hit.style.backgroundImage = "url(../Images/Animations/Hit/Hit_4.png)";}, 550);
+	setTimeout(function hit_13(){ hit.style.backgroundImage = "url(../Images/Animations/Hit/Hit_3.png)";}, 600);
+	setTimeout(function hit_14(){ hit.style.backgroundImage = "url(../Images/Animations/Hit/Hit_2.png)";}, 650);
+	setTimeout(function hit_15(){ hit.style.backgroundImage = "url(../Images/Animations/Hit/Hit_1.png)";}, 700);
+	setTimeout(function hit_clear(){ hit.style.backgroundImage = "url()";}, 750);*/	
