@@ -743,6 +743,8 @@ bouton_monstre_special_1.onclick = function(){
 		message_au_centre.style.borderRadius = "10px";
 		message_au_centre.style.padding = "10px";
 		perso_tour = perso_tour + 1;
+		mana_heros_3 = mana_heros_3 - 40;
+		valeur_mana_heros_3.innerHTML = mana_heros_3;
 	}
 	if (perso_tour == 1){
 		monstre_1_poison = 3;
@@ -752,6 +754,8 @@ bouton_monstre_special_1.onclick = function(){
 		message_au_centre.style.borderRadius = "10px";
 		message_au_centre.style.padding = "10px";
 		perso_tour = perso_tour + 1;
+		mana_heros_1 = mana_heros_1 - 30;
+		valeur_mana_heros_1.innerHTML = mana_heros_1;
 	}
 	if (perso_tour == 0){
 		perso_tour = 1;
@@ -806,6 +810,8 @@ bouton_monstre_special_2.onclick = function(){
 		message_au_centre.style.borderRadius = "10px";
 		message_au_centre.style.padding = "10px";
 		perso_tour = perso_tour + 1;
+		mana_heros_3 = mana_heros_3 - 40;
+		valeur_mana_heros_3.innerHTML = mana_heros_3;
 	}
 	if (perso_tour == 1){
 		monstre_2_poison = 3;
@@ -815,6 +821,8 @@ bouton_monstre_special_2.onclick = function(){
 		message_au_centre.style.borderRadius = "10px";
 		message_au_centre.style.padding = "10px";
 		perso_tour = perso_tour + 1;
+		mana_heros_1 = mana_heros_1 - 30;
+		valeur_mana_heros_1.innerHTML = mana_heros_1;
 	}
 	if (perso_tour == 0){
 		perso_tour = 1;
@@ -869,6 +877,8 @@ bouton_monstre_special_3.onclick = function(){
 		message_au_centre.style.borderRadius = "10px";
 		message_au_centre.style.padding = "10px";
 		perso_tour = perso_tour + 1;
+		mana_heros_3 = mana_heros_3 - 40;
+		valeur_mana_heros_3.innerHTML = mana_heros_3;
 	}
 	if (perso_tour == 1){
 		monstre_3_poison = 3;
@@ -878,6 +888,8 @@ bouton_monstre_special_3.onclick = function(){
 		message_au_centre.style.borderRadius = "10px";
 		message_au_centre.style.padding = "10px";
 		perso_tour = perso_tour + 1;
+		mana_heros_1 = mana_heros_1 - 40;
+		valeur_mana_heros_1.innerHTML = mana_heros_1;
 	}
 	if (perso_tour == 0){
 		perso_tour = 1;
@@ -918,11 +930,29 @@ bouton_monstre_special_3.onclick = function(){
 }
 
 bouton_special.onclick = function (){
+	if (perso_tour == 4 && mana_heros_4 < 30) {
+		bouton_special.innerHTML = "Impossible";
+		return;
+	}
+	if (perso_tour == 3 && mana_heros_4 < 40) {
+		bouton_special.innerHTML = "Impossible";
+		return;
+	}
+	if (perso_tour == 2 && mana_heros_4 < 25) {
+		bouton_special.innerHTML = "Impossible";
+		return;
+	}
+	if (perso_tour == 1 && mana_heros_4 < 30) {
+		bouton_special.innerHTML = "Impossible";
+		return;
+	}	
 	bouton_special.style.backgroundImage = "url(../Images/Autre/Button_pressed.png)";
 	bouton_special.onmouseout = function (){
 		bouton_special.style.backgroundImage = "url(../Images/Autre/Button.png)";
 	}
 	if (perso_tour == 4){
+		mana_heros_4 = mana_heros_4 - 30;
+		valeur_mana_heros_4.innerHTML = mana_heros_4;
 		pv_monstre_1 = pv_monstre_1 - valeur_foudre;
 		pv_monstre_2 = pv_monstre_2 - valeur_foudre;
 		pv_monstre_3 = pv_monstre_3 - valeur_foudre;
@@ -942,6 +972,8 @@ bouton_special.onclick = function (){
 		bouton_monstre_special_3.style.backgroundImage = "url(../Images/Autre/Button.png)";
 	}
 	if (perso_tour == 2){
+		mana_heros_2 = mana_heros_2 - 25;
+		valeur_mana_heros_2.innerHTML = mana_heros_2;
 		for(var i = 0; i <= 2; i++){
 			if(tableau_pdv_heros[i+1] > tableau_pdv_heros[i]){
 				min_pdv = i;
