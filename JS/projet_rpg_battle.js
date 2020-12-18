@@ -180,10 +180,10 @@ var grise_bouton = function (){
 	if (perso_tour == 2 && defense_disponible_2 < 2){
 		bouton_defend.style.backgroundColor = "#525252";
 	}
-	if (perso_tour == 3 && special_disponible_3 < 2){
+	if (perso_tour == 3 && defense_disponible_3 < 2){
 		bouton_defend.style.backgroundColor = "#525252";
 	}
-	if (perso_tour == 4 && special_disponible_4 < 2){
+	if (perso_tour == 4 && defense_disponible_4 < 2){
 		bouton_defend.style.backgroundColor = "#525252";
 	}
 	if (perso_tour == 1 && special_disponible_1 < 2){
@@ -1425,6 +1425,7 @@ var attaque_troisieme_monstre = function(){
 	if (special_disponible_4 < 2){
 		special_disponible_4 = special_disponible_4 + 1;
 	}
+	grise_bouton();
 
 }
 
@@ -1748,6 +1749,7 @@ bouton_attaque.onclick = function atkonclick(){
 			bouton_monstre_attaque_3.style.backgroundImage = "url(../Images/Autre/Button.png)";
 		}
 	}
+	grise_bouton();
 }
 
 bouton_monstre_attaque_1.onclick = function(){
@@ -2353,6 +2355,7 @@ bouton_defend.onclick = function (){
 		pointeur_heros_4.style.backgroundImage = "url(../Images/Autre/Pointer_down.png)";
 		special.innerHTML = "Foudre";
 	}
+	grise_bouton();
 }
 
 bouton_monstre_special_1.onclick = function(){
@@ -2919,7 +2922,8 @@ bouton_special.onclick = function (){
 		pointeur_heros_3.style.backgroundImage = "url()";
 		pointeur_heros_4.style.backgroundImage = "url(../Images/Autre/Pointer_down.png)";
 		special.innerHTML = "Foudre";
-	}	
+	}
+	grise_bouton();
 }
 
 	/*setTimeout(function bloodsplash_1(){ bloodsplash.style.backgroundImage = "url(../Images/Animations/Blood/Blood_15.png)";}, 0);
