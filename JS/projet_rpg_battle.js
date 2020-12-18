@@ -101,9 +101,9 @@ var def_heros_3 = 10;
 var def_heros_4 = 10;
 var perso_tour = 1;
 var poison = false;
-var montre_1_poison = 0;
-var montre_2_poison = 0;
-var montre_3_poison = 0;
+var monstre_1_poison = 0;
+var monstre_2_poison = 0;
+var monstre_3_poison = 0;
 var tour_poison = 0;
 var degats_poison = 10;
 var tableau_pdv_heros = [pdv_heros_1, pdv_heros_2, pdv_heros_3, pdv_heros_4];
@@ -116,6 +116,21 @@ var valeur_foudre = 10;
 
 function entierAleatoire(min, max){
 	return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+var degats_du_poison = function (){
+	if (monstre_1_poison > 0){
+		pv_monstre_1 = pv_monstre_1 - degats_poison;
+		monstre_1_poison = monstre_1_poison - 1;
+	}
+	if (monstre_2_poison > 0){
+		pv_monstre_2 = pv_monstre_2 - degats_poison;
+		monstre_2_poison = monstre_2_poison - 1;
+	}
+	if (monstre_3_poison > 0){
+		pv_monstre_3 = pv_monstre_3 - degats_poison;
+		monstre_3_poison = monstre_3_poison - 1;
+	}
 }
 
 var clear_message_centre = function(){ 
@@ -146,7 +161,7 @@ var condition_defaite = function() {
 }
 
 var attaque_premier_monstre = function(){
-	if (pv_monstre_1 > 0){
+	if (pv_monstre_1 > 0 && gel_monstre_1 == false){
 		var compteur_heros_en_vie = 0;
 		if (pdv_heros_1 > 0){
 			compteur_heros_en_vie = compteur_heros_en_vie + 1;
@@ -506,10 +521,11 @@ var attaque_premier_monstre = function(){
 	if (pv_monstre_1 <= 0){
 		monstre_1.style.background = "url()";
 	}
+	gel_monstre_1 = false;
 }
 
 var attaque_second_monstre = function(){
-	if (pv_monstre_2 > 0){
+	if (pv_monstre_2 > 0 && gel_monstre_2 == false){
 		var compteur_heros_en_vie = 0;
 		if (pdv_heros_1 > 0){
 			compteur_heros_en_vie = compteur_heros_en_vie + 1;
@@ -868,10 +884,11 @@ var attaque_second_monstre = function(){
 	if (pv_monstre_2 <= 0) {
 		monstre_2.style.background = "url()";
 	}
+	gel_monstre_2 = false;
 }
 
 var attaque_troisieme_monstre = function(){
-	if (pv_monstre_3){
+	if (pv_monstre_3 && gel_monstre_3 == false){
 		var compteur_heros_en_vie = 0;
 		if (pdv_heros_1 > 0){
 			compteur_heros_en_vie = compteur_heros_en_vie + 1;
@@ -1269,6 +1286,7 @@ var attaque_troisieme_monstre = function(){
 		pointeur_heros_4.style.backgroundImage = "url(../Images/Autre/Pointer_down.png)";
 		special.innerHTML = "Foudre";
 	}
+	gel_monstre_3 = false;
 }
 
 if (perso_tour == 1) {
@@ -1554,6 +1572,7 @@ bouton_monstre_attaque_1.onclick = function(){
 		setTimeout(clear_message_centre, 8000);
 		setTimeout(condition_defaite, 10000);
 		setTimeout(condition_victoire, 10000);
+		setTimeout(degats_du_poison, 8000);
 	}
 	if (perso_tour == 3){
 		pv_monstre_1 = pv_monstre_1 - atk_heros_3;
@@ -1571,6 +1590,7 @@ bouton_monstre_attaque_1.onclick = function(){
 			setTimeout(clear_message_centre, 8000);
 			setTimeout(condition_defaite, 10000);
 			setTimeout(condition_victoire, 10000);
+			setTimeout(degats_du_poison, 8000);
 		}
 		setTimeout(clear_message_centre, 2000);
 	}
@@ -1593,6 +1613,7 @@ bouton_monstre_attaque_1.onclick = function(){
 			setTimeout(clear_message_centre, 8000);
 			setTimeout(condition_defaite, 10000);
 			setTimeout(condition_victoire, 10000);
+			setTimeout(degats_du_poison, 8000);
 		}
 		setTimeout(clear_message_centre, 2000);
 	}
@@ -1618,6 +1639,7 @@ bouton_monstre_attaque_1.onclick = function(){
 			setTimeout(clear_message_centre, 8000);
 			setTimeout(condition_defaite, 10000);
 			setTimeout(condition_victoire, 10000);
+			setTimeout(degats_du_poison, 8000);
 		}
 		setTimeout(clear_message_centre, 2000);
 	}
@@ -1675,6 +1697,7 @@ bouton_monstre_attaque_2.onclick = function(){
 		setTimeout(clear_message_centre, 8000);
 		setTimeout(condition_defaite, 10000);
 		setTimeout(condition_victoire, 10000);
+		setTimeout(degats_du_poison, 8000);
 		}
 	if (perso_tour == 3){
 		pv_monstre_2 = pv_monstre_2 - atk_heros_3;
@@ -1692,6 +1715,7 @@ bouton_monstre_attaque_2.onclick = function(){
 			setTimeout(clear_message_centre, 8000);
 			setTimeout(condition_defaite, 10000);
 			setTimeout(condition_victoire, 10000);
+			setTimeout(degats_du_poison, 8000);
 		}
 		setTimeout(clear_message_centre, 2000);
 	}
@@ -1714,6 +1738,7 @@ bouton_monstre_attaque_2.onclick = function(){
 			setTimeout(clear_message_centre, 8000);
 			setTimeout(condition_defaite, 10000);
 			setTimeout(condition_victoire, 10000);
+			setTimeout(degats_du_poison, 8000);
 		}
 		setTimeout(clear_message_centre, 2000);
 	}
@@ -1739,6 +1764,7 @@ bouton_monstre_attaque_2.onclick = function(){
 			setTimeout(clear_message_centre, 8000);
 			setTimeout(condition_defaite, 10000);
 			setTimeout(condition_victoire, 10000);
+			setTimeout(degats_du_poison, 8000);
 		}
 		setTimeout(clear_message_centre, 2000);
 	}
@@ -1792,6 +1818,7 @@ bouton_monstre_attaque_3.onclick = function(){
 		setTimeout(clear_message_centre, 8000);
 		setTimeout(condition_defaite, 10000);
 		setTimeout(condition_victoire, 10000);
+		setTimeout(degats_du_poison, 8000);
 		}
 	if (perso_tour == 3){
 		pv_monstre_3 = pv_monstre_3 - atk_heros_3;
@@ -1809,6 +1836,7 @@ bouton_monstre_attaque_3.onclick = function(){
 			setTimeout(clear_message_centre, 8000);
 			setTimeout(condition_defaite, 10000);
 			setTimeout(condition_victoire, 10000);
+			setTimeout(degats_du_poison, 8000);
 		}
 		setTimeout(clear_message_centre, 2000);
 	}
@@ -1831,6 +1859,7 @@ bouton_monstre_attaque_3.onclick = function(){
 			setTimeout(clear_message_centre, 8000);
 			setTimeout(condition_defaite, 10000);
 			setTimeout(condition_victoire, 10000);
+			setTimeout(degats_du_poison, 8000);
 		}
 		setTimeout(clear_message_centre, 2000);
 	}
@@ -1856,6 +1885,7 @@ bouton_monstre_attaque_3.onclick = function(){
 			setTimeout(clear_message_centre, 8000);
 			setTimeout(condition_defaite, 10000);
 			setTimeout(condition_victoire, 10000);
+			setTimeout(degats_du_poison, 8000);
 		}
 		setTimeout(clear_message_centre, 2000);
 	}
@@ -1907,6 +1937,7 @@ bouton_defend.onclick = function (){
 		setTimeout(clear_message_centre, 8000);
 		setTimeout(condition_defaite, 10000);
 		setTimeout(condition_victoire, 10000);
+		setTimeout(degats_du_poison, 8000);
 	}
 	if (perso_tour == 3){
 		valeur_def_heros_3.innerHTML = def_heros_3 + 20;
@@ -1924,6 +1955,7 @@ bouton_defend.onclick = function (){
 			setTimeout(clear_message_centre, 8000);
 			setTimeout(condition_defaite, 10000);
 			setTimeout(condition_victoire, 10000);
+			setTimeout(degats_du_poison, 8000);
 		}
 	}
 	if (perso_tour == 2){
@@ -1945,6 +1977,7 @@ bouton_defend.onclick = function (){
 			setTimeout(clear_message_centre, 8000);
 			setTimeout(condition_defaite, 10000);
 			setTimeout(condition_victoire, 10000);
+			setTimeout(degats_du_poison, 8000);
 		}
 	}
 	if (perso_tour == 1){
@@ -1969,6 +2002,7 @@ bouton_defend.onclick = function (){
 			setTimeout(clear_message_centre, 8000);
 			setTimeout(condition_defaite, 10000);
 			setTimeout(condition_victoire, 10000);
+			setTimeout(degats_du_poison, 8000);
 		}
 	}
 	if (perso_tour == 0){
@@ -2044,6 +2078,7 @@ bouton_monstre_special_1.onclick = function(){
 			setTimeout(clear_message_centre, 8000);
 			setTimeout(condition_defaite, 10000);
 			setTimeout(condition_victoire, 10000);
+			setTimeout(degats_du_poison, 8000);
 		}
 	}
 	if (perso_tour == 1){
@@ -2071,6 +2106,7 @@ bouton_monstre_special_1.onclick = function(){
 			setTimeout(clear_message_centre, 8000);
 			setTimeout(condition_defaite, 10000);
 			setTimeout(condition_victoire, 10000);
+			setTimeout(degats_du_poison, 8000);
 		}
 	}
 	if (perso_tour == 0){
@@ -2131,6 +2167,7 @@ bouton_monstre_special_2.onclick = function(){
 			setTimeout(clear_message_centre, 8000);
 			setTimeout(condition_defaite, 10000);
 			setTimeout(condition_victoire, 10000);
+			setTimeout(degats_du_poison, 8000);
 		}
 		setTimeout(clear_message_centre, 2000);
 	}
@@ -2158,6 +2195,7 @@ bouton_monstre_special_2.onclick = function(){
 			setTimeout(clear_message_centre, 8000);
 			setTimeout(condition_defaite, 10000);
 			setTimeout(condition_victoire, 10000);
+			setTimeout(degats_du_poison, 8000);
 		}
 		setTimeout(clear_message_centre, 2000);
 	}
@@ -2219,6 +2257,7 @@ bouton_monstre_special_3.onclick = function(){
 			setTimeout(clear_message_centre, 8000);
 			setTimeout(condition_defaite, 10000);
 			setTimeout(condition_victoire, 10000);
+			setTimeout(degats_du_poison, 8000);
 		}
 		setTimeout(clear_message_centre, 2000);
 	}
@@ -2246,6 +2285,7 @@ bouton_monstre_special_3.onclick = function(){
 			setTimeout(clear_message_centre, 8000);
 			setTimeout(condition_defaite, 10000);
 			setTimeout(condition_victoire, 10000);
+			setTimeout(degats_du_poison, 8000);
 		}
 		setTimeout(clear_message_centre, 2000);
 	}
@@ -2344,6 +2384,7 @@ bouton_special.onclick = function (){
 			setTimeout(clear_message_centre, 8000);
 			setTimeout(condition_defaite, 10000);
 			setTimeout(condition_victoire, 10000);
+			setTimeout(degats_du_poison, 8000);
 		}
 	}
 	if (perso_tour == 3){
@@ -2351,16 +2392,16 @@ bouton_special.onclick = function (){
 			return;
 		} else {
 			if (pv_monstre_1 > 0){
-				bouton_monstre_attaque_1.innerHTML = "Mort-Vivant";
-				bouton_monstre_attaque_1.style.backgroundImage = "url(../Images/Autre/Button.png)";
+				bouton_monstre_special_1.innerHTML = "Mort-Vivant";
+				bouton_monstre_special_1.style.backgroundImage = "url(../Images/Autre/Button.png)";
 			}
 			if (pv_monstre_2 > 0){
-				bouton_monstre_attaque_2.innerHTML = "Minotaure";
-				bouton_monstre_attaque_2.style.backgroundImage = "url(../Images/Autre/Button.png)";
+				bouton_monstre_special_2.innerHTML = "Minotaure";
+				bouton_monstre_special_2.style.backgroundImage = "url(../Images/Autre/Button.png)";
 			}
 			if (pv_monstre_3 > 0){
-				bouton_monstre_attaque_3.innerHTML = "Élémentaire";
-				bouton_monstre_attaque_3.style.backgroundImage = "url(../Images/Autre/Button.png)";
+				bouton_monstre_special_3.innerHTML = "Élémentaire";
+				bouton_monstre_special_3.style.backgroundImage = "url(../Images/Autre/Button.png)";
 			}
 		}
 	}
@@ -2435,6 +2476,7 @@ bouton_special.onclick = function (){
 			setTimeout(clear_message_centre, 8000);
 			setTimeout(condition_defaite, 10000);
 			setTimeout(condition_victoire, 10000);
+			setTimeout(degats_du_poison, 8000);
 		}
 		setTimeout(clear_message_centre, 2000);
 	}
@@ -2443,16 +2485,16 @@ bouton_special.onclick = function (){
 			return;
 		} else {
 			if (pv_monstre_1 > 0){
-				bouton_monstre_attaque_1.innerHTML = "Mort-Vivant";
-				bouton_monstre_attaque_1.style.backgroundImage = "url(../Images/Autre/Button.png)";
+				bouton_monstre_special_1.innerHTML = "Mort-Vivant";
+				bouton_monstre_special_1.style.backgroundImage = "url(../Images/Autre/Button.png)";
 			}
 			if (pv_monstre_2 > 0){
-				bouton_monstre_attaque_2.innerHTML = "Minotaure";
-				bouton_monstre_attaque_2.style.backgroundImage = "url(../Images/Autre/Button.png)";
+				bouton_monstre_special_2.innerHTML = "Minotaure";
+				bouton_monstre_special_2.style.backgroundImage = "url(../Images/Autre/Button.png)";
 			}
 			if (pv_monstre_3 > 0){
-				bouton_monstre_attaque_3.innerHTML = "Élémentaire";
-				bouton_monstre_attaque_3.style.backgroundImage = "url(../Images/Autre/Button.png)";
+				bouton_monstre_special_3.innerHTML = "Élémentaire";
+				bouton_monstre_special_3.style.backgroundImage = "url(../Images/Autre/Button.png)";
 			}
 		}
 	}
