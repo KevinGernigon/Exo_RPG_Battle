@@ -93,8 +93,11 @@ body {
 }
 
 #bouton_attaque {
-	width: 74%;
-    height: 80%;
+	position: fixed;
+	top : 66%;
+	bottom: 28%;
+	left: 6%;
+	right: 83%;
 	background-image: url("../Images/Autre/Button.png");
 	background-size: contain;
 	background-repeat: no-repeat;
@@ -102,8 +105,11 @@ body {
 }
 
 #bouton_defend {
-	width: 74%;
-    height: 80%;
+	position : fixed;
+	top : 75%;
+	bottom: 19%;
+	left: 6%;
+	right: 83%;
 	background-image: url("../Images/Autre/Button.png");
 	background-size: contain;
 	background-repeat: no-repeat;
@@ -111,8 +117,11 @@ body {
 }
 
 #bouton_special {
-	width: 74%;
-    height: 80%;	
+	position : fixed;
+	top : 85%;
+	left: 6%;
+	right : 83%;
+	bottom : 9.5%;
 	background-image: url("../Images/Autre/Button.png");
 	background-size: contain;
 	background-repeat: no-repeat;

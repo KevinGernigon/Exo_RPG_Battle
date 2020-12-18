@@ -78,7 +78,18 @@ var bloodsplash = document.getElementById("bloodsplash");
 var water = document.getElementById("water");
 var hit = document.getElementById("hit");
 
-
+var attaque_disponible_1 = 2;
+var attaque_disponible_2 = 2;
+var attaque_disponible_3 = 2;
+var attaque_disponible_4 = 2;
+var defense_disponible_1 = 2;
+var defense_disponible_2 = 2;
+var defense_disponible_3 = 2;
+var defense_disponible_4 = 2;
+var special_disponible_1 = 2;
+var special_disponible_2 = 2;
+var special_disponible_3 = 2;
+var special_disponible_4 = 2;
 var action_attaque
 var pv_monstre_1 = 100;
 var pv_monstre_2 = 100;
@@ -113,6 +124,81 @@ var gel_monstre_1 = false;
 var gel_monstre_2 = false;
 var gel_monstre_3 = false;
 var valeur_foudre = 10;
+
+var grise_bouton = function (){
+	if (perso_tour == 1 && attaque_disponible_1 == 2){
+		bouton_attaque.style.backgroundColor = "";
+	}
+	if (perso_tour == 2 && attaque_disponible_2 == 2){
+		bouton_attaque.style.backgroundColor = "";
+	}
+	if (perso_tour == 3 && attaque_disponible_3 == 2){
+		bouton_attaque.style.backgroundColor = "";
+	}
+	if (perso_tour == 4 && attaque_disponible_4 == 2){
+		bouton_attaque.style.backgroundColor = "";
+	}
+	if (perso_tour == 1 && defense_disponible_1 == 2){
+		bouton_defend.style.backgroundColor = "";
+	}
+	if (perso_tour == 2 && defense_disponible_2 == 2){
+		bouton_defend.style.backgroundColor = "";
+	}
+	if (perso_tour == 3 && defense_disponible_3 == 2){
+		bouton_defend.style.backgroundColor = "";
+	}
+	if (perso_tour == 4 && defense_disponible_4 == 2){
+		bouton_defend.style.backgroundColor = "";
+	}
+	if (perso_tour == 1 && special_disponible_1 == 2){
+		bouton_special.style.backgroundColor = "";
+	}
+	if (perso_tour == 2 && special_disponible_2 == 2){
+		bouton_special.style.backgroundColor = "";
+	}
+	if (perso_tour == 3 && special_disponible_3 == 2){
+		bouton_special.style.backgroundColor = "";
+	}
+	if (perso_tour == 4 && special_disponible_4 == 2){
+		bouton_special.style.backgroundColor = "";
+	}
+	if (perso_tour == 1 && attaque_disponible_1 < 2){
+		bouton_attaque.style.backgroundColor = "#525252";
+	}
+	if (perso_tour == 2 && attaque_disponible_2 < 2){
+		bouton_attaque.style.backgroundColor = "#525252";
+	}
+	if (perso_tour == 3 && attaque_disponible_3 < 2){
+		bouton_attaque.style.backgroundColor = "#525252";
+	}
+	if (perso_tour == 4 && attaque_disponible_4 < 2){
+		bouton_attaque.style.backgroundColor = "#525252";
+	}
+	if (perso_tour == 1 && defense_disponible_1 < 2){
+		bouton_defend.style.backgroundColor = "#525252";
+	}
+	if (perso_tour == 2 && defense_disponible_2 < 2){
+		bouton_defend.style.backgroundColor = "#525252";
+	}
+	if (perso_tour == 3 && special_disponible_3 < 2){
+		bouton_defend.style.backgroundColor = "#525252";
+	}
+	if (perso_tour == 4 && special_disponible_4 < 2){
+		bouton_defend.style.backgroundColor = "#525252";
+	}
+	if (perso_tour == 1 && special_disponible_1 < 2){
+		bouton_special.style.backgroundColor = "#525252";
+	}
+	if (perso_tour == 2 && special_disponible_2 < 2){
+		bouton_special.style.backgroundColor = "#525252";
+	}
+	if (perso_tour == 3 && special_disponible_3 < 2){
+		bouton_special.style.backgroundColor = "#525252";
+	}
+	if (perso_tour == 4 && special_disponible_4 < 2){
+		bouton_special.style.backgroundColor = "#525252";
+	}
+}
 
 function entierAleatoire(min, max){
 	return Math.floor(Math.random() * (max - min + 1)) + min;
@@ -1117,7 +1203,7 @@ var attaque_troisieme_monstre = function(){
 				message_au_centre.style.padding = "10px";
 			}
 			if (attaque_monstre_3 == 2){
-				pdv_heros_3 = pdv_heros_3 + def_heros_3- 40;
+				pdv_heros_3 = pdv_heros_3 + def_heros_3 - 40;
 				valeur_pdv_heros_3.innerHTML = pdv_heros_3;
 				message_attaque.innerHTML = "Jihrah subit " + (40-def_heros_3) + " points de dégâts.";
 				message_au_centre.style.backgroundColor = "rgba(12, 63, 145, 0.6)";
@@ -1287,6 +1373,59 @@ var attaque_troisieme_monstre = function(){
 		special.innerHTML = "Foudre";
 	}
 	gel_monstre_3 = false;
+	if (def_heros_1 == 30) {
+		def_heros_1 = def_heros_1 - 20;
+		valeur_def_heros_1.innerHTML = def_heros_1;
+	}
+	if (def_heros_2 == 30) {
+		def_heros_2 = def_heros_2 - 20;
+		valeur_def_heros_2.innerHTML = def_heros_2;
+	}
+	if (def_heros_3 == 30) {
+		def_heros_3 = def_heros_3 - 20;
+		valeur_def_heros_3.innerHTML = def_heros_3;
+	}
+	if (def_heros_4 == 30) {
+		def_heros_4 = def_heros_4 - 20;
+		valeur_def_heros_4.innerHTML = def_heros_4;
+	}
+	if (attaque_disponible_1 < 2){
+		attaque_disponible_1 = attaque_disponible_1 + 1;
+	}
+	if (attaque_disponible_2 < 2){
+		attaque_disponible_2 = attaque_disponible_2 + 1;
+	}
+	if (attaque_disponible_3 < 2){
+		attaque_disponible_3 = attaque_disponible_3 + 1;
+	}
+	if (attaque_disponible_4 < 2){
+		attaque_disponible_4 = attaque_disponible_4+ 1;
+	}
+	if (defense_disponible_1 < 2){
+		defense_disponible_1 = defense_disponible_1 + 1;
+	}
+	if (defense_disponible_2 < 2){
+		defense_disponible_2 = defense_disponible_2 + 1;
+	}
+	if (defense_disponible_3 < 2){
+		defense_disponible_3 = defense_disponible_3 + 1;
+	}
+	if (defense_disponible_4 < 2){
+		defense_disponible_4 = defense_disponible_4 + 1;
+	}
+	if (special_disponible_1 < 2){
+		special_disponible_1 = special_disponible_1 + 1;
+	}
+	if (special_disponible_2 < 2){
+		special_disponible_2 = special_disponible_2 + 1;
+	}
+	if (special_disponible_3 < 2){
+		special_disponible_3 = special_disponible_3 + 1;
+	}
+	if (special_disponible_4 < 2){
+		special_disponible_4 = special_disponible_4 + 1;
+	}
+
 }
 
 if (perso_tour == 1) {
@@ -1533,21 +1672,81 @@ bouton_monstre_attaque_3.onmouseover = function (){
 }
 
 bouton_attaque.onclick = function atkonclick(){
-	bouton_attaque.style.backgroundImage = "url(../Images/Autre/Button_pressed.png)";
-	bouton_attaque.onmouseout = function (){
-		bouton_attaque.style.backgroundImage = "url(../Images/Autre/Button.png)";
+	if (perso_tour == 1 && attaque_disponible_1 == 2){
+		bouton_attaque.style.backgroundColor = "";
+		bouton_attaque.style.backgroundImage = "url(../Images/Autre/Button_pressed.png)";
+		bouton_attaque.onmouseout = function (){
+			bouton_attaque.style.backgroundImage = "url(../Images/Autre/Button.png)";
+		}
+		if (pv_monstre_1 > 0){
+			bouton_monstre_attaque_1.innerHTML = "Mort-Vivant";
+			bouton_monstre_attaque_1.style.backgroundImage = "url(../Images/Autre/Button.png)";
+		}
+		if (pv_monstre_2 > 0){
+			bouton_monstre_attaque_2.innerHTML = "Minotaure";
+			bouton_monstre_attaque_2.style.backgroundImage = "url(../Images/Autre/Button.png)";
+		}
+		if (pv_monstre_3 > 0){
+			bouton_monstre_attaque_3.innerHTML = "Élémentaire";
+			bouton_monstre_attaque_3.style.backgroundImage = "url(../Images/Autre/Button.png)";
+		}
 	}
-	if (pv_monstre_1 > 0){
-		bouton_monstre_attaque_1.innerHTML = "Mort-Vivant";
-		bouton_monstre_attaque_1.style.backgroundImage = "url(../Images/Autre/Button.png)";
+	if (perso_tour == 2 && attaque_disponible_2 == 2){
+		bouton_attaque.style.backgroundColor = "";
+		bouton_attaque.style.backgroundImage = "url(../Images/Autre/Button_pressed.png)";
+		bouton_attaque.onmouseout = function (){
+			bouton_attaque.style.backgroundImage = "url(../Images/Autre/Button.png)";
+		}
+		if (pv_monstre_1 > 0){
+			bouton_monstre_attaque_1.innerHTML = "Mort-Vivant";
+			bouton_monstre_attaque_1.style.backgroundImage = "url(../Images/Autre/Button.png)";
+		}
+		if (pv_monstre_2 > 0){
+			bouton_monstre_attaque_2.innerHTML = "Minotaure";
+			bouton_monstre_attaque_2.style.backgroundImage = "url(../Images/Autre/Button.png)";
+		}
+		if (pv_monstre_3 > 0){
+			bouton_monstre_attaque_3.innerHTML = "Élémentaire";
+			bouton_monstre_attaque_3.style.backgroundImage = "url(../Images/Autre/Button.png)";
+		}
 	}
-	if (pv_monstre_2 > 0){
-		bouton_monstre_attaque_2.innerHTML = "Minotaure";
-		bouton_monstre_attaque_2.style.backgroundImage = "url(../Images/Autre/Button.png)";
+	if (perso_tour == 3 && attaque_disponible_3 == 2){
+		bouton_attaque.style.backgroundColor = "";
+		bouton_attaque.style.backgroundImage = "url(../Images/Autre/Button_pressed.png)";
+		bouton_attaque.onmouseout = function (){
+			bouton_attaque.style.backgroundImage = "url(../Images/Autre/Button.png)";
+		}
+		if (pv_monstre_1 > 0){
+			bouton_monstre_attaque_1.innerHTML = "Mort-Vivant";
+			bouton_monstre_attaque_1.style.backgroundImage = "url(../Images/Autre/Button.png)";
+		}
+		if (pv_monstre_2 > 0){
+			bouton_monstre_attaque_2.innerHTML = "Minotaure";
+			bouton_monstre_attaque_2.style.backgroundImage = "url(../Images/Autre/Button.png)";
+		}
+		if (pv_monstre_3 > 0){
+			bouton_monstre_attaque_3.innerHTML = "Élémentaire";
+			bouton_monstre_attaque_3.style.backgroundImage = "url(../Images/Autre/Button.png)";
+		}
 	}
-	if (pv_monstre_3 > 0){
-		bouton_monstre_attaque_3.innerHTML = "Élémentaire";
-		bouton_monstre_attaque_3.style.backgroundImage = "url(../Images/Autre/Button.png)";
+	if (perso_tour == 4 && attaque_disponible_4 == 2){
+		bouton_attaque.style.backgroundColor = "";
+		bouton_attaque.style.backgroundImage = "url(../Images/Autre/Button_pressed.png)";
+		bouton_attaque.onmouseout = function (){
+			bouton_attaque.style.backgroundImage = "url(../Images/Autre/Button.png)";
+		}
+		if (pv_monstre_1 > 0){
+			bouton_monstre_attaque_1.innerHTML = "Mort-Vivant";
+			bouton_monstre_attaque_1.style.backgroundImage = "url(../Images/Autre/Button.png)";
+		}
+		if (pv_monstre_2 > 0){
+			bouton_monstre_attaque_2.innerHTML = "Minotaure";
+			bouton_monstre_attaque_2.style.backgroundImage = "url(../Images/Autre/Button.png)";
+		}
+		if (pv_monstre_3 > 0){
+			bouton_monstre_attaque_3.innerHTML = "Élémentaire";
+			bouton_monstre_attaque_3.style.backgroundImage = "url(../Images/Autre/Button.png)";
+		}
 	}
 }
 
@@ -1558,7 +1757,7 @@ bouton_monstre_attaque_1.onclick = function(){
 	bouton_monstre_attaque_2.style.backgroundImage = "url()";
 	bouton_monstre_attaque_3.innerHTML = "";
 	bouton_monstre_attaque_3.style.backgroundImage = "url()";
-	if (perso_tour == 4){
+	if (perso_tour == 4 && attaque_disponible_4 == 2){
 		pv_monstre_1 = pv_monstre_1 - atk_heros_4;
 		message_attaque.innerHTML = "Vous avez infliger " + atk_heros_4 + " points de dégâts au Mort-Vivant."
 		message_au_centre.style.backgroundColor = "rgba(12, 63, 145, 0.6)";
@@ -1573,8 +1772,9 @@ bouton_monstre_attaque_1.onclick = function(){
 		setTimeout(condition_defaite, 10000);
 		setTimeout(condition_victoire, 10000);
 		setTimeout(degats_du_poison, 8000);
+		attaque_disponible_4 = 0;
 	}
-	if (perso_tour == 3){
+	if (perso_tour == 3 && attaque_disponible_3 == 2){
 		pv_monstre_1 = pv_monstre_1 - atk_heros_3;
 		message_attaque.innerHTML = "Vous avez infliger " + atk_heros_3 + " points de dégâts au Mort-Vivant."
 		message_au_centre.style.backgroundColor = "rgba(12, 63, 145, 0.6)";
@@ -1582,6 +1782,7 @@ bouton_monstre_attaque_1.onclick = function(){
 		message_au_centre.style.borderRadius = "10px";
 		message_au_centre.style.padding = "10px";
 		perso_tour = perso_tour + 1;
+		attaque_disponible_3 = 0;
 		if (pdv_heros_4 <= 0){
 			perso_tour = 0;
 			setTimeout(attaque_premier_monstre, 2000);
@@ -1594,7 +1795,7 @@ bouton_monstre_attaque_1.onclick = function(){
 		}
 		setTimeout(clear_message_centre, 2000);
 	}
-	if (perso_tour == 2){
+	if (perso_tour == 2 && attaque_disponible_2 == 2){
 		pv_monstre_1 = pv_monstre_1 - atk_heros_2;
 		message_attaque.innerHTML = "Vous avez infliger " + atk_heros_2 + " points de dégâts au Mort-Vivant."
 		message_au_centre.style.backgroundColor = "rgba(12, 63, 145, 0.6)";
@@ -1602,6 +1803,7 @@ bouton_monstre_attaque_1.onclick = function(){
 		message_au_centre.style.borderRadius = "10px";
 		message_au_centre.style.padding = "10px";
 		perso_tour = perso_tour + 1;
+		attaque_disponible_2 = 0;
 		if (pdv_heros_3 <= 0){
 			perso_tour = perso_tour + 1;
 		}
@@ -1617,7 +1819,7 @@ bouton_monstre_attaque_1.onclick = function(){
 		}
 		setTimeout(clear_message_centre, 2000);
 	}
-	if (perso_tour == 1){
+	if (perso_tour == 1 && attaque_disponible_1 == 2){
 		pv_monstre_1 = pv_monstre_1 - atk_heros_1;
 		message_attaque.innerHTML = "Vous avez infliger " + atk_heros_1 + " points de dégâts au Mort-Vivant."
 		message_au_centre.style.backgroundColor = "rgba(12, 63, 145, 0.6)";
@@ -1625,6 +1827,7 @@ bouton_monstre_attaque_1.onclick = function(){
 		message_au_centre.style.borderRadius = "10px";
 		message_au_centre.style.padding = "10px";
 		perso_tour = perso_tour + 1;
+		attaque_disponible_1 = 0;
 		if (pdv_heros_2 <= 0){
 			perso_tour = perso_tour + 1;
 		} 
@@ -1683,7 +1886,7 @@ bouton_monstre_attaque_2.onclick = function(){
 	bouton_monstre_attaque_2.style.backgroundImage = "url()";
 	bouton_monstre_attaque_3.innerHTML = "";
 	bouton_monstre_attaque_3.style.backgroundImage = "url()";
-	if (perso_tour == 4){
+	if (perso_tour == 4 && attaque_disponible_4 == 2){
 		pv_monstre_2 = pv_monstre_2 - atk_heros_4;
 		message_attaque.innerHTML = "Vous avez infliger " + atk_heros_4 + " points de dégâts au Minotaure."
 		message_au_centre.style.backgroundColor = "rgba(12, 63, 145, 0.6)";
@@ -1691,6 +1894,7 @@ bouton_monstre_attaque_2.onclick = function(){
 		message_au_centre.style.borderRadius = "10px";
 		message_au_centre.style.padding = "10px";
 		perso_tour = 0;
+		attaque_disponible_4 = 0;
 		setTimeout(attaque_premier_monstre, 2000);
 		setTimeout(attaque_second_monstre, 4000);
 		setTimeout(attaque_troisieme_monstre, 6000);
@@ -1698,8 +1902,8 @@ bouton_monstre_attaque_2.onclick = function(){
 		setTimeout(condition_defaite, 10000);
 		setTimeout(condition_victoire, 10000);
 		setTimeout(degats_du_poison, 8000);
-		}
-	if (perso_tour == 3){
+	}
+	if (perso_tour == 3 && attaque_disponible_3 == 2){
 		pv_monstre_2 = pv_monstre_2 - atk_heros_3;
 		message_attaque.innerHTML = "Vous avez infliger " + atk_heros_3 + " points de dégâts au Minotaure."
 		message_au_centre.style.backgroundColor = "rgba(12, 63, 145, 0.6)";
@@ -1707,6 +1911,7 @@ bouton_monstre_attaque_2.onclick = function(){
 		message_au_centre.style.borderRadius = "10px";
 		message_au_centre.style.padding = "10px";
 		perso_tour = perso_tour + 1;
+		attaque_disponible_3 = 0;
 		if (pdv_heros_4 <= 0){
 			perso_tour = 0;
 			setTimeout(attaque_premier_monstre, 2000);
@@ -1719,7 +1924,7 @@ bouton_monstre_attaque_2.onclick = function(){
 		}
 		setTimeout(clear_message_centre, 2000);
 	}
-	if (perso_tour == 2){
+	if (perso_tour == 2 && attaque_disponible_2 == 2){
 		pv_monstre_2 = pv_monstre_2 - atk_heros_2;
 		message_attaque.innerHTML = "Vous avez infliger " + atk_heros_2 + " points de dégâts au Minotaure."
 		message_au_centre.style.backgroundColor = "rgba(12, 63, 145, 0.6)";
@@ -1727,6 +1932,7 @@ bouton_monstre_attaque_2.onclick = function(){
 		message_au_centre.style.borderRadius = "10px";
 		message_au_centre.style.padding = "10px";
 		perso_tour = perso_tour + 1;
+		attaque_disponible_2 = 0;
 		if (pdv_heros_3 <= 0){
 			perso_tour = perso_tour + 1;
 		}
@@ -1742,7 +1948,7 @@ bouton_monstre_attaque_2.onclick = function(){
 		}
 		setTimeout(clear_message_centre, 2000);
 	}
-	if (perso_tour == 1){
+	if (perso_tour == 1 && attaque_disponible_1 == 2){
 		pv_monstre_2 = pv_monstre_2 - atk_heros_1;
 		message_attaque.innerHTML = "Vous avez infliger " + atk_heros_1 + " points de dégâts au Minotaure."
 		message_au_centre.style.backgroundColor = "rgba(12, 63, 145, 0.6)";
@@ -1750,6 +1956,7 @@ bouton_monstre_attaque_2.onclick = function(){
 		message_au_centre.style.borderRadius = "10px";
 		message_au_centre.style.padding = "10px";
 		perso_tour = perso_tour + 1;
+		attaque_disponible_1 = 0;
 		if (pdv_heros_2 <= 0){
 			perso_tour = perso_tour + 1;
 		} 
@@ -1794,7 +2001,35 @@ bouton_monstre_attaque_2.onclick = function(){
 		pointeur_heros_2.style.backgroundImage = "url()";
 		pointeur_heros_3.style.backgroundImage = "url()";
 		pointeur_heros_4.style.backgroundImage = "url(../Images/Autre/Pointer_down.png)";
-	}		
+	}
+	if (perso_tour == 1){
+		pointeur_heros_1.style.backgroundImage = "url(../Images/Autre/Pointer_down.png)";
+		pointeur_heros_2.style.backgroundImage = "url()";
+		pointeur_heros_3.style.backgroundImage = "url()";
+		pointeur_heros_4.style.backgroundImage = "url()";
+		special.innerHTML = "Poison";
+	}
+	if (perso_tour == 2){
+		pointeur_heros_1.style.backgroundImage = "url()";
+		pointeur_heros_2.style.backgroundImage = "url(../Images/Autre/Pointer_down.png)";
+		pointeur_heros_3.style.backgroundImage = "url()";
+		pointeur_heros_4.style.backgroundImage = "url()";
+		special.innerHTML = "Soin";
+	}
+	if (perso_tour == 3){
+		pointeur_heros_1.style.backgroundImage = "url()";
+		pointeur_heros_2.style.backgroundImage = "url()";
+		pointeur_heros_3.style.backgroundImage = "url(../Images/Autre/Pointer_down.png)";
+		pointeur_heros_4.style.backgroundImage = "url()";
+		special.innerHTML = "Gel";
+	}
+	if (perso_tour == 4){
+		pointeur_heros_1.style.backgroundImage = "url()";
+		pointeur_heros_2.style.backgroundImage = "url()";
+		pointeur_heros_3.style.backgroundImage = "url()";
+		pointeur_heros_4.style.backgroundImage = "url(../Images/Autre/Pointer_down.png)";
+		special.innerHTML = "Foudre";
+	}	
 }		
 
 bouton_monstre_attaque_3.onclick = function(){
@@ -1804,7 +2039,7 @@ bouton_monstre_attaque_3.onclick = function(){
 	bouton_monstre_attaque_2.style.backgroundImage = "url()";
 	bouton_monstre_attaque_3.innerHTML = "";
 	bouton_monstre_attaque_3.style.backgroundImage = "url()";
-	if (perso_tour == 4){
+	if (perso_tour == 4 && attaque_disponible_4 == 2){
 		pv_monstre_3 = pv_monstre_3 - atk_heros_4;
 		message_attaque.innerHTML = "Vous avez infliger " + atk_heros_4 + " points de dégâts à l'Élémentaire."
 		message_au_centre.style.backgroundColor = "rgba(12, 63, 145, 0.6)";
@@ -1812,6 +2047,7 @@ bouton_monstre_attaque_3.onclick = function(){
 		message_au_centre.style.borderRadius = "10px";
 		message_au_centre.style.padding = "10px";
 		perso_tour = 0;
+		attaque_disponible_4 = 0;
 		setTimeout(attaque_premier_monstre, 2000);
 		setTimeout(attaque_second_monstre, 4000);
 		setTimeout(attaque_troisieme_monstre, 6000);
@@ -1820,7 +2056,7 @@ bouton_monstre_attaque_3.onclick = function(){
 		setTimeout(condition_victoire, 10000);
 		setTimeout(degats_du_poison, 8000);
 		}
-	if (perso_tour == 3){
+	if (perso_tour == 3 && attaque_disponible_3 == 2){
 		pv_monstre_3 = pv_monstre_3 - atk_heros_3;
 		message_attaque.innerHTML = "Vous avez infliger " + atk_heros_3 + " points de dégâts à l'Élémentaire."
 		message_au_centre.style.backgroundColor = "rgba(12, 63, 145, 0.6)";
@@ -1828,6 +2064,7 @@ bouton_monstre_attaque_3.onclick = function(){
 		message_au_centre.style.borderRadius = "10px";
 		message_au_centre.style.padding = "10px";
 		perso_tour = perso_tour + 1;
+		attaque_disponible_3 = 0;
 		if (pdv_heros_4 <= 0){
 			perso_tour = 0;
 			setTimeout(attaque_premier_monstre, 2000);
@@ -1840,7 +2077,7 @@ bouton_monstre_attaque_3.onclick = function(){
 		}
 		setTimeout(clear_message_centre, 2000);
 	}
-	if (perso_tour == 2){
+	if (perso_tour == 2 && attaque_disponible_2 == 2){
 		pv_monstre_3 = pv_monstre_3 - atk_heros_2;
 		message_attaque.innerHTML = "Vous avez infliger " + atk_heros_2 + " points de dégâts à l'Élémentaire."
 		message_au_centre.style.backgroundColor = "rgba(12, 63, 145, 0.6)";
@@ -1848,6 +2085,7 @@ bouton_monstre_attaque_3.onclick = function(){
 		message_au_centre.style.borderRadius = "10px";
 		message_au_centre.style.padding = "10px";
 		perso_tour = perso_tour + 1;
+		attaque_disponible_2 = 0;
 		if (pdv_heros_3 <= 0){
 			perso_tour = perso_tour + 1;
 		}
@@ -1863,7 +2101,7 @@ bouton_monstre_attaque_3.onclick = function(){
 		}
 		setTimeout(clear_message_centre, 2000);
 	}
-	if (perso_tour == 1){
+	if (perso_tour == 1 && attaque_disponible_1 == 2){
 		pv_monstre_3 = pv_monstre_3 - atk_heros_1;
 		message_attaque.innerHTML = "Vous avez infliger " + atk_heros_1 + " points de dégâts à l'Élémentaire."
 		message_au_centre.style.backgroundColor = "rgba(12, 63, 145, 0.6)";
@@ -1871,6 +2109,7 @@ bouton_monstre_attaque_3.onclick = function(){
 		message_au_centre.style.borderRadius = "10px";
 		message_au_centre.style.padding = "10px";
 		perso_tour = perso_tour + 1;
+		attaque_disponible_1 = 0;
 		if (pdv_heros_2 <= 0){
 			perso_tour = perso_tour + 1;
 		} 
@@ -1915,7 +2154,35 @@ bouton_monstre_attaque_3.onclick = function(){
 		pointeur_heros_2.style.backgroundImage = "url()";
 		pointeur_heros_3.style.backgroundImage = "url()";
 		pointeur_heros_4.style.backgroundImage = "url(../Images/Autre/Pointer_down.png)";
-	}		
+	}
+	if (perso_tour == 1){
+		pointeur_heros_1.style.backgroundImage = "url(../Images/Autre/Pointer_down.png)";
+		pointeur_heros_2.style.backgroundImage = "url()";
+		pointeur_heros_3.style.backgroundImage = "url()";
+		pointeur_heros_4.style.backgroundImage = "url()";
+		special.innerHTML = "Poison";
+	}
+	if (perso_tour == 2){
+		pointeur_heros_1.style.backgroundImage = "url()";
+		pointeur_heros_2.style.backgroundImage = "url(../Images/Autre/Pointer_down.png)";
+		pointeur_heros_3.style.backgroundImage = "url()";
+		pointeur_heros_4.style.backgroundImage = "url()";
+		special.innerHTML = "Soin";
+	}
+	if (perso_tour == 3){
+		pointeur_heros_1.style.backgroundImage = "url()";
+		pointeur_heros_2.style.backgroundImage = "url()";
+		pointeur_heros_3.style.backgroundImage = "url(../Images/Autre/Pointer_down.png)";
+		pointeur_heros_4.style.backgroundImage = "url()";
+		special.innerHTML = "Gel";
+	}
+	if (perso_tour == 4){
+		pointeur_heros_1.style.backgroundImage = "url()";
+		pointeur_heros_2.style.backgroundImage = "url()";
+		pointeur_heros_3.style.backgroundImage = "url()";
+		pointeur_heros_4.style.backgroundImage = "url(../Images/Autre/Pointer_down.png)";
+		special.innerHTML = "Foudre";
+	}
 }		
 
 bouton_defend.onclick = function (){
@@ -1923,14 +2190,16 @@ bouton_defend.onclick = function (){
 	bouton_defend.onmouseout = function (){
 		bouton_defend.style.backgroundImage = "url(../Images/Autre/Button.png)";
 	}
-	if (perso_tour == 4){
-		valeur_def_heros_4.innerHTML = def_heros_4 + 20;
+	if (perso_tour == 4 && defense_disponible_4 == 2){
+		def_heros_4 = def_heros_4 + 20;
+		valeur_def_heros_4.innerHTML = def_heros_4;
 		message_attaque.innerHTML = "Vous augmentez votre défense de 20 points pour ce tour."
 		message_au_centre.style.backgroundColor = "rgba(12, 63, 145, 0.6)";
 		message_au_centre.style.border = "10px solid white";
 		message_au_centre.style.borderRadius = "10px";
 		message_au_centre.style.padding = "10px";
 		perso_tour = 0;
+		defense_disponible_4 = 0;
 		setTimeout(attaque_premier_monstre, 2000);
 		setTimeout(attaque_second_monstre, 4000);
 		setTimeout(attaque_troisieme_monstre, 6000);
@@ -1939,14 +2208,16 @@ bouton_defend.onclick = function (){
 		setTimeout(condition_victoire, 10000);
 		setTimeout(degats_du_poison, 8000);
 	}
-	if (perso_tour == 3){
-		valeur_def_heros_3.innerHTML = def_heros_3 + 20;
+	if (perso_tour == 3 && defense_disponible_3 == 2){
+		def_heros_3 = def_heros_3 + 20;
+		valeur_def_heros_3.innerHTML = def_heros_3;
 		message_attaque.innerHTML = "Vous augmentez votre défense de 20 points pour ce tour."
 		message_au_centre.style.backgroundColor = "rgba(12, 63, 145, 0.6)";
 		message_au_centre.style.border = "10px solid white";
 		message_au_centre.style.borderRadius = "10px";
 		message_au_centre.style.padding = "10px";
 		perso_tour = perso_tour + 1;
+		defense_disponible_3 = 0;
 		if (pdv_heros_4 <= 0){
 			perso_tour = 0;
 			setTimeout(attaque_premier_monstre, 2000);
@@ -1958,14 +2229,16 @@ bouton_defend.onclick = function (){
 			setTimeout(degats_du_poison, 8000);
 		}
 	}
-	if (perso_tour == 2){
-		valeur_def_heros_2.innerHTML = def_heros_2 + 20;
+	if (perso_tour == 2 && defense_disponible_3 == 2){
+		def_heros_2 = def_heros_2 + 20;
+		valeur_def_heros_2.innerHTML = def_heros_2;
 		message_attaque.innerHTML = "Vous augmentez votre défense de 20 points pour ce tour."
 		message_au_centre.style.backgroundColor = "rgba(12, 63, 145, 0.6)";
 		message_au_centre.style.border = "10px solid white";
 		message_au_centre.style.borderRadius = "10px";
 		message_au_centre.style.padding = "10px";
 		perso_tour = perso_tour + 1;
+		defense_disponible_2 = 0;
 		if (pdv_heros_3 <= 0){
 			perso_tour = perso_tour + 1;
 		}
@@ -1980,14 +2253,16 @@ bouton_defend.onclick = function (){
 			setTimeout(degats_du_poison, 8000);
 		}
 	}
-	if (perso_tour == 1){
-		valeur_def_heros_1.innerHTML = def_heros_1 + 20;
+	if (perso_tour == 1 && defense_disponible_1 == 2){
+		def_heros_1 = def_heros_1 + 20;
+		valeur_def_heros_1.innerHTML = def_heros_1;
 		message_attaque.innerHTML = "Vous augmentez votre défense de 20 points pour ce tour."
 		message_au_centre.style.backgroundColor = "rgba(12, 63, 145, 0.6)";
 		message_au_centre.style.border = "10px solid white";
 		message_au_centre.style.borderRadius = "10px";
 		message_au_centre.style.padding = "10px";
 		perso_tour = perso_tour + 1;
+		defense_disponible_1 = 0;
 		if (pdv_heros_2 <= 0){
 			perso_tour = perso_tour + 1;
 		} 
@@ -2050,6 +2325,34 @@ bouton_defend.onclick = function (){
 		message_attaque.innerHTML = ""; 
 		message_au_centre.style.border = ""; 
 		message_au_centre.style.padding = "";}, 2500);
+	if (perso_tour == 1){
+		pointeur_heros_1.style.backgroundImage = "url(../Images/Autre/Pointer_down.png)";
+		pointeur_heros_2.style.backgroundImage = "url()";
+		pointeur_heros_3.style.backgroundImage = "url()";
+		pointeur_heros_4.style.backgroundImage = "url()";
+		special.innerHTML = "Poison";
+	}
+	if (perso_tour == 2){
+		pointeur_heros_1.style.backgroundImage = "url()";
+		pointeur_heros_2.style.backgroundImage = "url(../Images/Autre/Pointer_down.png)";
+		pointeur_heros_3.style.backgroundImage = "url()";
+		pointeur_heros_4.style.backgroundImage = "url()";
+		special.innerHTML = "Soin";
+	}
+	if (perso_tour == 3){
+		pointeur_heros_1.style.backgroundImage = "url()";
+		pointeur_heros_2.style.backgroundImage = "url()";
+		pointeur_heros_3.style.backgroundImage = "url(../Images/Autre/Pointer_down.png)";
+		pointeur_heros_4.style.backgroundImage = "url()";
+		special.innerHTML = "Gel";
+	}
+	if (perso_tour == 4){
+		pointeur_heros_1.style.backgroundImage = "url()";
+		pointeur_heros_2.style.backgroundImage = "url()";
+		pointeur_heros_3.style.backgroundImage = "url()";
+		pointeur_heros_4.style.backgroundImage = "url(../Images/Autre/Pointer_down.png)";
+		special.innerHTML = "Foudre";
+	}
 }
 
 bouton_monstre_special_1.onclick = function(){
@@ -2139,7 +2442,35 @@ bouton_monstre_special_1.onclick = function(){
 		pointeur_heros_3.style.backgroundImage = "url()";
 		pointeur_heros_4.style.backgroundImage = "url(../Images/Autre/Pointer_down.png)";
 		special.innerHTML = "Foudre";
-	}	
+	}
+	if (perso_tour == 1){
+		pointeur_heros_1.style.backgroundImage = "url(../Images/Autre/Pointer_down.png)";
+		pointeur_heros_2.style.backgroundImage = "url()";
+		pointeur_heros_3.style.backgroundImage = "url()";
+		pointeur_heros_4.style.backgroundImage = "url()";
+		special.innerHTML = "Poison";
+	}
+	if (perso_tour == 2){
+		pointeur_heros_1.style.backgroundImage = "url()";
+		pointeur_heros_2.style.backgroundImage = "url(../Images/Autre/Pointer_down.png)";
+		pointeur_heros_3.style.backgroundImage = "url()";
+		pointeur_heros_4.style.backgroundImage = "url()";
+		special.innerHTML = "Soin";
+	}
+	if (perso_tour == 3){
+		pointeur_heros_1.style.backgroundImage = "url()";
+		pointeur_heros_2.style.backgroundImage = "url()";
+		pointeur_heros_3.style.backgroundImage = "url(../Images/Autre/Pointer_down.png)";
+		pointeur_heros_4.style.backgroundImage = "url()";
+		special.innerHTML = "Gel";
+	}
+	if (perso_tour == 4){
+		pointeur_heros_1.style.backgroundImage = "url()";
+		pointeur_heros_2.style.backgroundImage = "url()";
+		pointeur_heros_3.style.backgroundImage = "url()";
+		pointeur_heros_4.style.backgroundImage = "url(../Images/Autre/Pointer_down.png)";
+		special.innerHTML = "Foudre";
+	}
 }
 
 bouton_monstre_special_2.onclick = function(){
@@ -2229,7 +2560,35 @@ bouton_monstre_special_2.onclick = function(){
 		pointeur_heros_3.style.backgroundImage = "url()";
 		pointeur_heros_4.style.backgroundImage = "url(../Images/Autre/Pointer_down.png)";
 		special.innerHTML = "Foudre";
-	}	
+	}
+	if (perso_tour == 1){
+		pointeur_heros_1.style.backgroundImage = "url(../Images/Autre/Pointer_down.png)";
+		pointeur_heros_2.style.backgroundImage = "url()";
+		pointeur_heros_3.style.backgroundImage = "url()";
+		pointeur_heros_4.style.backgroundImage = "url()";
+		special.innerHTML = "Poison";
+	}
+	if (perso_tour == 2){
+		pointeur_heros_1.style.backgroundImage = "url()";
+		pointeur_heros_2.style.backgroundImage = "url(../Images/Autre/Pointer_down.png)";
+		pointeur_heros_3.style.backgroundImage = "url()";
+		pointeur_heros_4.style.backgroundImage = "url()";
+		special.innerHTML = "Soin";
+	}
+	if (perso_tour == 3){
+		pointeur_heros_1.style.backgroundImage = "url()";
+		pointeur_heros_2.style.backgroundImage = "url()";
+		pointeur_heros_3.style.backgroundImage = "url(../Images/Autre/Pointer_down.png)";
+		pointeur_heros_4.style.backgroundImage = "url()";
+		special.innerHTML = "Gel";
+	}
+	if (perso_tour == 4){
+		pointeur_heros_1.style.backgroundImage = "url()";
+		pointeur_heros_2.style.backgroundImage = "url()";
+		pointeur_heros_3.style.backgroundImage = "url()";
+		pointeur_heros_4.style.backgroundImage = "url(../Images/Autre/Pointer_down.png)";
+		special.innerHTML = "Foudre";
+	}
 }
 
 bouton_monstre_special_3.onclick = function(){
@@ -2320,6 +2679,34 @@ bouton_monstre_special_3.onclick = function(){
 		pointeur_heros_4.style.backgroundImage = "url(../Images/Autre/Pointer_down.png)";
 		special.innerHTML = "Foudre";
 	}	
+	if (perso_tour == 1){
+		pointeur_heros_1.style.backgroundImage = "url(../Images/Autre/Pointer_down.png)";
+		pointeur_heros_2.style.backgroundImage = "url()";
+		pointeur_heros_3.style.backgroundImage = "url()";
+		pointeur_heros_4.style.backgroundImage = "url()";
+		special.innerHTML = "Poison";
+	}
+	if (perso_tour == 2){
+		pointeur_heros_1.style.backgroundImage = "url()";
+		pointeur_heros_2.style.backgroundImage = "url(../Images/Autre/Pointer_down.png)";
+		pointeur_heros_3.style.backgroundImage = "url()";
+		pointeur_heros_4.style.backgroundImage = "url()";
+		special.innerHTML = "Soin";
+	}
+	if (perso_tour == 3){
+		pointeur_heros_1.style.backgroundImage = "url()";
+		pointeur_heros_2.style.backgroundImage = "url()";
+		pointeur_heros_3.style.backgroundImage = "url(../Images/Autre/Pointer_down.png)";
+		pointeur_heros_4.style.backgroundImage = "url()";
+		special.innerHTML = "Gel";
+	}
+	if (perso_tour == 4){
+		pointeur_heros_1.style.backgroundImage = "url()";
+		pointeur_heros_2.style.backgroundImage = "url()";
+		pointeur_heros_3.style.backgroundImage = "url()";
+		pointeur_heros_4.style.backgroundImage = "url(../Images/Autre/Pointer_down.png)";
+		special.innerHTML = "Foudre";
+	}
 }
 
 bouton_special.onclick = function (){
@@ -2363,7 +2750,7 @@ bouton_special.onclick = function (){
 			bouton_special.style.backgroundImage = "url(../Images/Autre/Button.png)";
 		}
 	}
-	if (perso_tour == 4){
+	if (perso_tour == 4 && special_disponible_4 == 2){
 		if (mana_heros_4 < 30){
 			return;
 		} else {
@@ -2378,6 +2765,7 @@ bouton_special.onclick = function (){
 			message_au_centre.style.borderRadius = "10px";
 			message_au_centre.style.padding = "10px";
 			perso_tour = 0;
+			special_disponible_4 = 0;
 			setTimeout(attaque_premier_monstre, 2000);
 			setTimeout(attaque_second_monstre, 4000);
 			setTimeout(attaque_troisieme_monstre, 6000);
@@ -2387,7 +2775,7 @@ bouton_special.onclick = function (){
 			setTimeout(degats_du_poison, 8000);
 		}
 	}
-	if (perso_tour == 3){
+	if (perso_tour == 3, special_disponible_3 == 2){
 		if (mana_heros_3 < 40){
 			return;
 		} else {
@@ -2404,8 +2792,9 @@ bouton_special.onclick = function (){
 				bouton_monstre_special_3.style.backgroundImage = "url(../Images/Autre/Button.png)";
 			}
 		}
+		special_disponible_3 = 0;
 	}
-	if (perso_tour == 2){
+	if (perso_tour == 2 && special_disponible_2 == 2){
 		if (mana_heros_2 < 25){
 			return;
 		} else {
@@ -2479,8 +2868,9 @@ bouton_special.onclick = function (){
 			setTimeout(degats_du_poison, 8000);
 		}
 		setTimeout(clear_message_centre, 2000);
+		special_disponible_2 = 0;
 	}
-	if (perso_tour == 1){
+	if (perso_tour == 1 && special_disponible_1 == 2){
 		if (mana_heros_1 < 40){
 			return;
 		} else {
@@ -2497,6 +2887,7 @@ bouton_special.onclick = function (){
 				bouton_monstre_special_3.style.backgroundImage = "url(../Images/Autre/Button.png)";
 			}
 		}
+		special_disponible_1 = 0;
 	}
 	if (perso_tour == 0){
 		perso_tour = 1;
