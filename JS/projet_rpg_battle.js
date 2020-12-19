@@ -90,7 +90,6 @@ var special_disponible_1 = 2;
 var special_disponible_2 = 2;
 var special_disponible_3 = 2;
 var special_disponible_4 = 2;
-var action_attaque
 var pv_monstre_1 = 100;
 var pv_monstre_2 = 100;
 var pv_monstre_3 = 100;
@@ -117,13 +116,14 @@ var monstre_2_poison = 0;
 var monstre_3_poison = 0;
 var tour_poison = 0;
 var degats_poison = 10;
-var tableau_pdv_heros = [pdv_heros_1, pdv_heros_2, pdv_heros_3, pdv_heros_4];
+/*var tableau_pdv_heros = [pdv_heros_1, pdv_heros_2, pdv_heros_3, pdv_heros_4];*/
 var min_pdv = 0;
 var valeur_soin = 20;
 var gel_monstre_1 = false;
 var gel_monstre_2 = false;
 var gel_monstre_3 = false;
 var valeur_foudre = 10;
+
 
 var grise_bouton = function (){
 	if (perso_tour == 1 && attaque_disponible_1 == 2){
@@ -608,6 +608,7 @@ var attaque_premier_monstre = function(){
 		monstre_1.style.background = "url()";
 	}
 	gel_monstre_1 = false;
+	grise_bouton();
 }
 
 var attaque_second_monstre = function(){
@@ -971,6 +972,7 @@ var attaque_second_monstre = function(){
 		monstre_2.style.background = "url()";
 	}
 	gel_monstre_2 = false;
+	grise_bouton();
 }
 
 var attaque_troisieme_monstre = function(){
@@ -1426,7 +1428,6 @@ var attaque_troisieme_monstre = function(){
 		special_disponible_4 = special_disponible_4 + 1;
 	}
 	grise_bouton();
-
 }
 
 if (perso_tour == 1) {
@@ -1749,7 +1750,6 @@ bouton_attaque.onclick = function atkonclick(){
 			bouton_monstre_attaque_3.style.backgroundImage = "url(../Images/Autre/Button.png)";
 		}
 	}
-	grise_bouton();
 }
 
 bouton_monstre_attaque_1.onclick = function(){
@@ -1785,6 +1785,7 @@ bouton_monstre_attaque_1.onclick = function(){
 		message_au_centre.style.padding = "10px";
 		perso_tour = perso_tour + 1;
 		attaque_disponible_3 = 0;
+		grise_bouton();
 		if (pdv_heros_4 <= 0){
 			perso_tour = 0;
 			setTimeout(attaque_premier_monstre, 2000);
@@ -1809,6 +1810,7 @@ bouton_monstre_attaque_1.onclick = function(){
 		if (pdv_heros_3 <= 0){
 			perso_tour = perso_tour + 1;
 		}
+		grise_bouton();
 		if (pdv_heros_3 <= 0 && pdv_heros_4 <= 0){
 			perso_tour = 0;
 			setTimeout(attaque_premier_monstre, 2000);
@@ -1836,6 +1838,7 @@ bouton_monstre_attaque_1.onclick = function(){
 		if (pdv_heros_3 <= 0){
 			perso_tour = perso_tour + 1;
 		}
+		grise_bouton();
 		if (pdv_heros_2 <= 0 && pdv_heros_3 <= 0 && pdv_heros_4 <= 0){
 			perso_tour = 0;
 			setTimeout(attaque_premier_monstre, 2000);
@@ -1850,6 +1853,7 @@ bouton_monstre_attaque_1.onclick = function(){
 	}
 	if (perso_tour == 0){
 		perso_tour = 1;
+		grise_bouton();
 	}
 	if (perso_tour == 1){
 		pointeur_heros_1.style.backgroundImage = "url(../Images/Autre/Pointer_down.png)";
@@ -1914,6 +1918,7 @@ bouton_monstre_attaque_2.onclick = function(){
 		message_au_centre.style.padding = "10px";
 		perso_tour = perso_tour + 1;
 		attaque_disponible_3 = 0;
+		grise_bouton();
 		if (pdv_heros_4 <= 0){
 			perso_tour = 0;
 			setTimeout(attaque_premier_monstre, 2000);
@@ -1938,6 +1943,7 @@ bouton_monstre_attaque_2.onclick = function(){
 		if (pdv_heros_3 <= 0){
 			perso_tour = perso_tour + 1;
 		}
+		grise_bouton();
 		if (pdv_heros_3 <= 0 && pdv_heros_4 <= 0){
 			perso_tour = 0;
 			setTimeout(attaque_premier_monstre, 2000);
@@ -1965,6 +1971,7 @@ bouton_monstre_attaque_2.onclick = function(){
 		if (pdv_heros_3 <= 0){
 			perso_tour = perso_tour + 1;
 		}
+		grise_bouton();
 		if (pdv_heros_2 <= 0 && pdv_heros_3 <= 0 && pdv_heros_4 <= 0){
 			perso_tour = 0;
 			setTimeout(attaque_premier_monstre, 2000);
@@ -1979,6 +1986,7 @@ bouton_monstre_attaque_2.onclick = function(){
 	}
 	if (perso_tour == 0){
 		perso_tour = 1;
+		grise_bouton();
 	}
 	if (perso_tour == 1){
 		pointeur_heros_1.style.backgroundImage = "url(../Images/Autre/Pointer_down.png)";
@@ -2067,6 +2075,7 @@ bouton_monstre_attaque_3.onclick = function(){
 		message_au_centre.style.padding = "10px";
 		perso_tour = perso_tour + 1;
 		attaque_disponible_3 = 0;
+		grise_bouton();
 		if (pdv_heros_4 <= 0){
 			perso_tour = 0;
 			setTimeout(attaque_premier_monstre, 2000);
@@ -2091,6 +2100,7 @@ bouton_monstre_attaque_3.onclick = function(){
 		if (pdv_heros_3 <= 0){
 			perso_tour = perso_tour + 1;
 		}
+		grise_bouton();
 		if (pdv_heros_3 <= 0 && pdv_heros_4 <= 0){
 			perso_tour = 0;
 			setTimeout(attaque_premier_monstre, 2000);
@@ -2118,6 +2128,7 @@ bouton_monstre_attaque_3.onclick = function(){
 		if (pdv_heros_3 <= 0){
 			perso_tour = perso_tour + 1;
 		}
+		grise_bouton();
 		if (pdv_heros_2 <= 0 && pdv_heros_3 <= 0 && pdv_heros_4 <= 0){
 			perso_tour = 0;
 			setTimeout(attaque_premier_monstre, 2000);
@@ -2132,6 +2143,7 @@ bouton_monstre_attaque_3.onclick = function(){
 	}
 	if (perso_tour == 0){
 		perso_tour = 1;
+		grise_bouton();
 	}
 	if (perso_tour == 1){
 		pointeur_heros_1.style.backgroundImage = "url(../Images/Autre/Pointer_down.png)";
@@ -2220,6 +2232,7 @@ bouton_defend.onclick = function (){
 		message_au_centre.style.padding = "10px";
 		perso_tour = perso_tour + 1;
 		defense_disponible_3 = 0;
+		grise_bouton();
 		if (pdv_heros_4 <= 0){
 			perso_tour = 0;
 			setTimeout(attaque_premier_monstre, 2000);
@@ -2231,7 +2244,7 @@ bouton_defend.onclick = function (){
 			setTimeout(degats_du_poison, 8000);
 		}
 	}
-	if (perso_tour == 2 && defense_disponible_3 == 2){
+	if (perso_tour == 2 && defense_disponible_2 == 2){
 		def_heros_2 = def_heros_2 + 20;
 		valeur_def_heros_2.innerHTML = def_heros_2;
 		message_attaque.innerHTML = "Vous augmentez votre défense de 20 points pour ce tour."
@@ -2244,6 +2257,7 @@ bouton_defend.onclick = function (){
 		if (pdv_heros_3 <= 0){
 			perso_tour = perso_tour + 1;
 		}
+		grise_bouton();
 		if (pdv_heros_3 <= 0 && pdv_heros_4 <= 0){
 			perso_tour = 0;
 			setTimeout(attaque_premier_monstre, 2000);
@@ -2271,6 +2285,7 @@ bouton_defend.onclick = function (){
 		if (pdv_heros_3 <= 0){
 			perso_tour = perso_tour + 1;
 		}
+		grise_bouton();
 		if (pdv_heros_2 <= 0 && pdv_heros_3 <= 0 && pdv_heros_4 <= 0){
 			perso_tour = 0;
 			setTimeout(attaque_premier_monstre, 2000);
@@ -2284,15 +2299,7 @@ bouton_defend.onclick = function (){
 	}
 	if (perso_tour == 0){
 		perso_tour = 1;
-		if (pdv_heros_1 <= 0){
-			perso_tour = perso_tour + 1;
-		}
-		if (pdv_heros_2 <= 0){
-			perso_tour = perso_tour + 1;
-		}
-		if (pdv_heros_3 <= 0){
-			perso_tour = perso_tour + 1;
-		}
+		grise_bouton();
 	}
 	if (perso_tour == 1){
 		pointeur_heros_1.style.backgroundImage = "url(../Images/Autre/Pointer_down.png)";
@@ -2355,7 +2362,6 @@ bouton_defend.onclick = function (){
 		pointeur_heros_4.style.backgroundImage = "url(../Images/Autre/Pointer_down.png)";
 		special.innerHTML = "Foudre";
 	}
-	grise_bouton();
 }
 
 bouton_monstre_special_1.onclick = function(){
@@ -2373,6 +2379,8 @@ bouton_monstre_special_1.onclick = function(){
 		message_au_centre.style.borderRadius = "10px";
 		message_au_centre.style.padding = "10px";
 		perso_tour = perso_tour + 1;
+		special_disponible_3 = 0;
+		grise_bouton();
 		mana_heros_3 = mana_heros_3 - 40;
 		valeur_mana_heros_3.innerHTML = mana_heros_3;
 		setTimeout(clear_message_centre, 2000);
@@ -2404,6 +2412,8 @@ bouton_monstre_special_1.onclick = function(){
 		if (pdv_heros_3 <= 0){
 			perso_tour = perso_tour + 1;
 		}
+		special_disponible_1 = 0;
+		grise_bouton();
 		if (pdv_heros_2 <= 0 && pdv_heros_3 <= 0 && pdv_heros_4 <= 0){
 			perso_tour = 0;
 			setTimeout(attaque_premier_monstre, 2000);
@@ -2417,6 +2427,7 @@ bouton_monstre_special_1.onclick = function(){
 	}
 	if (perso_tour == 0){
 		perso_tour = 1;
+		grise_bouton();
 	}
 	if (perso_tour == 1){
 		pointeur_heros_1.style.backgroundImage = "url(../Images/Autre/Pointer_down.png)";
@@ -2491,6 +2502,8 @@ bouton_monstre_special_2.onclick = function(){
 		message_au_centre.style.borderRadius = "10px";
 		message_au_centre.style.padding = "10px";
 		perso_tour = perso_tour + 1;
+		special_disponible_3 = 0;
+		grise_bouton();
 		mana_heros_3 = mana_heros_3 - 40;
 		valeur_mana_heros_3.innerHTML = mana_heros_3;
 		if (pdv_heros_4 <= 0){
@@ -2521,6 +2534,8 @@ bouton_monstre_special_2.onclick = function(){
 		if (pdv_heros_3 <= 0){
 			perso_tour = perso_tour + 1;
 		}
+		special_disponible_1 = 0;
+		grise_bouton();
 		if (pdv_heros_2 <= 0 && pdv_heros_3 <= 0 && pdv_heros_4 <= 0){
 			perso_tour = 0;
 			setTimeout(attaque_premier_monstre, 2000);
@@ -2609,6 +2624,8 @@ bouton_monstre_special_3.onclick = function(){
 		message_au_centre.style.borderRadius = "10px";
 		message_au_centre.style.padding = "10px";
 		perso_tour = perso_tour + 1;
+		special_disponible_3 = 0;
+		grise_bouton();
 		mana_heros_3 = mana_heros_3 - 40;
 		valeur_mana_heros_3.innerHTML = mana_heros_3;
 		if (pdv_heros_4 <= 0){
@@ -2639,6 +2656,8 @@ bouton_monstre_special_3.onclick = function(){
 		if (pdv_heros_3 <= 0){
 			perso_tour = perso_tour + 1;
 		}
+		special_disponible_1 = 0;
+		grise_bouton();
 		if (pdv_heros_2 <= 0 && pdv_heros_3 <= 0 && pdv_heros_4 <= 0){
 			perso_tour = 0;
 			setTimeout(attaque_premier_monstre, 2000);
@@ -2778,10 +2797,11 @@ bouton_special.onclick = function (){
 			setTimeout(degats_du_poison, 8000);
 		}
 	}
-	if (perso_tour == 3, special_disponible_3 == 2){
+	if (perso_tour == 3 && special_disponible_3 == 2){
 		if (mana_heros_3 < 40){
 			return;
-		} else {
+		} 
+		if (mana_heros_3 > 39) {
 			if (pv_monstre_1 > 0){
 				bouton_monstre_special_1.innerHTML = "Mort-Vivant";
 				bouton_monstre_special_1.style.backgroundImage = "url(../Images/Autre/Button.png)";
@@ -2795,7 +2815,6 @@ bouton_special.onclick = function (){
 				bouton_monstre_special_3.style.backgroundImage = "url(../Images/Autre/Button.png)";
 			}
 		}
-		special_disponible_3 = 0;
 	}
 	if (perso_tour == 2 && special_disponible_2 == 2){
 		if (mana_heros_2 < 25){
@@ -2803,55 +2822,430 @@ bouton_special.onclick = function (){
 		} else {
 			mana_heros_2 = mana_heros_2 - 25;
 			valeur_mana_heros_2.innerHTML = mana_heros_2;
-			for(var i = 0; i <= 2; i++){
-				if(tableau_pdv_heros[i+1] > tableau_pdv_heros[i]){
-					min_pdv = i;
-				} else if (tableau_pdv_heros[i+1] < tableau_pdv_heros[i]){
-					min_pdv = i+1;
-					tableau_pdv_heros[i]=tableau_pdv_heros[i+1];
+			var compteur_heros_en_vie = 0;
+			if (pdv_heros_1 > 0){
+				compteur_heros_en_vie = compteur_heros_en_vie + 1;
+			}
+			if (pdv_heros_2 > 0){
+				compteur_heros_en_vie = compteur_heros_en_vie + 1;
+			}
+			if (pdv_heros_3 > 0){
+				compteur_heros_en_vie = compteur_heros_en_vie + 1;
+			}
+			if (pdv_heros_4 > 0){
+				compteur_heros_en_vie = compteur_heros_en_vie + 1;
+			}
+			if (compteur_heros_en_vie == 4){
+				var tableau_pdv_heros = [pdv_heros_1, pdv_heros_2, pdv_heros_3, pdv_heros_4];
+				for(var i = 0; i <= 2; i++){
+					if(tableau_pdv_heros[i+1] > tableau_pdv_heros[i]){
+						min_pdv = i;
+					} else if (tableau_pdv_heros[i+1] < tableau_pdv_heros[i]){
+						min_pdv = i+1;
+						tableau_pdv_heros[i]=tableau_pdv_heros[i+1];
+					}
+				}
+				if (min_pdv == 0){
+					if(pdv_heros_1 > 79){
+						pdv_heros_1 = 100;
+						message_attaque.innerHTML = "Vous avez soigné Kai de " + 100-pdv_heros_1 + " points de vie.";
+					} else {
+						pdv_heros_1 = pdv_heros_1 + valeur_soin;
+						message_attaque.innerHTML = "Vous avez soigné Kai de "  + valeur_soin +" points de vie.";
+					}
+					valeur_pdv_heros_1.innerHTML = pdv_heros_1;
+				}
+				if (min_pdv == 1){
+					if(pdv_heros_2 > 79){
+						pdv_heros_2 = 100;
+						message_attaque.innerHTML = "Vous avez soigné Gezek de " + 100-pdv_heros_1 + " points de vie.";
+					} else {
+						pdv_heros_2 = pdv_heros_2 + valeur_soin;
+						message_attaque.innerHTML = "Vous avez soigné Gezek de "  + valeur_soin +" points de vie.";
+					}
+					valeur_pdv_heros_2.innerHTML = pdv_heros_2;
+				}
+				if (min_pdv == 2){
+					if(pdv_heros_3 > 79){
+						pdv_heros_3 = 100;
+						message_attaque.innerHTML = "Vous avez soigné Jihrah de " + 100-pdv_heros_1 + " points de vie.";
+					} else {
+						pdv_heros_3 = pdv_heros_3 + valeur_soin;
+						message_attaque.innerHTML = "Vous avez soigné Jihrah de "  + valeur_soin +" points de vie.";
+					}
+					valeur_pdv_heros_3.innerHTML = pdv_heros_3;
+				}
+				if (min_pdv == 3){
+					if(pdv_heros_4 > 79){
+						pdv_heros_4 = 100;
+						message_attaque.innerHTML = "Vous avez soigné Helnes de " + 100-pdv_heros_1 + " points de vie.";
+					} else {
+						pdv_heros_4 = pdv_heros_4 + valeur_soin;
+						message_attaque.innerHTML = "Vous avez soigné Helnes de "  + valeur_soin +" points de vie.";
+					}
+					valeur_pdv_heros_4.innerHTML = pdv_heros_4;
 				}
 			}
-			if (min_pdv == 0){
-				if(pdv_heros_1 > 79){
-					pdv_heros_1 = 100;
-					message_attaque.innerHTML = "Vous avez soigné Kai de " + 100-pdv_heros_1 + " points de vie.";
-				} else {
-					pdv_heros_1 = pdv_heros_1 + valeur_soin;
-					message_attaque.innerHTML = "Vous avez soigné Kai de "  + valeur_soin +" points de vie.";
+			if (compteur_heros_en_vie == 3){
+				if (pdv_heros_1 > 0 && pdv_heros_2 > 0 && pdv_heros_3 > 0){
+					var tableau_pdv_heros = [pdv_heros_1, pdv_heros_2, pdv_heros_3];
+					for(var i = 0; i <= 1; i++){
+						if(tableau_pdv_heros[i+1] > tableau_pdv_heros[i]){
+							min_pdv = i;
+						} else if (tableau_pdv_heros[i+1] < tableau_pdv_heros[i]){
+							min_pdv = i+1;
+							tableau_pdv_heros[i]=tableau_pdv_heros[i+1];
+						}
+					}
+					if (min_pdv == 0){
+						if(pdv_heros_1 > 79){
+							pdv_heros_1 = 100;
+							message_attaque.innerHTML = "Vous avez soigné Kai de " + 100-pdv_heros_1 + " points de vie.";
+						} else {
+							pdv_heros_1 = pdv_heros_1 + valeur_soin;
+							message_attaque.innerHTML = "Vous avez soigné Kai de "  + valeur_soin +" points de vie.";
+						}
+						valeur_pdv_heros_1.innerHTML = pdv_heros_1;
+					}
+					if (min_pdv == 1){
+						if(pdv_heros_2 > 79){
+							pdv_heros_2 = 100;
+							message_attaque.innerHTML = "Vous avez soigné Gezek de " + 100-pdv_heros_2 + " points de vie.";
+						} else {
+							pdv_heros_2 = pdv_heros_2 + valeur_soin;
+							message_attaque.innerHTML = "Vous avez soigné Gezek de "  + valeur_soin +" points de vie.";
+						}
+						valeur_pdv_heros_2.innerHTML = pdv_heros_2;
+					}
+					if (min_pdv == 2){
+						if(pdv_heros_3 > 79){
+							pdv_heros_3 = 100;
+							message_attaque.innerHTML = "Vous avez soigné Jihrah de " + 100-pdv_heros_3 + " points de vie.";
+						} else {
+							pdv_heros_3 = pdv_heros_3 + valeur_soin;
+							message_attaque.innerHTML = "Vous avez soigné Jihrah de "  + valeur_soin +" points de vie.";
+						}
+						valeur_pdv_heros_3.innerHTML = pdv_heros_3;
+					}
 				}
-				valeur_pdv_heros_1.innerHTML = pdv_heros_1;
-			}
-			if (min_pdv == 1){
-				if(pdv_heros_2 > 79){
-					pdv_heros_2 = 100;
-					message_attaque.innerHTML = "Vous avez soigné Gezek de " + 100-pdv_heros_1 + " points de vie.";
-				} else {
-					pdv_heros_2 = pdv_heros_2 + valeur_soin;
-					message_attaque.innerHTML = "Vous avez soigné Gezek de "  + valeur_soin +" points de vie.";
+				if (pdv_heros_1 > 0 && pdv_heros_2 > 0 && pdv_heros_4 > 0){
+					var tableau_pdv_heros = [pdv_heros_1, pdv_heros_2, pdv_heros_4];
+					for(var i = 0; i <= 1; i++){
+						if(tableau_pdv_heros[i+1] > tableau_pdv_heros[i]){
+							min_pdv = i;
+						} else if (tableau_pdv_heros[i+1] < tableau_pdv_heros[i]){
+							min_pdv = i+1;
+							tableau_pdv_heros[i]=tableau_pdv_heros[i+1];
+						}
+					}
+					if (min_pdv == 0){
+						if(pdv_heros_1 > 79){
+							pdv_heros_1 = 100;
+							message_attaque.innerHTML = "Vous avez soigné Kai de " + 100-pdv_heros_1 + " points de vie.";
+						} else {
+							pdv_heros_1 = pdv_heros_1 + valeur_soin;
+							message_attaque.innerHTML = "Vous avez soigné Kai de "  + valeur_soin +" points de vie.";
+						}
+						valeur_pdv_heros_1.innerHTML = pdv_heros_1;
+					}
+					if (min_pdv == 1){
+						if(pdv_heros_2 > 79){
+							pdv_heros_2 = 100;
+							message_attaque.innerHTML = "Vous avez soigné Gezek de " + 100-pdv_heros_2 + " points de vie.";
+						} else {
+							pdv_heros_2 = pdv_heros_2 + valeur_soin;
+							message_attaque.innerHTML = "Vous avez soigné Gezek de "  + valeur_soin +" points de vie.";
+						}
+						valeur_pdv_heros_2.innerHTML = pdv_heros_2;
+					}
+					if (min_pdv == 2){
+						if(pdv_heros_4 > 79){
+							pdv_heros_4 = 100;
+							message_attaque.innerHTML = "Vous avez soigné Helnes de " + 100-pdv_heros_4 + " points de vie.";
+						} else {
+							pdv_heros_4 = pdv_heros_4 + valeur_soin;
+							message_attaque.innerHTML = "Vous avez soigné Helnes de "  + valeur_soin +" points de vie.";
+						}
+						valeur_pdv_heros_3.innerHTML = pdv_heros_3;
+					}
 				}
-				valeur_pdv_heros_2.innerHTML = pdv_heros_2;
-			}
-			if (min_pdv == 2){
-				if(pdv_heros_3 > 79){
-					pdv_heros_3 = 100;
-					message_attaque.innerHTML = "Vous avez soigné Jihrah de " + 100-pdv_heros_1 + " points de vie.";
-				} else {
-					pdv_heros_3 = pdv_heros_3 + valeur_soin;
-					message_attaque.innerHTML = "Vous avez soigné Jihrah de "  + valeur_soin +" points de vie.";
+				if (pdv_heros_1 > 0 && pdv_heros_3 > 0 && pdv_heros_4 > 0){
+					var tableau_pdv_heros = [pdv_heros_1, pdv_heros_3, pdv_heros_4];
+					for(var i = 0; i <= 1; i++){
+						if(tableau_pdv_heros[i+1] > tableau_pdv_heros[i]){
+							min_pdv = i;
+						} else if (tableau_pdv_heros[i+1] < tableau_pdv_heros[i]){
+							min_pdv = i+1;
+							tableau_pdv_heros[i]=tableau_pdv_heros[i+1];
+						}
+					}
+					if (min_pdv == 0){
+						if(pdv_heros_1 > 79){
+							pdv_heros_1 = 100;
+							message_attaque.innerHTML = "Vous avez soigné Kai de " + 100-pdv_heros_1 + " points de vie.";
+						} else {
+							pdv_heros_1 = pdv_heros_1 + valeur_soin;
+							message_attaque.innerHTML = "Vous avez soigné Kai de "  + valeur_soin +" points de vie.";
+						}
+						valeur_pdv_heros_1.innerHTML = pdv_heros_1;
+					}
+					if (min_pdv == 1){
+						if(pdv_heros_3 > 79){
+							pdv_heros_3 = 100;
+							message_attaque.innerHTML = "Vous avez soigné Gezek de " + 100-pdv_heros_3 + " points de vie.";
+						} else {
+							pdv_heros_3 = pdv_heros_3 + valeur_soin;
+							message_attaque.innerHTML = "Vous avez soigné Gezek de "  + valeur_soin +" points de vie.";
+						}
+						valeur_pdv_heros_3.innerHTML = pdv_heros_3;
+					}
+					if (min_pdv == 2){
+						if(pdv_heros_4 > 79){
+							pdv_heros_4 = 100;
+							message_attaque.innerHTML = "Vous avez soigné Helnes de " + 100-pdv_heros_4 + " points de vie.";
+						} else {
+							pdv_heros_4 = pdv_heros_4 + valeur_soin;
+							message_attaque.innerHTML = "Vous avez soigné Helnes de "  + valeur_soin +" points de vie.";
+						}
+						valeur_pdv_heros_4.innerHTML = pdv_heros_4;
+					}
 				}
-				valeur_pdv_heros_3.innerHTML = pdv_heros_3;
-			}
-			if (min_pdv == 3){
-				if(pdv_heros_4 > 79){
-					pdv_heros_4 = 100;
-					message_attaque.innerHTML = "Vous avez soigné Helnes de " + 100-pdv_heros_1 + " points de vie.";
-				} else {
-					pdv_heros_4 = pdv_heros_4 + valeur_soin;
-					message_attaque.innerHTML = "Vous avez soigné Helnes de "  + valeur_soin +" points de vie.";
+				if (pdv_heros_2 > 0 && pdv_heros_3 > 0 && pdv_heros_4 > 0){
+					var tableau_pdv_heros = [pdv_heros_2, pdv_heros_3, pdv_heros_4];
+					for(var i = 0; i <= 1; i++){
+						if(tableau_pdv_heros[i+1] > tableau_pdv_heros[i]){
+							min_pdv = i;
+						} else if (tableau_pdv_heros[i+1] < tableau_pdv_heros[i]){
+							min_pdv = i+1;
+							tableau_pdv_heros[i]=tableau_pdv_heros[i+1];
+						}
+					}
+					if (min_pdv == 0){
+						if(pdv_heros_2 > 79){
+							pdv_heros_2 = 100;
+							message_attaque.innerHTML = "Vous avez soigné Gezek de " + 100-pdv_heros_2 + " points de vie.";
+						} else {
+							pdv_heros_2 = pdv_heros_2+ valeur_soin;
+							message_attaque.innerHTML = "Vous avez soigné Gezek de "  + valeur_soin +" points de vie.";
+						}
+						valeur_pdv_heros_2.innerHTML = pdv_heros_2;
+					}
+					if (min_pdv == 1){
+						if(pdv_heros_3 > 79){
+							pdv_heros_3 = 100;
+							message_attaque.innerHTML = "Vous avez soigné Jihrah de " + 100-pdv_heros_3 + " points de vie.";
+						} else {
+							pdv_heros_3 = pdv_heros_3 + valeur_soin;
+							message_attaque.innerHTML = "Vous avez soigné Jihrah de "  + valeur_soin +" points de vie.";
+						}
+						valeur_pdv_heros_3.innerHTML = pdv_heros_3;
+					}
+					if (min_pdv == 2){
+						if(pdv_heros_4 > 79){
+							pdv_heros_4 = 100;
+							message_attaque.innerHTML = "Vous avez soigné Helnes de " + 100-pdv_heros_4 + " points de vie.";
+						} else {
+							pdv_heros_4 = pdv_heros_4 + valeur_soin;
+							message_attaque.innerHTML = "Vous avez soigné Helnes de "  + valeur_soin +" points de vie.";
+						}
+						valeur_pdv_heros_4.innerHTML = pdv_heros_4;
+					}
 				}
-				valeur_pdv_heros_4.innerHTML = pdv_heros_4;
 			}
-		}		
+			if (compteur_heros_en_vie == 2){
+				if (pdv_heros_1 > 0 && pdv_heros_2 > 0){
+					if (pdv_heros_1 >= pdv_heros_2){
+						if(pdv_heros_2 > 79){
+							pdv_heros_2 = 100;
+							message_attaque.innerHTML = "Vous avez soigné Gezek de " + 100-pdv_heros_2 + " points de vie.";
+						} else {
+							pdv_heros_2 = pdv_heros_2+ valeur_soin;
+							message_attaque.innerHTML = "Vous avez soigné Gezek de "  + valeur_soin +" points de vie.";
+						}
+						valeur_pdv_heros_2.innerHTML = pdv_heros_2;
+					}
+					if (pdv_heros_2 > pdv_heros_1){
+						if(pdv_heros_1 > 79){
+							pdv_heros_1 = 100;
+							message_attaque.innerHTML = "Vous avez soigné Kai de " + 100-pdv_heros_1 + " points de vie.";
+						} else {
+							pdv_heros_1 = pdv_heros_1 + valeur_soin;
+							message_attaque.innerHTML = "Vous avez soigné Kai de "  + valeur_soin +" points de vie.";
+						}
+						valeur_pdv_heros_1.innerHTML = pdv_heros_1;
+					}
+				}
+				if (pdv_heros_1 > 0 && pdv_heros_3 > 0){
+					if (pdv_heros_1 >= pdv_heros_3){
+						if(pdv_heros_3 > 79){
+							pdv_heros_3 = 100;
+							message_attaque.innerHTML = "Vous avez soigné Jihrah de " + 100-pdv_heros_3 + " points de vie.";
+						} else {
+							pdv_heros_3 = pdv_heros_3 + valeur_soin;
+							message_attaque.innerHTML = "Vous avez soigné Jihrah de "  + valeur_soin +" points de vie.";
+						}
+						valeur_pdv_heros_3.innerHTML = pdv_heros_3;
+					}
+					if (pdv_heros_3 > pdv_heros_1){
+						if(pdv_heros_1 > 79){
+							pdv_heros_1 = 100;
+							message_attaque.innerHTML = "Vous avez soigné Kai de " + 100-pdv_heros_1 + " points de vie.";
+						} else {
+							pdv_heros_1 = pdv_heros_1 + valeur_soin;
+							message_attaque.innerHTML = "Vous avez soigné Kai de "  + valeur_soin +" points de vie.";
+						}
+						valeur_pdv_heros_1.innerHTML = pdv_heros_1;
+					}
+				}
+				if (pdv_heros_1 > 0 && pdv_heros_4 > 0){
+					if (pdv_heros_1 >= pdv_heros_4){
+						if(pdv_heros_4 > 79){
+							pdv_heros_4 = 100;
+							message_attaque.innerHTML = "Vous avez soigné Helnes de " + 100-pdv_heros_4 + " points de vie.";
+						} else {
+							pdv_heros_4 = pdv_heros_4 + valeur_soin;
+							message_attaque.innerHTML = "Vous avez soigné Helnes de "  + valeur_soin +" points de vie.";
+						}
+						valeur_pdv_heros_4.innerHTML = pdv_heros_4;
+					}
+					if (pdv_heros_4 > pdv_heros_1){
+						if(pdv_heros_1 > 79){
+							pdv_heros_1 = 100;
+							message_attaque.innerHTML = "Vous avez soigné Kai de " + 100-pdv_heros_1 + " points de vie.";
+						} else {
+							pdv_heros_1 = pdv_heros_1 + valeur_soin;
+							message_attaque.innerHTML = "Vous avez soigné Kai de "  + valeur_soin +" points de vie.";
+						}
+						valeur_pdv_heros_1.innerHTML = pdv_heros_1;
+					}
+				}
+				if (pdv_heros_2 > 0 && pdv_heros_3 > 0){
+					if (pdv_heros_2 >= pdv_heros_3){
+						if(pdv_heros_3 > 79){
+							pdv_heros_3 = 100;
+							message_attaque.innerHTML = "Vous avez soigné Jihrah de " + 100-pdv_heros_3 + " points de vie.";
+						} else {
+							pdv_heros_3 = pdv_heros_3 + valeur_soin;
+							message_attaque.innerHTML = "Vous avez soigné Jihrah de "  + valeur_soin +" points de vie.";
+						}
+						valeur_pdv_heros_3.innerHTML = pdv_heros_3;
+					}
+					if (pdv_heros_3 > pdv_heros_2){
+						if(pdv_heros_2 > 79){
+							pdv_heros_2 = 100;
+							message_attaque.innerHTML = "Vous avez soigné Gezek de " + 100-pdv_heros_2 + " points de vie.";
+						} else {
+							pdv_heros_2 = pdv_heros_2 + valeur_soin;
+							message_attaque.innerHTML = "Vous avez soigné Gezek de "  + valeur_soin +" points de vie.";
+						}
+						valeur_pdv_heros_2.innerHTML = pdv_heros_2;
+					}
+				}
+				if (pdv_heros_2 > 0 && pdv_heros_4 > 0){
+					if (pdv_heros_2 >= pdv_heros_4){
+						if(pdv_heros_4 > 79){
+							pdv_heros_4 = 100;
+							message_attaque.innerHTML = "Vous avez soigné Helnes de " + 100-pdv_heros_4 + " points de vie.";
+						} else {
+							pdv_heros_4 = pdv_heros_4 + valeur_soin;
+							message_attaque.innerHTML = "Vous avez soigné Helnes de "  + valeur_soin +" points de vie.";
+						}
+						valeur_pdv_heros_4.innerHTML = pdv_heros_4;
+					}
+					if (pdv_heros_4 > pdv_heros_2){
+						if(pdv_heros_2 > 79){
+							pdv_heros_2 = 100;
+							message_attaque.innerHTML = "Vous avez soigné Gezek de " + 100-pdv_heros_2 + " points de vie.";
+						} else {
+							pdv_heros_2 = pdv_heros_2 + valeur_soin;
+							message_attaque.innerHTML = "Vous avez soigné Gezek de "  + valeur_soin +" points de vie.";
+						}
+						valeur_pdv_heros_2.innerHTML = pdv_heros_2;
+					}
+				}
+				if (pdv_heros_3 > 0 && pdv_heros_4 > 0){
+					if (pdv_heros_3 >= pdv_heros_4){
+						if(pdv_heros_4 > 79){
+							pdv_heros_4 = 100;
+							message_attaque.innerHTML = "Vous avez soigné Helnes de " + 100-pdv_heros_4 + " points de vie.";
+						} else {
+							pdv_heros_4 = pdv_heros_4 + valeur_soin;
+							message_attaque.innerHTML = "Vous avez soigné Helnes de "  + valeur_soin +" points de vie.";
+						}
+						valeur_pdv_heros_4.innerHTML = pdv_heros_4;
+					}
+					if (pdv_heros_4 > pdv_heros_3){
+						if(pdv_heros_3 > 79){
+							pdv_heros_3 = 100;
+							message_attaque.innerHTML = "Vous avez soigné Jihrah de " + 100-pdv_heros_3 + " points de vie.";
+						} else {
+							pdv_heros_3= pdv_heros_3 + valeur_soin;
+							message_attaque.innerHTML = "Vous avez soigné Jihrah de "  + valeur_soin +" points de vie.";
+						}
+						valeur_pdv_heros_3.innerHTML = pdv_heros_3;
+					}
+				}
+			}
+			if (compteur_heros_en_vie == 1){
+				if (pdv_heros_2 > 0){
+					if(pdv_heros_2 > 79){
+						pdv_heros_2 = 100;
+						message_attaque.innerHTML = "Vous avez soigné Gezek de " + 100-pdv_heros_2 + " points de vie.";
+					} else {
+						pdv_heros_2 = pdv_heros_2 + valeur_soin;
+						message_attaque.innerHTML = "Vous avez soigné Gezek de "  + valeur_soin +" points de vie.";
+					}
+					valeur_pdv_heros_2.innerHTML = pdv_heros_2;
+				}
+			}
+				/*for(var i = 0; i <= 1; i++){
+					if(tableau_pdv_heros[i+1] > tableau_pdv_heros[i]){
+						min_pdv = i;
+					} else if (tableau_pdv_heros[i+1] < tableau_pdv_heros[i]){
+						min_pdv = i+1;
+						tableau_pdv_heros[i]=tableau_pdv_heros[i+1];
+					}
+				}
+				if (min_pdv == 0){
+					if(pdv_heros_1 > 79){
+						pdv_heros_1 = 100;
+						message_attaque.innerHTML = "Vous avez soigné Kai de " + 100-pdv_heros_1 + " points de vie.";
+					} else {
+						pdv_heros_1 = pdv_heros_1 + valeur_soin;
+						message_attaque.innerHTML = "Vous avez soigné Kai de "  + valeur_soin +" points de vie.";
+					}
+					valeur_pdv_heros_1.innerHTML = pdv_heros_1;
+				}
+				if (min_pdv == 1){
+					if(pdv_heros_2 > 79){
+						pdv_heros_2 = 100;
+						message_attaque.innerHTML = "Vous avez soigné Gezek de " + 100-pdv_heros_1 + " points de vie.";
+					} else {
+						pdv_heros_2 = pdv_heros_2 + valeur_soin;
+						message_attaque.innerHTML = "Vous avez soigné Gezek de "  + valeur_soin +" points de vie.";
+					}
+					valeur_pdv_heros_2.innerHTML = pdv_heros_2;
+				}
+				if (min_pdv == 2){
+					if(pdv_heros_3 > 79){
+						pdv_heros_3 = 100;
+						message_attaque.innerHTML = "Vous avez soigné Jihrah de " + 100-pdv_heros_1 + " points de vie.";
+					} else {
+						pdv_heros_3 = pdv_heros_3 + valeur_soin;
+						message_attaque.innerHTML = "Vous avez soigné Jihrah de "  + valeur_soin +" points de vie.";
+					}
+					valeur_pdv_heros_3.innerHTML = pdv_heros_3;
+				}
+				if (min_pdv == 3){
+					if(pdv_heros_4 > 79){
+						pdv_heros_4 = 100;
+						message_attaque.innerHTML = "Vous avez soigné Helnes de " + 100-pdv_heros_1 + " points de vie.";
+					} else {
+						pdv_heros_4 = pdv_heros_4 + valeur_soin;
+						message_attaque.innerHTML = "Vous avez soigné Helnes de "  + valeur_soin +" points de vie.";
+					}
+					valeur_pdv_heros_4.innerHTML = pdv_heros_4;
+				}*/	
 		message_au_centre.style.backgroundColor = "rgba(12, 63, 145, 0.6)";
 		message_au_centre.style.border = "10px solid white";
 		message_au_centre.style.borderRadius = "10px";
@@ -2860,6 +3254,7 @@ bouton_special.onclick = function (){
 		if (pdv_heros_3 <= 0){
 			perso_tour = perso_tour + 1;
 		}
+		grise_bouton();
 		if (pdv_heros_3 <= 0 && pdv_heros_4 <= 0){
 			perso_tour = 0;
 			setTimeout(attaque_premier_monstre, 2000);
@@ -2873,10 +3268,12 @@ bouton_special.onclick = function (){
 		setTimeout(clear_message_centre, 2000);
 		special_disponible_2 = 0;
 	}
+}
 	if (perso_tour == 1 && special_disponible_1 == 2){
 		if (mana_heros_1 < 40){
 			return;
-		} else {
+		} 
+		if (mana_heros_1 > 39) {
 			if (pv_monstre_1 > 0){
 				bouton_monstre_special_1.innerHTML = "Mort-Vivant";
 				bouton_monstre_special_1.style.backgroundImage = "url(../Images/Autre/Button.png)";
@@ -2890,10 +3287,10 @@ bouton_special.onclick = function (){
 				bouton_monstre_special_3.style.backgroundImage = "url(../Images/Autre/Button.png)";
 			}
 		}
-		special_disponible_1 = 0;
 	}
 	if (perso_tour == 0){
 		perso_tour = 1;
+		grise_bouton();
 	}
 	if (perso_tour == 1){
 		pointeur_heros_1.style.backgroundImage = "url(../Images/Autre/Pointer_down.png)";
@@ -2923,9 +3320,7 @@ bouton_special.onclick = function (){
 		pointeur_heros_4.style.backgroundImage = "url(../Images/Autre/Pointer_down.png)";
 		special.innerHTML = "Foudre";
 	}
-	grise_bouton();
 }
-
 	/*setTimeout(function bloodsplash_1(){ bloodsplash.style.backgroundImage = "url(../Images/Animations/Blood/Blood_15.png)";}, 0);
 	setTimeout(function bloodsplash_2(){ bloodsplash.style.backgroundImage = "url(../Images/Animations/Blood/Blood_14.png)";}, 50);
 	setTimeout(function bloodsplash_3(){ bloodsplash.style.backgroundImage = "url(../Images/Animations/Blood/Blood_13.png)";}, 100);
