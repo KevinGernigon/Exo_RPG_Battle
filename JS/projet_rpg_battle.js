@@ -1767,6 +1767,18 @@ bouton_monstre_attaque_1.onclick = function(){
 		message_au_centre.style.borderRadius = "10px";
 		message_au_centre.style.padding = "10px";
 		perso_tour = 0;
+		if (pv_monstre_1 <= 0){
+			setTimeout(function monstre_1_mort(){ monstre_1.style.opacity = "0.9";}, 50);
+			setTimeout(function monstre_1_mort(){ monstre_1.style.opacity = "0.8";}, 100);
+			setTimeout(function monstre_1_mort(){ monstre_1.style.opacity = "0.7";}, 150);
+			setTimeout(function monstre_1_mort(){ monstre_1.style.opacity = "0.6";}, 200);
+			setTimeout(function monstre_1_mort(){ monstre_1.style.opacity = "0.5";}, 250);
+			setTimeout(function monstre_1_mort(){ monstre_1.style.opacity = "0.4";}, 300);
+			setTimeout(function monstre_1_mort(){ monstre_1.style.opacity = "0.3";}, 350);
+			setTimeout(function monstre_1_mort(){ monstre_1.style.opacity = "0.2";}, 400);
+			setTimeout(function monstre_1_mort(){ monstre_1.style.opacity = "0.1";}, 450);
+			setTimeout(function monstre_1_mort(){ monstre_1.style.opacity = "0";}, 500);
+		}
 		setTimeout(attaque_premier_monstre, 2000);
 		setTimeout(attaque_second_monstre, 4000);
 		setTimeout(attaque_troisieme_monstre, 6000);
@@ -1786,6 +1798,18 @@ bouton_monstre_attaque_1.onclick = function(){
 		perso_tour = perso_tour + 1;
 		attaque_disponible_3 = 0;
 		grise_bouton();
+		if (pv_monstre_1 <= 0){
+			setTimeout(function monstre_1_mort(){ monstre_1.style.opacity = "0.9";}, 50);
+			setTimeout(function monstre_1_mort(){ monstre_1.style.opacity = "0.8";}, 100);
+			setTimeout(function monstre_1_mort(){ monstre_1.style.opacity = "0.7";}, 150);
+			setTimeout(function monstre_1_mort(){ monstre_1.style.opacity = "0.6";}, 200);
+			setTimeout(function monstre_1_mort(){ monstre_1.style.opacity = "0.5";}, 250);
+			setTimeout(function monstre_1_mort(){ monstre_1.style.opacity = "0.4";}, 300);
+			setTimeout(function monstre_1_mort(){ monstre_1.style.opacity = "0.3";}, 350);
+			setTimeout(function monstre_1_mort(){ monstre_1.style.opacity = "0.2";}, 400);
+			setTimeout(function monstre_1_mort(){ monstre_1.style.opacity = "0.1";}, 450);
+			setTimeout(function monstre_1_mort(){ monstre_1.style.opacity = "0";}, 500);
+		}
 		if (pdv_heros_4 <= 0){
 			perso_tour = 0;
 			setTimeout(attaque_premier_monstre, 2000);
@@ -1807,6 +1831,18 @@ bouton_monstre_attaque_1.onclick = function(){
 		message_au_centre.style.padding = "10px";
 		perso_tour = perso_tour + 1;
 		attaque_disponible_2 = 0;
+		if (pv_monstre_1 <= 0){
+			setTimeout(function monstre_1_mort(){ monstre_1.style.opacity = "0.9";}, 50);
+			setTimeout(function monstre_1_mort(){ monstre_1.style.opacity = "0.8";}, 100);
+			setTimeout(function monstre_1_mort(){ monstre_1.style.opacity = "0.7";}, 150);
+			setTimeout(function monstre_1_mort(){ monstre_1.style.opacity = "0.6";}, 200);
+			setTimeout(function monstre_1_mort(){ monstre_1.style.opacity = "0.5";}, 250);
+			setTimeout(function monstre_1_mort(){ monstre_1.style.opacity = "0.4";}, 300);
+			setTimeout(function monstre_1_mort(){ monstre_1.style.opacity = "0.3";}, 350);
+			setTimeout(function monstre_1_mort(){ monstre_1.style.opacity = "0.2";}, 400);
+			setTimeout(function monstre_1_mort(){ monstre_1.style.opacity = "0.1";}, 450);
+			setTimeout(function monstre_1_mort(){ monstre_1.style.opacity = "0";}, 500);
+		}
 		if (pdv_heros_3 <= 0){
 			perso_tour = perso_tour + 1;
 		}
@@ -1832,6 +1868,18 @@ bouton_monstre_attaque_1.onclick = function(){
 		message_au_centre.style.padding = "10px";
 		perso_tour = perso_tour + 1;
 		attaque_disponible_1 = 0;
+		if (pv_monstre_1 <= 0){
+			setTimeout(function monstre_1_mort(){ monstre_1.style.opacity = "0.9";}, 50);
+			setTimeout(function monstre_1_mort(){ monstre_1.style.opacity = "0.8";}, 100);
+			setTimeout(function monstre_1_mort(){ monstre_1.style.opacity = "0.7";}, 150);
+			setTimeout(function monstre_1_mort(){ monstre_1.style.opacity = "0.6";}, 200);
+			setTimeout(function monstre_1_mort(){ monstre_1.style.opacity = "0.5";}, 250);
+			setTimeout(function monstre_1_mort(){ monstre_1.style.opacity = "0.4";}, 300);
+			setTimeout(function monstre_1_mort(){ monstre_1.style.opacity = "0.3";}, 350);
+			setTimeout(function monstre_1_mort(){ monstre_1.style.opacity = "0.2";}, 400);
+			setTimeout(function monstre_1_mort(){ monstre_1.style.opacity = "0.1";}, 450);
+			setTimeout(function monstre_1_mort(){ monstre_1.style.opacity = "0";}, 500);
+		}
 		if (pdv_heros_2 <= 0){
 			perso_tour = perso_tour + 1;
 		} 
@@ -1901,6 +1949,18 @@ bouton_monstre_attaque_2.onclick = function(){
 		message_au_centre.style.padding = "10px";
 		perso_tour = 0;
 		attaque_disponible_4 = 0;
+		if (pv_monstre_2 <= 0){
+			setTimeout(function monstre_2_mort(){ monstre_2.style.opacity = "0.9";}, 50);
+			setTimeout(function monstre_2_mort(){ monstre_2.style.opacity = "0.8";}, 100);
+			setTimeout(function monstre_2_mort(){ monstre_2.style.opacity = "0.7";}, 150);
+			setTimeout(function monstre_2_mort(){ monstre_2.style.opacity = "0.6";}, 200);
+			setTimeout(function monstre_2_mort(){ monstre_2.style.opacity = "0.5";}, 250);
+			setTimeout(function monstre_2_mort(){ monstre_2.style.opacity = "0.4";}, 300);
+			setTimeout(function monstre_2_mort(){ monstre_2.style.opacity = "0.3";}, 350);
+			setTimeout(function monstre_2_mort(){ monstre_2.style.opacity = "0.2";}, 400);
+			setTimeout(function monstre_2_mort(){ monstre_2.style.opacity = "0.1";}, 450);
+			setTimeout(function monstre_2_mort(){ monstre_2.style.opacity = "0";}, 500);
+		}
 		setTimeout(attaque_premier_monstre, 2000);
 		setTimeout(attaque_second_monstre, 4000);
 		setTimeout(attaque_troisieme_monstre, 6000);
@@ -1919,6 +1979,18 @@ bouton_monstre_attaque_2.onclick = function(){
 		perso_tour = perso_tour + 1;
 		attaque_disponible_3 = 0;
 		grise_bouton();
+		if (pv_monstre_2 <= 0){
+			setTimeout(function monstre_2_mort(){ monstre_2.style.opacity = "0.9";}, 50);
+			setTimeout(function monstre_2_mort(){ monstre_2.style.opacity = "0.8";}, 100);
+			setTimeout(function monstre_2_mort(){ monstre_2.style.opacity = "0.7";}, 150);
+			setTimeout(function monstre_2_mort(){ monstre_2.style.opacity = "0.6";}, 200);
+			setTimeout(function monstre_2_mort(){ monstre_2.style.opacity = "0.5";}, 250);
+			setTimeout(function monstre_2_mort(){ monstre_2.style.opacity = "0.4";}, 300);
+			setTimeout(function monstre_2_mort(){ monstre_2.style.opacity = "0.3";}, 350);
+			setTimeout(function monstre_2_mort(){ monstre_2.style.opacity = "0.2";}, 400);
+			setTimeout(function monstre_2_mort(){ monstre_2.style.opacity = "0.1";}, 450);
+			setTimeout(function monstre_2_mort(){ monstre_2.style.opacity = "0";}, 500);
+		}
 		if (pdv_heros_4 <= 0){
 			perso_tour = 0;
 			setTimeout(attaque_premier_monstre, 2000);
@@ -1940,6 +2012,18 @@ bouton_monstre_attaque_2.onclick = function(){
 		message_au_centre.style.padding = "10px";
 		perso_tour = perso_tour + 1;
 		attaque_disponible_2 = 0;
+		if (pv_monstre_2 <= 0){
+			setTimeout(function monstre_2_mort(){ monstre_2.style.opacity = "0.9";}, 50);
+			setTimeout(function monstre_2_mort(){ monstre_2.style.opacity = "0.8";}, 100);
+			setTimeout(function monstre_2_mort(){ monstre_2.style.opacity = "0.7";}, 150);
+			setTimeout(function monstre_2_mort(){ monstre_2.style.opacity = "0.6";}, 200);
+			setTimeout(function monstre_2_mort(){ monstre_2.style.opacity = "0.5";}, 250);
+			setTimeout(function monstre_2_mort(){ monstre_2.style.opacity = "0.4";}, 300);
+			setTimeout(function monstre_2_mort(){ monstre_2.style.opacity = "0.3";}, 350);
+			setTimeout(function monstre_2_mort(){ monstre_2.style.opacity = "0.2";}, 400);
+			setTimeout(function monstre_2_mort(){ monstre_2.style.opacity = "0.1";}, 450);
+			setTimeout(function monstre_2_mort(){ monstre_2.style.opacity = "0";}, 500);
+		}
 		if (pdv_heros_3 <= 0){
 			perso_tour = perso_tour + 1;
 		}
@@ -1965,6 +2049,18 @@ bouton_monstre_attaque_2.onclick = function(){
 		message_au_centre.style.padding = "10px";
 		perso_tour = perso_tour + 1;
 		attaque_disponible_1 = 0;
+		if (pv_monstre_2 <= 0){
+			setTimeout(function monstre_2_mort(){ monstre_2.style.opacity = "0.9";}, 50);
+			setTimeout(function monstre_2_mort(){ monstre_2.style.opacity = "0.8";}, 100);
+			setTimeout(function monstre_2_mort(){ monstre_2.style.opacity = "0.7";}, 150);
+			setTimeout(function monstre_2_mort(){ monstre_2.style.opacity = "0.6";}, 200);
+			setTimeout(function monstre_2_mort(){ monstre_2.style.opacity = "0.5";}, 250);
+			setTimeout(function monstre_2_mort(){ monstre_2.style.opacity = "0.4";}, 300);
+			setTimeout(function monstre_2_mort(){ monstre_2.style.opacity = "0.3";}, 350);
+			setTimeout(function monstre_2_mort(){ monstre_2.style.opacity = "0.2";}, 400);
+			setTimeout(function monstre_2_mort(){ monstre_2.style.opacity = "0.1";}, 450);
+			setTimeout(function monstre_2_mort(){ monstre_2.style.opacity = "0";}, 500);
+		}
 		if (pdv_heros_2 <= 0){
 			perso_tour = perso_tour + 1;
 		} 
@@ -2058,6 +2154,18 @@ bouton_monstre_attaque_3.onclick = function(){
 		message_au_centre.style.padding = "10px";
 		perso_tour = 0;
 		attaque_disponible_4 = 0;
+		if (pv_monstre_3 <= 0){
+			setTimeout(function monstre_3_mort(){ monstre_3.style.opacity = "0.9";}, 50);
+			setTimeout(function monstre_3_mort(){ monstre_3.style.opacity = "0.8";}, 100);
+			setTimeout(function monstre_3_mort(){ monstre_3.style.opacity = "0.7";}, 150);
+			setTimeout(function monstre_3_mort(){ monstre_3.style.opacity = "0.6";}, 200);
+			setTimeout(function monstre_3_mort(){ monstre_3.style.opacity = "0.5";}, 250);
+			setTimeout(function monstre_3_mort(){ monstre_3.style.opacity = "0.4";}, 300);
+			setTimeout(function monstre_3_mort(){ monstre_3.style.opacity = "0.3";}, 350);
+			setTimeout(function monstre_3_mort(){ monstre_3.style.opacity = "0.2";}, 400);
+			setTimeout(function monstre_3_mort(){ monstre_3.style.opacity = "0.1";}, 450);
+			setTimeout(function monstre_3_mort(){ monstre_3.style.opacity = "0";}, 500);
+		}
 		setTimeout(attaque_premier_monstre, 2000);
 		setTimeout(attaque_second_monstre, 4000);
 		setTimeout(attaque_troisieme_monstre, 6000);
@@ -2076,6 +2184,18 @@ bouton_monstre_attaque_3.onclick = function(){
 		perso_tour = perso_tour + 1;
 		attaque_disponible_3 = 0;
 		grise_bouton();
+		if (pv_monstre_3 <= 0){
+			setTimeout(function monstre_3_mort(){ monstre_3.style.opacity = "0.9";}, 50);
+			setTimeout(function monstre_3_mort(){ monstre_3.style.opacity = "0.8";}, 100);
+			setTimeout(function monstre_3_mort(){ monstre_3.style.opacity = "0.7";}, 150);
+			setTimeout(function monstre_3_mort(){ monstre_3.style.opacity = "0.6";}, 200);
+			setTimeout(function monstre_3_mort(){ monstre_3.style.opacity = "0.5";}, 250);
+			setTimeout(function monstre_3_mort(){ monstre_3.style.opacity = "0.4";}, 300);
+			setTimeout(function monstre_3_mort(){ monstre_3.style.opacity = "0.3";}, 350);
+			setTimeout(function monstre_3_mort(){ monstre_3.style.opacity = "0.2";}, 400);
+			setTimeout(function monstre_3_mort(){ monstre_3.style.opacity = "0.1";}, 450);
+			setTimeout(function monstre_3_mort(){ monstre_3.style.opacity = "0";}, 500);
+		}
 		if (pdv_heros_4 <= 0){
 			perso_tour = 0;
 			setTimeout(attaque_premier_monstre, 2000);
@@ -2097,6 +2217,18 @@ bouton_monstre_attaque_3.onclick = function(){
 		message_au_centre.style.padding = "10px";
 		perso_tour = perso_tour + 1;
 		attaque_disponible_2 = 0;
+		if (pv_monstre_3 <= 0){
+			setTimeout(function monstre_3_mort(){ monstre_3.style.opacity = "0.9";}, 50);
+			setTimeout(function monstre_3_mort(){ monstre_3.style.opacity = "0.8";}, 100);
+			setTimeout(function monstre_3_mort(){ monstre_3.style.opacity = "0.7";}, 150);
+			setTimeout(function monstre_3_mort(){ monstre_3.style.opacity = "0.6";}, 200);
+			setTimeout(function monstre_3_mort(){ monstre_3.style.opacity = "0.5";}, 250);
+			setTimeout(function monstre_3_mort(){ monstre_3.style.opacity = "0.4";}, 300);
+			setTimeout(function monstre_3_mort(){ monstre_3.style.opacity = "0.3";}, 350);
+			setTimeout(function monstre_3_mort(){ monstre_3.style.opacity = "0.2";}, 400);
+			setTimeout(function monstre_3_mort(){ monstre_3.style.opacity = "0.1";}, 450);
+			setTimeout(function monstre_3_mort(){ monstre_3.style.opacity = "0";}, 500);
+		}
 		if (pdv_heros_3 <= 0){
 			perso_tour = perso_tour + 1;
 		}
@@ -2122,6 +2254,18 @@ bouton_monstre_attaque_3.onclick = function(){
 		message_au_centre.style.padding = "10px";
 		perso_tour = perso_tour + 1;
 		attaque_disponible_1 = 0;
+		if (pv_monstre_3 <= 0){
+			setTimeout(function monstre_3_mort(){ monstre_3.style.opacity = "0.9";}, 50);
+			setTimeout(function monstre_3_mort(){ monstre_3.style.opacity = "0.8";}, 100);
+			setTimeout(function monstre_3_mort(){ monstre_3.style.opacity = "0.7";}, 150);
+			setTimeout(function monstre_3_mort(){ monstre_3.style.opacity = "0.6";}, 200);
+			setTimeout(function monstre_3_mort(){ monstre_3.style.opacity = "0.5";}, 250);
+			setTimeout(function monstre_3_mort(){ monstre_3.style.opacity = "0.4";}, 300);
+			setTimeout(function monstre_3_mort(){ monstre_3.style.opacity = "0.3";}, 350);
+			setTimeout(function monstre_3_mort(){ monstre_3.style.opacity = "0.2";}, 400);
+			setTimeout(function monstre_3_mort(){ monstre_3.style.opacity = "0.1";}, 450);
+			setTimeout(function monstre_3_mort(){ monstre_3.style.opacity = "0";}, 500);
+		}
 		if (pdv_heros_2 <= 0){
 			perso_tour = perso_tour + 1;
 		} 
@@ -2788,6 +2932,42 @@ bouton_special.onclick = function (){
 			message_au_centre.style.padding = "10px";
 			perso_tour = 0;
 			special_disponible_4 = 0;
+		if (pv_monstre_1 <= 0){
+			setTimeout(function monstre_1_mort(){ monstre_1.style.opacity = "0.9";}, 50);
+			setTimeout(function monstre_1_mort(){ monstre_1.style.opacity = "0.8";}, 100);
+			setTimeout(function monstre_1_mort(){ monstre_1.style.opacity = "0.7";}, 150);
+			setTimeout(function monstre_1_mort(){ monstre_1.style.opacity = "0.6";}, 200);
+			setTimeout(function monstre_1_mort(){ monstre_1.style.opacity = "0.5";}, 250);
+			setTimeout(function monstre_1_mort(){ monstre_1.style.opacity = "0.4";}, 300);
+			setTimeout(function monstre_1_mort(){ monstre_1.style.opacity = "0.3";}, 350);
+			setTimeout(function monstre_1_mort(){ monstre_1.style.opacity = "0.2";}, 400);
+			setTimeout(function monstre_1_mort(){ monstre_1.style.opacity = "0.1";}, 450);
+			setTimeout(function monstre_1_mort(){ monstre_1.style.opacity = "0";}, 500);
+		}
+		if (pv_monstre_2 <= 0){
+			setTimeout(function monstre_2_mort(){ monstre_2.style.opacity = "0.9";}, 50);
+			setTimeout(function monstre_2_mort(){ monstre_2.style.opacity = "0.8";}, 100);
+			setTimeout(function monstre_2_mort(){ monstre_2.style.opacity = "0.7";}, 150);
+			setTimeout(function monstre_2_mort(){ monstre_2.style.opacity = "0.6";}, 200);
+			setTimeout(function monstre_2_mort(){ monstre_2.style.opacity = "0.5";}, 250);
+			setTimeout(function monstre_2_mort(){ monstre_2.style.opacity = "0.4";}, 300);
+			setTimeout(function monstre_2_mort(){ monstre_2.style.opacity = "0.3";}, 350);
+			setTimeout(function monstre_2_mort(){ monstre_2.style.opacity = "0.2";}, 400);
+			setTimeout(function monstre_2_mort(){ monstre_2.style.opacity = "0.1";}, 450);
+			setTimeout(function monstre_2_mort(){ monstre_2.style.opacity = "0";}, 500);
+		}
+		if (pv_monstre_3 <= 0){
+			setTimeout(function monstre_3_mort(){ monstre_3.style.opacity = "0.9";}, 50);
+			setTimeout(function monstre_3_mort(){ monstre_3.style.opacity = "0.8";}, 100);
+			setTimeout(function monstre_3_mort(){ monstre_3.style.opacity = "0.7";}, 150);
+			setTimeout(function monstre_3_mort(){ monstre_3.style.opacity = "0.6";}, 200);
+			setTimeout(function monstre_3_mort(){ monstre_3.style.opacity = "0.5";}, 250);
+			setTimeout(function monstre_3_mort(){ monstre_3.style.opacity = "0.4";}, 300);
+			setTimeout(function monstre_3_mort(){ monstre_3.style.opacity = "0.3";}, 350);
+			setTimeout(function monstre_3_mort(){ monstre_3.style.opacity = "0.2";}, 400);
+			setTimeout(function monstre_3_mort(){ monstre_3.style.opacity = "0.1";}, 450);
+			setTimeout(function monstre_3_mort(){ monstre_3.style.opacity = "0";}, 500);
+		}
 			setTimeout(attaque_premier_monstre, 2000);
 			setTimeout(attaque_second_monstre, 4000);
 			setTimeout(attaque_troisieme_monstre, 6000);
@@ -2848,7 +3028,7 @@ bouton_special.onclick = function (){
 				if (min_pdv == 0){
 					if(pdv_heros_1 > 79){
 						pdv_heros_1 = 100;
-						message_attaque.innerHTML = "Vous avez soigné Kai de " + 100-pdv_heros_1 + " points de vie.";
+						message_attaque.innerHTML = "Vous avez soigné Kai de " + (100-pdv_heros_1) + " points de vie.";
 					} else {
 						pdv_heros_1 = pdv_heros_1 + valeur_soin;
 						message_attaque.innerHTML = "Vous avez soigné Kai de "  + valeur_soin +" points de vie.";
@@ -2858,7 +3038,7 @@ bouton_special.onclick = function (){
 				if (min_pdv == 1){
 					if(pdv_heros_2 > 79){
 						pdv_heros_2 = 100;
-						message_attaque.innerHTML = "Vous avez soigné Gezek de " + 100-pdv_heros_1 + " points de vie.";
+						message_attaque.innerHTML = "Vous avez soigné Gezek de " + (100-pdv_heros_2) + " points de vie.";
 					} else {
 						pdv_heros_2 = pdv_heros_2 + valeur_soin;
 						message_attaque.innerHTML = "Vous avez soigné Gezek de "  + valeur_soin +" points de vie.";
@@ -2868,7 +3048,7 @@ bouton_special.onclick = function (){
 				if (min_pdv == 2){
 					if(pdv_heros_3 > 79){
 						pdv_heros_3 = 100;
-						message_attaque.innerHTML = "Vous avez soigné Jihrah de " + 100-pdv_heros_1 + " points de vie.";
+						message_attaque.innerHTML = "Vous avez soigné Jihrah de " + (100-pdv_heros_3) + " points de vie.";
 					} else {
 						pdv_heros_3 = pdv_heros_3 + valeur_soin;
 						message_attaque.innerHTML = "Vous avez soigné Jihrah de "  + valeur_soin +" points de vie.";
@@ -2878,7 +3058,7 @@ bouton_special.onclick = function (){
 				if (min_pdv == 3){
 					if(pdv_heros_4 > 79){
 						pdv_heros_4 = 100;
-						message_attaque.innerHTML = "Vous avez soigné Helnes de " + 100-pdv_heros_1 + " points de vie.";
+						message_attaque.innerHTML = "Vous avez soigné Helnes de " + (100-pdv_heros_4) + " points de vie.";
 					} else {
 						pdv_heros_4 = pdv_heros_4 + valeur_soin;
 						message_attaque.innerHTML = "Vous avez soigné Helnes de "  + valeur_soin +" points de vie.";
@@ -2900,7 +3080,7 @@ bouton_special.onclick = function (){
 					if (min_pdv == 0){
 						if(pdv_heros_1 > 79){
 							pdv_heros_1 = 100;
-							message_attaque.innerHTML = "Vous avez soigné Kai de " + 100-pdv_heros_1 + " points de vie.";
+							message_attaque.innerHTML = "Vous avez soigné Kai de " + (100-pdv_heros_1) + " points de vie.";
 						} else {
 							pdv_heros_1 = pdv_heros_1 + valeur_soin;
 							message_attaque.innerHTML = "Vous avez soigné Kai de "  + valeur_soin +" points de vie.";
@@ -2910,7 +3090,7 @@ bouton_special.onclick = function (){
 					if (min_pdv == 1){
 						if(pdv_heros_2 > 79){
 							pdv_heros_2 = 100;
-							message_attaque.innerHTML = "Vous avez soigné Gezek de " + 100-pdv_heros_2 + " points de vie.";
+							message_attaque.innerHTML = "Vous avez soigné Gezek de " + (100-pdv_heros_2) + " points de vie.";
 						} else {
 							pdv_heros_2 = pdv_heros_2 + valeur_soin;
 							message_attaque.innerHTML = "Vous avez soigné Gezek de "  + valeur_soin +" points de vie.";
@@ -2920,7 +3100,7 @@ bouton_special.onclick = function (){
 					if (min_pdv == 2){
 						if(pdv_heros_3 > 79){
 							pdv_heros_3 = 100;
-							message_attaque.innerHTML = "Vous avez soigné Jihrah de " + 100-pdv_heros_3 + " points de vie.";
+							message_attaque.innerHTML = "Vous avez soigné Jihrah de " + (100-pdv_heros_3) + " points de vie.";
 						} else {
 							pdv_heros_3 = pdv_heros_3 + valeur_soin;
 							message_attaque.innerHTML = "Vous avez soigné Jihrah de "  + valeur_soin +" points de vie.";
@@ -2941,7 +3121,7 @@ bouton_special.onclick = function (){
 					if (min_pdv == 0){
 						if(pdv_heros_1 > 79){
 							pdv_heros_1 = 100;
-							message_attaque.innerHTML = "Vous avez soigné Kai de " + 100-pdv_heros_1 + " points de vie.";
+							message_attaque.innerHTML = "Vous avez soigné Kai de " + (100-pdv_heros_1) + " points de vie.";
 						} else {
 							pdv_heros_1 = pdv_heros_1 + valeur_soin;
 							message_attaque.innerHTML = "Vous avez soigné Kai de "  + valeur_soin +" points de vie.";
@@ -2951,7 +3131,7 @@ bouton_special.onclick = function (){
 					if (min_pdv == 1){
 						if(pdv_heros_2 > 79){
 							pdv_heros_2 = 100;
-							message_attaque.innerHTML = "Vous avez soigné Gezek de " + 100-pdv_heros_2 + " points de vie.";
+							message_attaque.innerHTML = "Vous avez soigné Gezek de " + (100-pdv_heros_2) + " points de vie.";
 						} else {
 							pdv_heros_2 = pdv_heros_2 + valeur_soin;
 							message_attaque.innerHTML = "Vous avez soigné Gezek de "  + valeur_soin +" points de vie.";
@@ -2961,48 +3141,7 @@ bouton_special.onclick = function (){
 					if (min_pdv == 2){
 						if(pdv_heros_4 > 79){
 							pdv_heros_4 = 100;
-							message_attaque.innerHTML = "Vous avez soigné Helnes de " + 100-pdv_heros_4 + " points de vie.";
-						} else {
-							pdv_heros_4 = pdv_heros_4 + valeur_soin;
-							message_attaque.innerHTML = "Vous avez soigné Helnes de "  + valeur_soin +" points de vie.";
-						}
-						valeur_pdv_heros_3.innerHTML = pdv_heros_3;
-					}
-				}
-				if (pdv_heros_1 > 0 && pdv_heros_3 > 0 && pdv_heros_4 > 0){
-					var tableau_pdv_heros = [pdv_heros_1, pdv_heros_3, pdv_heros_4];
-					for(var i = 0; i <= 1; i++){
-						if(tableau_pdv_heros[i+1] > tableau_pdv_heros[i]){
-							min_pdv = i;
-						} else if (tableau_pdv_heros[i+1] < tableau_pdv_heros[i]){
-							min_pdv = i+1;
-							tableau_pdv_heros[i]=tableau_pdv_heros[i+1];
-						}
-					}
-					if (min_pdv == 0){
-						if(pdv_heros_1 > 79){
-							pdv_heros_1 = 100;
-							message_attaque.innerHTML = "Vous avez soigné Kai de " + 100-pdv_heros_1 + " points de vie.";
-						} else {
-							pdv_heros_1 = pdv_heros_1 + valeur_soin;
-							message_attaque.innerHTML = "Vous avez soigné Kai de "  + valeur_soin +" points de vie.";
-						}
-						valeur_pdv_heros_1.innerHTML = pdv_heros_1;
-					}
-					if (min_pdv == 1){
-						if(pdv_heros_3 > 79){
-							pdv_heros_3 = 100;
-							message_attaque.innerHTML = "Vous avez soigné Gezek de " + 100-pdv_heros_3 + " points de vie.";
-						} else {
-							pdv_heros_3 = pdv_heros_3 + valeur_soin;
-							message_attaque.innerHTML = "Vous avez soigné Gezek de "  + valeur_soin +" points de vie.";
-						}
-						valeur_pdv_heros_3.innerHTML = pdv_heros_3;
-					}
-					if (min_pdv == 2){
-						if(pdv_heros_4 > 79){
-							pdv_heros_4 = 100;
-							message_attaque.innerHTML = "Vous avez soigné Helnes de " + 100-pdv_heros_4 + " points de vie.";
+							message_attaque.innerHTML = "Vous avez soigné Helnes de " + (100-pdv_heros_4) + " points de vie.";
 						} else {
 							pdv_heros_4 = pdv_heros_4 + valeur_soin;
 							message_attaque.innerHTML = "Vous avez soigné Helnes de "  + valeur_soin +" points de vie.";
@@ -3023,7 +3162,7 @@ bouton_special.onclick = function (){
 					if (min_pdv == 0){
 						if(pdv_heros_2 > 79){
 							pdv_heros_2 = 100;
-							message_attaque.innerHTML = "Vous avez soigné Gezek de " + 100-pdv_heros_2 + " points de vie.";
+							message_attaque.innerHTML = "Vous avez soigné Gezek de " + (100-pdv_heros_2) + " points de vie.";
 						} else {
 							pdv_heros_2 = pdv_heros_2+ valeur_soin;
 							message_attaque.innerHTML = "Vous avez soigné Gezek de "  + valeur_soin +" points de vie.";
@@ -3033,7 +3172,7 @@ bouton_special.onclick = function (){
 					if (min_pdv == 1){
 						if(pdv_heros_3 > 79){
 							pdv_heros_3 = 100;
-							message_attaque.innerHTML = "Vous avez soigné Jihrah de " + 100-pdv_heros_3 + " points de vie.";
+							message_attaque.innerHTML = "Vous avez soigné Jihrah de " + (100-pdv_heros_3) + " points de vie.";
 						} else {
 							pdv_heros_3 = pdv_heros_3 + valeur_soin;
 							message_attaque.innerHTML = "Vous avez soigné Jihrah de "  + valeur_soin +" points de vie.";
@@ -3043,7 +3182,7 @@ bouton_special.onclick = function (){
 					if (min_pdv == 2){
 						if(pdv_heros_4 > 79){
 							pdv_heros_4 = 100;
-							message_attaque.innerHTML = "Vous avez soigné Helnes de " + 100-pdv_heros_4 + " points de vie.";
+							message_attaque.innerHTML = "Vous avez soigné Helnes de " + (100-pdv_heros_4) + " points de vie.";
 						} else {
 							pdv_heros_4 = pdv_heros_4 + valeur_soin;
 							message_attaque.innerHTML = "Vous avez soigné Helnes de "  + valeur_soin +" points de vie.";
@@ -3057,7 +3196,7 @@ bouton_special.onclick = function (){
 					if (pdv_heros_1 >= pdv_heros_2){
 						if(pdv_heros_2 > 79){
 							pdv_heros_2 = 100;
-							message_attaque.innerHTML = "Vous avez soigné Gezek de " + 100-pdv_heros_2 + " points de vie.";
+							message_attaque.innerHTML = "Vous avez soigné Gezek de " + (100-pdv_heros_2) + " points de vie.";
 						} else {
 							pdv_heros_2 = pdv_heros_2+ valeur_soin;
 							message_attaque.innerHTML = "Vous avez soigné Gezek de "  + valeur_soin +" points de vie.";
@@ -3067,51 +3206,7 @@ bouton_special.onclick = function (){
 					if (pdv_heros_2 > pdv_heros_1){
 						if(pdv_heros_1 > 79){
 							pdv_heros_1 = 100;
-							message_attaque.innerHTML = "Vous avez soigné Kai de " + 100-pdv_heros_1 + " points de vie.";
-						} else {
-							pdv_heros_1 = pdv_heros_1 + valeur_soin;
-							message_attaque.innerHTML = "Vous avez soigné Kai de "  + valeur_soin +" points de vie.";
-						}
-						valeur_pdv_heros_1.innerHTML = pdv_heros_1;
-					}
-				}
-				if (pdv_heros_1 > 0 && pdv_heros_3 > 0){
-					if (pdv_heros_1 >= pdv_heros_3){
-						if(pdv_heros_3 > 79){
-							pdv_heros_3 = 100;
-							message_attaque.innerHTML = "Vous avez soigné Jihrah de " + 100-pdv_heros_3 + " points de vie.";
-						} else {
-							pdv_heros_3 = pdv_heros_3 + valeur_soin;
-							message_attaque.innerHTML = "Vous avez soigné Jihrah de "  + valeur_soin +" points de vie.";
-						}
-						valeur_pdv_heros_3.innerHTML = pdv_heros_3;
-					}
-					if (pdv_heros_3 > pdv_heros_1){
-						if(pdv_heros_1 > 79){
-							pdv_heros_1 = 100;
-							message_attaque.innerHTML = "Vous avez soigné Kai de " + 100-pdv_heros_1 + " points de vie.";
-						} else {
-							pdv_heros_1 = pdv_heros_1 + valeur_soin;
-							message_attaque.innerHTML = "Vous avez soigné Kai de "  + valeur_soin +" points de vie.";
-						}
-						valeur_pdv_heros_1.innerHTML = pdv_heros_1;
-					}
-				}
-				if (pdv_heros_1 > 0 && pdv_heros_4 > 0){
-					if (pdv_heros_1 >= pdv_heros_4){
-						if(pdv_heros_4 > 79){
-							pdv_heros_4 = 100;
-							message_attaque.innerHTML = "Vous avez soigné Helnes de " + 100-pdv_heros_4 + " points de vie.";
-						} else {
-							pdv_heros_4 = pdv_heros_4 + valeur_soin;
-							message_attaque.innerHTML = "Vous avez soigné Helnes de "  + valeur_soin +" points de vie.";
-						}
-						valeur_pdv_heros_4.innerHTML = pdv_heros_4;
-					}
-					if (pdv_heros_4 > pdv_heros_1){
-						if(pdv_heros_1 > 79){
-							pdv_heros_1 = 100;
-							message_attaque.innerHTML = "Vous avez soigné Kai de " + 100-pdv_heros_1 + " points de vie.";
+							message_attaque.innerHTML = "Vous avez soigné Kai de " + (100-pdv_heros_1) + " points de vie.";
 						} else {
 							pdv_heros_1 = pdv_heros_1 + valeur_soin;
 							message_attaque.innerHTML = "Vous avez soigné Kai de "  + valeur_soin +" points de vie.";
@@ -3123,7 +3218,7 @@ bouton_special.onclick = function (){
 					if (pdv_heros_2 >= pdv_heros_3){
 						if(pdv_heros_3 > 79){
 							pdv_heros_3 = 100;
-							message_attaque.innerHTML = "Vous avez soigné Jihrah de " + 100-pdv_heros_3 + " points de vie.";
+							message_attaque.innerHTML = "Vous avez soigné Jihrah de " + (100-pdv_heros_3) + " points de vie.";
 						} else {
 							pdv_heros_3 = pdv_heros_3 + valeur_soin;
 							message_attaque.innerHTML = "Vous avez soigné Jihrah de "  + valeur_soin +" points de vie.";
@@ -3133,7 +3228,7 @@ bouton_special.onclick = function (){
 					if (pdv_heros_3 > pdv_heros_2){
 						if(pdv_heros_2 > 79){
 							pdv_heros_2 = 100;
-							message_attaque.innerHTML = "Vous avez soigné Gezek de " + 100-pdv_heros_2 + " points de vie.";
+							message_attaque.innerHTML = "Vous avez soigné Gezek de " + (100-pdv_heros_2) + " points de vie.";
 						} else {
 							pdv_heros_2 = pdv_heros_2 + valeur_soin;
 							message_attaque.innerHTML = "Vous avez soigné Gezek de "  + valeur_soin +" points de vie.";
@@ -3145,7 +3240,7 @@ bouton_special.onclick = function (){
 					if (pdv_heros_2 >= pdv_heros_4){
 						if(pdv_heros_4 > 79){
 							pdv_heros_4 = 100;
-							message_attaque.innerHTML = "Vous avez soigné Helnes de " + 100-pdv_heros_4 + " points de vie.";
+							message_attaque.innerHTML = "Vous avez soigné Helnes de " + (100-pdv_heros_4) + " points de vie.";
 						} else {
 							pdv_heros_4 = pdv_heros_4 + valeur_soin;
 							message_attaque.innerHTML = "Vous avez soigné Helnes de "  + valeur_soin +" points de vie.";
@@ -3155,7 +3250,7 @@ bouton_special.onclick = function (){
 					if (pdv_heros_4 > pdv_heros_2){
 						if(pdv_heros_2 > 79){
 							pdv_heros_2 = 100;
-							message_attaque.innerHTML = "Vous avez soigné Gezek de " + 100-pdv_heros_2 + " points de vie.";
+							message_attaque.innerHTML = "Vous avez soigné Gezek de " + (100-pdv_heros_2) + " points de vie.";
 						} else {
 							pdv_heros_2 = pdv_heros_2 + valeur_soin;
 							message_attaque.innerHTML = "Vous avez soigné Gezek de "  + valeur_soin +" points de vie.";
@@ -3163,34 +3258,12 @@ bouton_special.onclick = function (){
 						valeur_pdv_heros_2.innerHTML = pdv_heros_2;
 					}
 				}
-				if (pdv_heros_3 > 0 && pdv_heros_4 > 0){
-					if (pdv_heros_3 >= pdv_heros_4){
-						if(pdv_heros_4 > 79){
-							pdv_heros_4 = 100;
-							message_attaque.innerHTML = "Vous avez soigné Helnes de " + 100-pdv_heros_4 + " points de vie.";
-						} else {
-							pdv_heros_4 = pdv_heros_4 + valeur_soin;
-							message_attaque.innerHTML = "Vous avez soigné Helnes de "  + valeur_soin +" points de vie.";
-						}
-						valeur_pdv_heros_4.innerHTML = pdv_heros_4;
-					}
-					if (pdv_heros_4 > pdv_heros_3){
-						if(pdv_heros_3 > 79){
-							pdv_heros_3 = 100;
-							message_attaque.innerHTML = "Vous avez soigné Jihrah de " + 100-pdv_heros_3 + " points de vie.";
-						} else {
-							pdv_heros_3= pdv_heros_3 + valeur_soin;
-							message_attaque.innerHTML = "Vous avez soigné Jihrah de "  + valeur_soin +" points de vie.";
-						}
-						valeur_pdv_heros_3.innerHTML = pdv_heros_3;
-					}
-				}
 			}
 			if (compteur_heros_en_vie == 1){
 				if (pdv_heros_2 > 0){
 					if(pdv_heros_2 > 79){
 						pdv_heros_2 = 100;
-						message_attaque.innerHTML = "Vous avez soigné Gezek de " + 100-pdv_heros_2 + " points de vie.";
+						message_attaque.innerHTML = "Vous avez soigné Gezek de " + (100-pdv_heros_2) + " points de vie.";
 					} else {
 						pdv_heros_2 = pdv_heros_2 + valeur_soin;
 						message_attaque.innerHTML = "Vous avez soigné Gezek de "  + valeur_soin +" points de vie.";
