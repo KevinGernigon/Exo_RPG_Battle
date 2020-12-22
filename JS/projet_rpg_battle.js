@@ -8,8 +8,8 @@
      personnage possédant le moins de pv. :check
 + 5/ Il y a trois monstres. Les actions offensives des personnages doivent déterminer quelmonstre elles ciblent. : check
 + 6/ Quand tous les personnages ont validé une action au cours de ce tour, les monstres attaquent, un par un. Les monstres ne peuvent faire qu’attaquer. :check
-- 7/ /!\Valider une action la rend indisponible. Quand un nouveau tour commence, cela libère les actions de tous les personnages, sauf celle qui a été utilisée
-     par chacun d’entre eux au tour précédent./!\
+- 7/ Valider une action la rend indisponible. Quand un nouveau tour commence, cela libère les actions de tous les personnages, sauf celle qui a été utilisée
+     par chacun d’entre eux au tour précédent. : check
 + 8/ Les actions spéciales coûtent de la mana et ne peuvent être utilisées que si le personnage en possède suffisamment (sinon l’option n’est même pas 
      cliquable). :check
 + 9/ Un monstre possède un certain nombre de points de vie, et à 0, il meurt (ce qui est visible, au moins par sa disparition). Il ne pourra évidemment plus
